@@ -1,0 +1,259 @@
+{
+  "url": "https://www.avir.com/service-request",
+  "slug": "service-request",
+  "templateType": "contact",
+  "title": "Service Request",
+  "metaDescription": "",
+  "ogImage": "https://cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/6361680bf3e6a52a0fd9470c_AVIR%20Opengraph.jpg",
+  "canonical": "",
+  "headings": [
+    {
+      "level": 2,
+      "text": "Service Call"
+    },
+    {
+      "level": 3,
+      "text": "About you"
+    },
+    {
+      "level": 2,
+      "text": "Engage the experts"
+    },
+    {
+      "level": 3,
+      "text": "Call"
+    },
+    {
+      "level": 4,
+      "text": "760.779.0881"
+    },
+    {
+      "level": 3,
+      "text": "Visit our Showroom"
+    },
+    {
+      "level": 4,
+      "text": "41905 Boardwalk, Suite XPalm Desert, CA 92211"
+    },
+    {
+      "level": 4,
+      "text": "Navigation"
+    },
+    {
+      "level": 4,
+      "text": "Services"
+    },
+    {
+      "level": 3,
+      "text": "Exciting Products"
+    }
+  ],
+  "bodyText": "MenuHomeServicesBrandsPortfolioAboutExciting PRoductsContactHome CinemaAutomationLightingShadingMusicSecurityNetworkingService CallAre you an Existing Client and need one of our technicians to stop by your home or business? Fill out the form below to schedule a visit.About youFirst NameLast NameEmail AddressPhone NumberI live here...Full-timeSeasonallyIf seasonally, please request a date:What can we fix for you?NetworkingAutomationVideoAudioTelephoneSecurityLightingCable/SatelliteIntercom/GateShadesSoftware UpdatesEquipment UpgradesPlease give us a brief description about the service needed:Thank you! Your submission has been received!Back to the homepageOops! Something went wrong while submitting the form.Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareersContactServicesHome CinemaAutomationLightingShadingMusicSecurityNetworkingExciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out moreProudly serving the entire Coachella Valley and surrounding areas:BanningBeaumontBermuda DunesBig BearCathedral CityCoachellaIdyllwildIndian WellsIndioJoshua TreeLa QuintaLake ArrowheadMoreno ValleyMurrietaPalm DesertPalm SpringsRancho MirageRedlandsRiversideSan BernardinoTemeculaThermalThousand PalmsYucaipaYucca ValleyCopyright © 2023. All rights reserved.Website by",
+  "navigation": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Services",
+      "href": "/services"
+    },
+    {
+      "text": "Brands",
+      "href": "/brands"
+    },
+    {
+      "text": "Portfolio",
+      "href": "/portfolio"
+    },
+    {
+      "text": "About",
+      "href": "/about-avir"
+    },
+    {
+      "text": "Exciting Products",
+      "href": "/exciting-new-products"
+    },
+    {
+      "text": "Blog",
+      "href": "/blog"
+    },
+    {
+      "text": "Careers",
+      "href": "/careers"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer": {
+    "text": "Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareersContactServicesHome CinemaAutomationLightingShadingMusicSecurityNetworkingExciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out moreProudly serving the entire Coachella Valley and surrounding areas:BanningBeaumontBermuda DunesBig BearCathedral CityCoachellaIdyllwildIndian WellsIndioJoshua TreeLa QuintaLake ArrowheadMoreno ValleyMurrietaPalm DesertPalm SpringsRancho MirageRedlandsRiversideSan BernardinoTemeculaThermalThousand PalmsYucaipaYucca ValleyCopyright © 2023. All rights reserved.Website by",
+    "links": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Services",
+        "href": "/services"
+      },
+      {
+        "text": "Brands",
+        "href": "/brands"
+      },
+      {
+        "text": "Exciting Products",
+        "href": "/exciting-new-products"
+      },
+      {
+        "text": "Portfolio",
+        "href": "/portfolio"
+      },
+      {
+        "text": "About",
+        "href": "/about-avir"
+      },
+      {
+        "text": "Careers",
+        "href": "/careers"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      },
+      {
+        "text": "Banning",
+        "href": "/city/banning"
+      },
+      {
+        "text": "Beaumont",
+        "href": "/city/beaumont"
+      },
+      {
+        "text": "Bermuda Dunes",
+        "href": "/city/bermuda-dunes"
+      },
+      {
+        "text": "Big Bear",
+        "href": "/city/big-bear"
+      },
+      {
+        "text": "Cathedral City",
+        "href": "/city/cathedral-city"
+      },
+      {
+        "text": "Coachella",
+        "href": "/city/coachella"
+      },
+      {
+        "text": "Idyllwild",
+        "href": "/city/idyllwild"
+      },
+      {
+        "text": "Indian Wells",
+        "href": "/city/indian-wells"
+      },
+      {
+        "text": "Indio",
+        "href": "/city/indio"
+      },
+      {
+        "text": "Joshua Tree",
+        "href": "/city/joshua-tree"
+      },
+      {
+        "text": "La Quinta",
+        "href": "/city/la-quinta"
+      },
+      {
+        "text": "Lake Arrowhead",
+        "href": "/city/lake-arrowhead"
+      },
+      {
+        "text": "Moreno Valley",
+        "href": "/city/moreno-valley"
+      },
+      {
+        "text": "Murrieta",
+        "href": "/city/murrieta"
+      },
+      {
+        "text": "Palm Desert",
+        "href": "/city/palm-desert"
+      },
+      {
+        "text": "Palm Springs",
+        "href": "/city/palm-springs"
+      },
+      {
+        "text": "Rancho Mirage",
+        "href": "/city/rancho-mirage"
+      },
+      {
+        "text": "Redlands",
+        "href": "/city/redlands"
+      },
+      {
+        "text": "Riverside",
+        "href": "/city/riverside"
+      },
+      {
+        "text": "San Bernardino",
+        "href": "/city/san-bernardino"
+      },
+      {
+        "text": "Temecula",
+        "href": "/city/temecula"
+      },
+      {
+        "text": "Thermal",
+        "href": "/city/thermal"
+      },
+      {
+        "text": "Thousand Palms",
+        "href": "/city/thousand-palms"
+      },
+      {
+        "text": "Yucaipa",
+        "href": "/city/yucaipa"
+      },
+      {
+        "text": "Yucca Valley",
+        "href": "/city/yucca-valley"
+      },
+      {
+        "text": "Website by",
+        "href": "https://www.dunclyde.com/"
+      }
+    ]
+  },
+  "contentSections": [
+    {
+      "identifier": "section",
+      "heading": "Service Call",
+      "preview": "Service CallAre you an Existing Client and need one of our technicians to stop by your home or business? Fill out the form below to schedule a visit.About youFirst NameLast NameEmail AddressPhone NumberI live here...Full-timeSeasonallyIf seasonally, please request a date:What can we fix for you?Netw..."
+    },
+    {
+      "identifier": "section footer",
+      "heading": "Engage the experts",
+      "preview": "Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareer..."
+    },
+    {
+      "identifier": "footer-cta__wrap",
+      "heading": "Exciting Products",
+      "preview": "Exciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out more"
+    },
+    {
+      "identifier": "footer__cta",
+      "heading": "Exciting Products",
+      "preview": "Exciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out more"
+    },
+    {
+      "identifier": "footer-cta-para",
+      "heading": "",
+      "preview": "Browse some of the most exclusive products we can bring to your next technology installation."
+    }
+  ],
+  "scrapedAt": "2026-03-04T21:21:19.118Z"
+}

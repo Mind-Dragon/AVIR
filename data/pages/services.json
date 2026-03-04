@@ -1,0 +1,314 @@
+{
+  "url": "https://www.avir.com/services",
+  "slug": "services",
+  "templateType": "services",
+  "title": "Services",
+  "metaDescription": "We offer an array of specialty services custom-tailored to your needs. From individual rooms to large-scale commercial buildings, we ensure quality each step of the way.",
+  "ogImage": "https://cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/6361680bf3e6a52a0fd9470c_AVIR%20Opengraph.jpg",
+  "canonical": "",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Services"
+    },
+    {
+      "level": 3,
+      "text": "Home Cinema"
+    },
+    {
+      "level": 3,
+      "text": "Automation"
+    },
+    {
+      "level": 3,
+      "text": "Lighting"
+    },
+    {
+      "level": 3,
+      "text": "Shading"
+    },
+    {
+      "level": 3,
+      "text": "Music"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Networking"
+    },
+    {
+      "level": 2,
+      "text": "VIP Treatment"
+    },
+    {
+      "level": 3,
+      "text": "Welcome and Turndown"
+    },
+    {
+      "level": 3,
+      "text": "Hibernation"
+    },
+    {
+      "level": 3,
+      "text": "Training"
+    },
+    {
+      "level": 2,
+      "text": "Engage the experts"
+    },
+    {
+      "level": 3,
+      "text": "Call"
+    },
+    {
+      "level": 4,
+      "text": "760.779.0881"
+    },
+    {
+      "level": 3,
+      "text": "Visit our Showroom"
+    },
+    {
+      "level": 4,
+      "text": "41905 Boardwalk, Suite XPalm Desert, CA 92211"
+    },
+    {
+      "level": 4,
+      "text": "Navigation"
+    },
+    {
+      "level": 4,
+      "text": "Services"
+    },
+    {
+      "level": 3,
+      "text": "Exciting Products"
+    }
+  ],
+  "bodyText": "MenuHomeServicesBrandsPortfolioAboutExciting PRoductsContactHome CinemaAutomationLightingShadingMusicSecurityNetworkingServicesAVIR fabricates immaculate smart environments for residential and commercial projects. We offer an array of specialty services custom-tailored to your needs. From individual rooms to large-scale commercial buildings, we ensure quality each step of the way.Jump toServicesSupportHome CinemaToday’s high-definition home theaters rival even the best commercial cinemas. AVIR works with world class architects, interior designers, and general contractors to build home theaters designed to exceed your highest expectations, bringing Hollywood into your home, and transporting you into the worlds on screen.Home Cinema GalleryAutomationAVIR’s ‘One Touch Simplicity’ lets you indulge in luxury with a single touch of a button or voice command. Imagine that with just a single touch or voice command the lights dim, the shades close, the TV turns on and your favorite movie begins. Intuitive and minimalistic control interface design is the core of what we have to offer. You’ll wish you’d have found us a long time ago. Home Cinema GalleryLightingTune your lights to specific color frequencies and temperatures, to highlight paintings and sculptures in stunning, museum-quality detail. Experience true candlelight from an LED bulb. Bring perfect, frequency-accurate light from the outdoors into your home at any time- morning, noon, or night.‍Home Cinema GalleryShadingFrom full blackout environments in home theaters and bedrooms, to sheer designs for beautifully open and vibrant spaces, perfectly complement your home aesthetic.Home Cinema GalleryMusicTravel between rooms, access simple controls, and experience a true audiophiles dream. Listen to the highest fidelity music, anywhere in your home.‍Home Cinema GallerySecurityYour home and your loved ones are, after all, your most precious assets, and a home security system is one of the most important investments you’ll ever make. AVIR knows your security comes from knowing you’ve made the very best choice for their protection.Video surveillance, on-demand access to police and fire, and hack-resistant tech are all possible. An automated security system means a mind free from worry.Home Cinema GalleryNetworkingIT infrastructure is the foundation of today’s modern home. Just like your home’s physical foundation, your digital foundation must be robust and strong enough to support the many devices which will depend on it. Unfortunately, the over-the-counter networking products many consumers have relied on in the past, simply cannot meet the needs of an automated residence.Home Cinema GallerySupportVIP TreatmentWelcome and TurndownOur Welcome and Turndown services take VIP care to the next level. Simply let us know you are coming into town (or have someone send your calendar), and everything will be ready and waiting as soon as you step foot in the door. Upon entry, we will have done a complete system check, ensuring each shade, light, and driver is working and up to date.HibernationWhen it’s time to leave, we make it easy. We place your system in Hibernation mode, saving power, increasing security through physical disconnection, and actively monitoring any on-site or digital threats.TrainingWe offer comprehensive training for every system on your property. Whether it’s the first-time training after a fresh install or a later session for your onsite staff, we ensure system literacy for everyone involved.Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareersContactServicesHome CinemaAutomationLightingShadingMusicSecurityNetworkingExciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out moreProudly serving the entire Coachella Valley and surrounding areas:BanningBeaumontBermuda DunesBig BearCathedral CityCoachellaIdyllwildIndian WellsIndioJoshua TreeLa QuintaLake ArrowheadMoreno ValleyMurrietaPalm DesertPalm SpringsRancho MirageRedlandsRiversideSan BernardinoTemeculaThermalThousand PalmsYucaipaYucca ValleyCopyright © 2023. All rights reserved.Website by",
+  "navigation": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Services",
+      "href": "/services"
+    },
+    {
+      "text": "Brands",
+      "href": "/brands"
+    },
+    {
+      "text": "Portfolio",
+      "href": "/portfolio"
+    },
+    {
+      "text": "About",
+      "href": "/about-avir"
+    },
+    {
+      "text": "Exciting Products",
+      "href": "/exciting-new-products"
+    },
+    {
+      "text": "Blog",
+      "href": "/blog"
+    },
+    {
+      "text": "Careers",
+      "href": "/careers"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer": {
+    "text": "Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareersContactServicesHome CinemaAutomationLightingShadingMusicSecurityNetworkingExciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out moreProudly serving the entire Coachella Valley and surrounding areas:BanningBeaumontBermuda DunesBig BearCathedral CityCoachellaIdyllwildIndian WellsIndioJoshua TreeLa QuintaLake ArrowheadMoreno ValleyMurrietaPalm DesertPalm SpringsRancho MirageRedlandsRiversideSan BernardinoTemeculaThermalThousand PalmsYucaipaYucca ValleyCopyright © 2023. All rights reserved.Website by",
+    "links": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Services",
+        "href": "/services"
+      },
+      {
+        "text": "Brands",
+        "href": "/brands"
+      },
+      {
+        "text": "Exciting Products",
+        "href": "/exciting-new-products"
+      },
+      {
+        "text": "Portfolio",
+        "href": "/portfolio"
+      },
+      {
+        "text": "About",
+        "href": "/about-avir"
+      },
+      {
+        "text": "Careers",
+        "href": "/careers"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      },
+      {
+        "text": "Banning",
+        "href": "/city/banning"
+      },
+      {
+        "text": "Beaumont",
+        "href": "/city/beaumont"
+      },
+      {
+        "text": "Bermuda Dunes",
+        "href": "/city/bermuda-dunes"
+      },
+      {
+        "text": "Big Bear",
+        "href": "/city/big-bear"
+      },
+      {
+        "text": "Cathedral City",
+        "href": "/city/cathedral-city"
+      },
+      {
+        "text": "Coachella",
+        "href": "/city/coachella"
+      },
+      {
+        "text": "Idyllwild",
+        "href": "/city/idyllwild"
+      },
+      {
+        "text": "Indian Wells",
+        "href": "/city/indian-wells"
+      },
+      {
+        "text": "Indio",
+        "href": "/city/indio"
+      },
+      {
+        "text": "Joshua Tree",
+        "href": "/city/joshua-tree"
+      },
+      {
+        "text": "La Quinta",
+        "href": "/city/la-quinta"
+      },
+      {
+        "text": "Lake Arrowhead",
+        "href": "/city/lake-arrowhead"
+      },
+      {
+        "text": "Moreno Valley",
+        "href": "/city/moreno-valley"
+      },
+      {
+        "text": "Murrieta",
+        "href": "/city/murrieta"
+      },
+      {
+        "text": "Palm Desert",
+        "href": "/city/palm-desert"
+      },
+      {
+        "text": "Palm Springs",
+        "href": "/city/palm-springs"
+      },
+      {
+        "text": "Rancho Mirage",
+        "href": "/city/rancho-mirage"
+      },
+      {
+        "text": "Redlands",
+        "href": "/city/redlands"
+      },
+      {
+        "text": "Riverside",
+        "href": "/city/riverside"
+      },
+      {
+        "text": "San Bernardino",
+        "href": "/city/san-bernardino"
+      },
+      {
+        "text": "Temecula",
+        "href": "/city/temecula"
+      },
+      {
+        "text": "Thermal",
+        "href": "/city/thermal"
+      },
+      {
+        "text": "Thousand Palms",
+        "href": "/city/thousand-palms"
+      },
+      {
+        "text": "Yucaipa",
+        "href": "/city/yucaipa"
+      },
+      {
+        "text": "Yucca Valley",
+        "href": "/city/yucca-valley"
+      },
+      {
+        "text": "Website by",
+        "href": "https://www.dunclyde.com/"
+      }
+    ]
+  },
+  "contentSections": [
+    {
+      "identifier": "section title",
+      "heading": "Services",
+      "preview": "ServicesAVIR fabricates immaculate smart environments for residential and commercial projects. We offer an array of specialty services custom-tailored to your needs. From individual rooms to large-scale commercial buildings, we ensure quality each step of the way."
+    },
+    {
+      "identifier": "section sub-nav is--hidden",
+      "heading": "",
+      "preview": "Jump toServicesSupport"
+    },
+    {
+      "identifier": "services",
+      "heading": "Home Cinema",
+      "preview": "Home CinemaToday’s high-definition home theaters rival even the best commercial cinemas. AVIR works with world class architects, interior designers, and general contractors to build home theaters designed to exceed your highest expectations, bringing Hollywood into your home, and transporting you in..."
+    },
+    {
+      "identifier": "support",
+      "heading": "VIP Treatment",
+      "preview": "SupportVIP TreatmentWelcome and TurndownOur Welcome and Turndown services take VIP care to the next level. Simply let us know you are coming into town (or have someone send your calendar), and everything will be ready and waiting as soon as you step foot in the door. Upon entry, we will have done a ..."
+    },
+    {
+      "identifier": "section footer",
+      "heading": "Engage the experts",
+      "preview": "Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareer..."
+    },
+    {
+      "identifier": "footer-cta__wrap",
+      "heading": "Exciting Products",
+      "preview": "Exciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out more"
+    },
+    {
+      "identifier": "footer__cta",
+      "heading": "Exciting Products",
+      "preview": "Exciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out more"
+    },
+    {
+      "identifier": "footer-cta-para",
+      "heading": "",
+      "preview": "Browse some of the most exclusive products we can bring to your next technology installation."
+    }
+  ],
+  "scrapedAt": "2026-03-04T21:21:19.108Z"
+}

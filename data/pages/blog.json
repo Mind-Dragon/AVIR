@@ -1,0 +1,660 @@
+{
+  "url": "https://www.avir.com/blog",
+  "slug": "blog",
+  "templateType": "blog-index",
+  "title": "Blog",
+  "metaDescription": "",
+  "ogImage": "",
+  "canonical": "",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Blog"
+    },
+    {
+      "level": 3,
+      "text": "Meridian Introduces 2026 Editions of the DSP750 and DSP730 In-Wall Speakers"
+    },
+    {
+      "level": 3,
+      "text": "JBL Synthesis Introduces Nine New Loudspeakers and Three AV Processors"
+    },
+    {
+      "level": 3,
+      "text": "Is This The Ultimate Home Theater?"
+    },
+    {
+      "level": 3,
+      "text": "Klipsch The Sevens II And The Nines II Powered Speakers Come Equipped With Dirac Technology"
+    },
+    {
+      "level": 3,
+      "text": "LG Introduces The Wallpaper TV Thin Wireless OLED TV"
+    },
+    {
+      "level": 3,
+      "text": "Marantz Introduces AV 30 and AMP 30 Home Theater Components"
+    },
+    {
+      "level": 3,
+      "text": "Samsung Unveils World’s First (Samsung R95H)"
+    },
+    {
+      "level": 3,
+      "text": "Rania and Lumaris"
+    },
+    {
+      "level": 3,
+      "text": "Marantz LINK 10n"
+    },
+    {
+      "level": 3,
+      "text": "Leon Announces the New Solé TV Frame for Sony’s BRAVIA 7"
+    },
+    {
+      "level": 3,
+      "text": "LG Unveils 136-inch MAGNIT ‘Active Micro LED’ Display"
+    },
+    {
+      "level": 3,
+      "text": "Sonus faber and Automobili Lamborghini"
+    },
+    {
+      "level": 3,
+      "text": "Polina brings beauty and stellar performance to open spaces."
+    },
+    {
+      "level": 3,
+      "text": "AudioControl Bijou 5100D"
+    },
+    {
+      "level": 3,
+      "text": "Experience cutting edge luxury home cinema with Barco Residential"
+    },
+    {
+      "level": 3,
+      "text": "Planar Komodo Series"
+    },
+    {
+      "level": 3,
+      "text": "Sage Series L150m"
+    },
+    {
+      "level": 3,
+      "text": "How to Keep Your Home Theater Safe"
+    },
+    {
+      "level": 3,
+      "text": "Introducing the Mark Levinson 600 Series"
+    },
+    {
+      "level": 3,
+      "text": "James Loudspeaker Outdoor Tower Series"
+    },
+    {
+      "level": 3,
+      "text": "JL Audio Gotham™ v2 Powered Subwoofers"
+    },
+    {
+      "level": 3,
+      "text": "Epson QB1000 4K HDR Laser Projector"
+    },
+    {
+      "level": 3,
+      "text": "KEF Reference 5 Meta"
+    },
+    {
+      "level": 3,
+      "text": "The world’s first Single Apparent Source loudspeaker."
+    },
+    {
+      "level": 3,
+      "text": "Trinnov Unveils AltitudeCI"
+    },
+    {
+      "level": 3,
+      "text": "Monumental style. Minimal distractions"
+    },
+    {
+      "level": 3,
+      "text": "Void Acoustics Unveils Three New Products"
+    },
+    {
+      "level": 3,
+      "text": "URC, Furrion Announce Expanded Partnership"
+    },
+    {
+      "level": 3,
+      "text": "Lutron Introduces New Rania and Lumaris Form Factors"
+    },
+    {
+      "level": 3,
+      "text": "MTI100 Integrated Turntable: Sun Records Limited Edition"
+    },
+    {
+      "level": 3,
+      "text": "Samsung Smart Laser Projector Integrated Cabinets"
+    },
+    {
+      "level": 3,
+      "text": "The Arena Collection by Sonus Faber"
+    },
+    {
+      "level": 3,
+      "text": "Focal Diva Mezza Utopia"
+    },
+    {
+      "level": 3,
+      "text": "Beyond the Curve - 32 Years of Nautilus"
+    },
+    {
+      "level": 3,
+      "text": "A Legacy in Sound- 801 Abbey Road Limited Edition"
+    },
+    {
+      "level": 3,
+      "text": "KEF Introduces Two New THX Certified Architectural Speakers"
+    },
+    {
+      "level": 3,
+      "text": "Mark Levinson 600 Series"
+    },
+    {
+      "level": 3,
+      "text": "Focal Introduces the Utopia Cinema Range"
+    },
+    {
+      "level": 3,
+      "text": "JBL Summit Series Expands"
+    },
+    {
+      "level": 3,
+      "text": "Monitor Audio Release New Vestra Series Subwoofers"
+    },
+    {
+      "level": 3,
+      "text": "JVC Partners Up With Control4"
+    },
+    {
+      "level": 3,
+      "text": "Grimani Systems MP-84: Seamless Design"
+    },
+    {
+      "level": 3,
+      "text": "The M6800D from AudioControl"
+    },
+    {
+      "level": 3,
+      "text": "Sony’s 2025 Bravia Lineup"
+    },
+    {
+      "level": 3,
+      "text": "Screen Innovations Upgrades KAOS Outdoor Shades With Features from Its Zen Line"
+    },
+    {
+      "level": 3,
+      "text": "Meridian Audio and Leon Collaborate on New Edge Media Frame"
+    },
+    {
+      "level": 3,
+      "text": "Sony Develops Next-Generation Display System"
+    },
+    {
+      "level": 3,
+      "text": "Autonomic and URC Unveil Expanded M Series Support and Faster UI Performance"
+    },
+    {
+      "level": 3,
+      "text": "SAVANT Reveals New Premium Proseo GE Smart Lighting And Shading Solutions"
+    },
+    {
+      "level": 3,
+      "text": "Meridian Ellipse: Streaming Audio At Its Finest"
+    },
+    {
+      "level": 3,
+      "text": "Mera Sound Sconce: A New Approach to Light and Sound"
+    },
+    {
+      "level": 3,
+      "text": "Upgrade Your Home Audio with the James Loudspeaker On Wall QT Series"
+    },
+    {
+      "level": 3,
+      "text": "Bang & Olufsen Expands Customization with Atelier and Exclusive Limited Editions"
+    },
+    {
+      "level": 3,
+      "text": "StormAudio ISR Fusion 20 named Stereonet Product of the Year 2025"
+    },
+    {
+      "level": 3,
+      "text": "Focal Introduces the Utopia Cinema Range"
+    },
+    {
+      "level": 3,
+      "text": "Planar Expands Award-Winning Planar CarbonLight LED Display Family"
+    },
+    {
+      "level": 3,
+      "text": "Marantz Expands Its Premium Hifi Separates Offerings with Three New Releases"
+    },
+    {
+      "level": 3,
+      "text": "Dynaudio Unveils Updated Symphony Opus One Immersive Soundbar at CES 2025"
+    },
+    {
+      "level": 3,
+      "text": "URC's TDC-8300 and TRC-1120 for Smart Home Control"
+    },
+    {
+      "level": 3,
+      "text": "Smart Home Technology We'd Like to See in 2025: A Vision for High-End Integration"
+    },
+    {
+      "level": 3,
+      "text": "LG's Transparent OLED TV Brings Sci-Fi Concepts Into Everyday Life"
+    },
+    {
+      "level": 3,
+      "text": "Wisdom Audio S57i: A Subwoofer That Fits Anywhere and Sounds Amazing"
+    },
+    {
+      "level": 3,
+      "text": "Kaleidescape Strato V"
+    },
+    {
+      "level": 3,
+      "text": "McIntosh MX200 A/V Processor"
+    },
+    {
+      "level": 3,
+      "text": "AVPro Edge Introduces HDMI Extension Kit With Range Up to 150 Meters"
+    },
+    {
+      "level": 3,
+      "text": "Zeppelin Pro: A Fresh Take on a Classic Wireless Speaker"
+    },
+    {
+      "level": 3,
+      "text": "Vinyl Royalty: Pro-Ject Unveils The Classic Reference Turntable with Elevated Elegance and Precision"
+    },
+    {
+      "level": 3,
+      "text": "Arc You Ready for the Ultra Experience?"
+    },
+    {
+      "level": 3,
+      "text": "“Mirror, Mirror on the Wall—Is That a TV After All?”"
+    },
+    {
+      "level": 3,
+      "text": "Focal Diva Utopia: High-End Performance in a Wireless System"
+    },
+    {
+      "level": 3,
+      "text": "JBL Synthesis SMA Series Amplifiers 2024"
+    },
+    {
+      "level": 3,
+      "text": "DoorBird Smart Door Controller D410 LTE/4G:"
+    },
+    {
+      "level": 3,
+      "text": "Pro-Ject T1 EVO: The Perfect Entry Point to Hi-Fi Vinyl or a Great Addition to a Collection"
+    },
+    {
+      "level": 3,
+      "text": "Epson Unveils the Q-Series at CEDIA 2024"
+    },
+    {
+      "level": 3,
+      "text": "Lutron’s Latest Innovations at CEDIA Expo 2024"
+    },
+    {
+      "level": 3,
+      "text": "Sonance’s Elegant Innovations Unveiled at CEDIA Expo 2024"
+    },
+    {
+      "level": 3,
+      "text": "Klipsch's Latest For 2024"
+    },
+    {
+      "level": 3,
+      "text": "Grimani Systems Launches The Reflectance™ System"
+    },
+    {
+      "level": 3,
+      "text": "Unpacking the Sony XR90 Series"
+    },
+    {
+      "level": 3,
+      "text": "Transform Any Room with a View"
+    },
+    {
+      "level": 3,
+      "text": "Kaleidescape's Strato V Movie Player"
+    },
+    {
+      "level": 3,
+      "text": "Small But Mighty: The Best-Selling Sonus Faber Concertino G4"
+    },
+    {
+      "level": 3,
+      "text": "Best JBL Audio Gear for Easy Home Upgrades"
+    },
+    {
+      "level": 3,
+      "text": "AVIR's Stellar Home Theater Installation Featured by Wisdom Audio"
+    },
+    {
+      "level": 3,
+      "text": "Expert Tips for Designing Your Perfect Home Theater"
+    },
+    {
+      "level": 3,
+      "text": "Bang & Olufsen: Reviving Classics"
+    },
+    {
+      "level": 3,
+      "text": "Enhanced Control4 Smart Home"
+    },
+    {
+      "level": 3,
+      "text": "C SEED N1 165 & 137 TV"
+    },
+    {
+      "level": 3,
+      "text": "McIntosh and Sonus Faber Partner with Jeep and Lamborghini"
+    },
+    {
+      "level": 3,
+      "text": "Unlock the Full Potential of Your Sonos Ace Wireless Headphones"
+    },
+    {
+      "level": 3,
+      "text": "New- Ketra D2 and Rania D2 Architectural Downlights"
+    },
+    {
+      "level": 3,
+      "text": "How the Crestron and Luhkee Partnership Transforms Smart Homes in Palm Desert"
+    },
+    {
+      "level": 3,
+      "text": "Coastal Source Opens Showroom at Pacific Design Center"
+    },
+    {
+      "level": 3,
+      "text": "Dynaudio Unveils New Sound at High-End Munich 2024"
+    },
+    {
+      "level": 3,
+      "text": "Pristine Audio Connectivity: AVPro Edge’s New Dante-Enabled Products"
+    },
+    {
+      "level": 3,
+      "text": "Celebrating Sound: The Klipsch Jubilee 75th Anniversary Edition"
+    },
+    {
+      "level": 3,
+      "text": "Outdoor Entertainment: Comparisons and Considerations"
+    },
+    {
+      "level": 3,
+      "text": "Unveiling Hyphn: The Pinnacle of Sound Sculpting by Monitor Audio"
+    },
+    {
+      "level": 3,
+      "text": "Soundscapes Redefined"
+    },
+    {
+      "level": 3,
+      "text": "A Nod to Future Automation’s Mastery"
+    },
+    {
+      "level": 2,
+      "text": "Engage the experts"
+    },
+    {
+      "level": 3,
+      "text": "Call"
+    },
+    {
+      "level": 4,
+      "text": "760.779.0881"
+    },
+    {
+      "level": 3,
+      "text": "Visit our Showroom"
+    },
+    {
+      "level": 4,
+      "text": "41905 Boardwalk, Suite XPalm Desert, CA 92211"
+    },
+    {
+      "level": 4,
+      "text": "Navigation"
+    },
+    {
+      "level": 4,
+      "text": "Services"
+    },
+    {
+      "level": 3,
+      "text": "Exciting Products"
+    }
+  ],
+  "bodyText": "MenuHomeServicesBrandsPortfolioAboutExciting PRoductsContactHome CinemaAutomationLightingShadingMusicSecurityNetworkingBlogCalifornia Living at its Finest: The Latest in Luxury Home AutomationMeridian Introduces 2026 Editions of the DSP750 and DSP730 In-Wall SpeakersFebruary 25, 2026The 2026 Editions feature enhanced driver design, advanced DSP processing, and refined acoustic engineering.JBL Synthesis Introduces Nine New Loudspeakers and Three AV ProcessorsFebruary 18, 2026The expansion of the JBL Synthesis SCL Custom Loudspeakers spans both architectural in-wall designs and new in-room and on-wall solutions.Is This The Ultimate Home Theater?February 11, 2026Cinema-grade and consumer formats in a single video wall 14.8.8-channel surround sound with advanced processingKlipsch The Sevens II And The Nines II Powered Speakers Come Equipped With Dirac TechnologyFebruary 4, 2026Next-generation powered speakers become among the first of their kind to feature Dirac’s room correction technology.LG Introduces The Wallpaper TV Thin Wireless OLED TVJanuary 28, 2026True wireless OLED, featuring a 9mm class thin bodyMarantz Introduces AV 30 and AMP 30 Home Theater ComponentsJanuary 21, 2026The AV 30 11.4-channel AV preamplifier and AMP 30 power amplifier can be combined with other Marantz products for a variety of system configurations.Samsung Unveils World’s First (Samsung R95H)January 14, 2026130-Inch Micro RGB TV Featuring Next-Generation Color and Bold New DesignRania and LumarisJanuary 7, 2026Lutron debuts an evolved lighting portfolio featuring new downlight and tape light solutions.Marantz LINK 10nDecember 31, 2025Reference 2.1 Channel Fully Featured Streaming Preamplifier Powered by HEOSLeon Announces the New Solé TV Frame for Sony’s BRAVIA 7December 17, 2025Available in 65-, 75-, and 85-inch sizes, this aluminum frame transforms BRAVIA 7’s Ultra-4K display into a framed work of living art — without compromising on picture quality.LG Unveils 136-inch MAGNIT ‘Active Micro LED’ DisplayDecember 10, 2025LG’s Active Matrix approach provides individual pixel-level control for refined detail and ultra-high-definition picture quality.Sonus faber and Automobili LamborghiniDecember 3, 2025The two Italian masters blend expertise to reveal Il Cremonese Ex3me – Automobili Lamborghini EditionPolina brings beauty and stellar performance to open spaces.November 26, 2025A sophisticated acoustic luminaire and indirect pendant that combine architectural lighting with superior sound control and a sophisticated geometric form. AudioControl Bijou 5100DNovember 19, 2025Bijou Series Five-Channel Integrated Amplifier with Line-level Subwoofer Output and Dante AudioExperience cutting edge luxury home cinema with Barco ResidentialNovember 12, 2025Barco introduced Runar and TruePix Bifrost TP-I, two new groundbreaking LED walls for luxury home cinema at CEDIA 2025.Planar Komodo SeriesNovember 5, 2025Ultra-Fine Pixel Pitch LED Visual PerformanceSage Series L150mOctober 29, 2025The L150m is the premier expression of the core technology and strengths of the Sage SeriesHow to Keep Your Home Theater SafeOctober 22, 2025Smart Chair Means Safe ChairIntroducing the Mark Levinson 600 SeriesOctober 15, 2025A collection of the finest amplifiers and preamplifiers inspired by the majestic beauty and power of Earth’s tectonic volcanism.James Loudspeaker Outdoor Tower SeriesOctober 8, 2025Designed to deliver concert-level performance outdoors.JL Audio Gotham™ v2 Powered SubwoofersOctober 1, 2025The King of BassEpson QB1000 4K HDR Laser ProjectorSeptember 24, 2025For multi-use installations that will be competing with ambient lighting, the QB1000 offers a compelling argument over a direct view display, with images only getting better when the lights go down.KEF Reference 5 Meta September 17, 2025The extraordinarily capable 12th generation Uni-Q® driver array with MAT™, Reference 5 Meta exemplifies the passion for innovation that underpins KEF’s design philosophy.The world’s first Single Apparent Source loudspeaker.September 10, 2025A bold and striking presence, Blade pushes the boundaries of what is possible with sound.Trinnov Unveils AltitudeCISeptember 3, 2025Scalable Audio over IP for every projectMonumental style. Minimal distractionsAugust 27, 2025Captivating whether it’s on or off.Void Acoustics Unveils Three New ProductsAugust 20, 2025The Void Experience and the Void LoungeURC, Furrion Announce Expanded PartnershipAugust 13, 2025New integration brings advanced functionality for outdoor, marine, and RV environment.Lutron Introduces New Rania and Lumaris Form FactorsAugust 6, 2025Lutron debuts an evolved lighting portfolio featuring new downlight and tape light solutions.MTI100 Integrated Turntable: Sun Records Limited EditionJuly 30, 2025Features custom printed Sun Records glass plinth and accompanying felt slipmatSamsung Smart Laser Projector Integrated CabinetsJuly 23, 2025A Seamless Stealthy Solution for Virtually Any DecorThe Arena Collection by Sonus FaberJuly 16, 2025Precision, Power, and Italian PrideFocal Diva Mezza UtopiaJuly 9, 2025A new evolution in its Diva Utopia line from the French acoustic innovator.Beyond the Curve - 32 Years of NautilusJuly 2, 2025There are loudspeakers, and then there is Nautilus.A Legacy in Sound- 801 Abbey Road Limited EditionJune 25, 2025A deliberate tribute to a partnership that has shaped some of the most iconic recordings of the last half-century.KEF Introduces Two New THX Certified Architectural SpeakersJune 18, 2025The high-impact, in-wall speakers feature KEF’s Metamaterial Absorption Technology.Mark Levinson 600 SeriesJune 11, 2025The 600 Series redefines what’s possible from preamplifiers and amplifiers, delivering an experience of power, precision, and purity that is unmistakably Mark Levinson.Focal Introduces the Utopia Cinema RangeJune 4, 2025Focal presents Utopia Cinema, a range designed for private cinema rooms of up to 2153 sq ft (200m²).JBL Summit Series ExpandsMay 28, 2025At High End Munich 2025, JBL introduced three new members to its Summit Series — Makalu, Pumori, and Ama..Monitor Audio Release New Vestra Series SubwoofersMay 21, 2025Three new models all use the company’s C-CAM cone technology.JVC Partners Up With Control4May 14, 2025Control4 is now compatible with all JVC D-ILA projector modelsGrimani Systems MP-84: Seamless DesignMay 7, 2025Built on decades of acoustic innovation, this speaker provides detailed, room-filling sound without visible hardware disrupting your space.The M6800D from AudioControlApril 30, 2025If you’ve ever wondered how to enjoy consistent, high-fidelity sound across your entire home—from the living room to the patio—the AudioControl M6800D offers a powerful answer.Sony’s 2025 Bravia LineupApril 23, 2025Sony has introduced its 2025 Bravia TV and home theater collection with a strategy centered on expanding rather than replacing its current offerings.Screen Innovations Upgrades KAOS Outdoor Shades With Features from Its Zen LineApril 16, 2025Screen Innovations has added its Zen Outdoor Shades features to further enhance KAOS.Meridian Audio and Leon Collaborate on New Edge Media FrameApril 9, 2025The Edge Media Frame for Meridian houses both the display and speakers in a custom-built, solid hardwood frameSony Develops Next-Generation Display SystemApril 2, 2025Individual RGB Control of High-Density LED Backlights. This system is to begin mass production in 2025.‍Autonomic and URC Unveil Expanded M Series Support and Faster UI PerformanceMarch 26, 2025Now compatible with the M5 PRO and M3 music servers for smarter control, faster listening access, and personalized listening.SAVANT Reveals New Premium Proseo GE Smart Lighting And Shading SolutionsMarch 19, 2025Also showcases Siri voice Integration and groundbreaking smart power solutionMeridian Ellipse: Streaming Audio At Its FinestMarch 12, 2025Elegant, simple, and powerful—the Meridian Ellipse is the latest evolution of high-performance all-in-one streaming speakers.Mera Sound Sconce: A New Approach to Light and SoundMarch 5, 2025Designed in collaboration with Mera Studio Architects, this wall-mounted speaker redefines how technology and design come together in the home.Upgrade Your Home Audio with the James Loudspeaker On Wall QT SeriesFebruary 26, 2025These sleek, wall-mounted speakers feature Quadratech (QT) tweeter technology.Bang & Olufsen Expands Customization with Atelier and Exclusive Limited EditionsFebruary 19, 2025This new initiative, developed in response to growing demand for customization, grants customers access to B&O’s master artisans in Struer, Denmark.StormAudio ISR Fusion 20 named Stereonet Product of the Year 2025February 12, 2025Like Storm's processors, this seeks to bring cinema-level performance to the home, albeit as a one-box solution.Focal Introduces the Utopia Cinema RangeFebruary 5, 2025Includes one 3-way loudspeaker — Cinema LCR — and one subwoofer — Cinema SUB.Planar Expands Award-Winning Planar CarbonLight LED Display FamilyJanuary 29, 2025A new and improved line of indoor LED video wall displays delivers an enhanced cabinet design and support for the most demanding video performance requirements.Marantz Expands Its Premium Hifi Separates Offerings with Three New ReleasesJanuary 22, 2025Marantz has announced the release of three new products that further expand its selection in the premium range of hifi separates options.Dynaudio Unveils Updated Symphony Opus One Immersive Soundbar at CES 2025January 15, 2025Following its initial reveal at CEDIA Expo 2024, the updated design marks a significant leap forward in all-in-one home audio systems.URC's TDC-8300 and TRC-1120 for Smart Home ControlJanuary 8, 2025Universal Remote Control (URC) has announced the release of two new devices designed to enhance smart home and commercial automation.Smart Home Technology We'd Like to See in 2025: A Vision for High-End IntegrationJanuary 1, 2025As a company focused exclusively on the elite tier of smart home solutions, working exclusively with Crestron and Control4, our perspective on the future of smart home technology is very specific.LG's Transparent OLED TV Brings Sci-Fi Concepts Into Everyday LifeDecember 25, 2024LG has made its Transparent OLED TV, the OLED T, available just in time for the holiday season.Wisdom Audio S57i: A Subwoofer That Fits Anywhere and Sounds AmazingDecember 18, 2024If you’ve been searching for a subwoofer that balances stellar performance with a low-profile design, the Wisdom Audio S57i might be just what you need.Kaleidescape Strato VDecember 11, 2024Commercial Theater Quality Films at HomeMcIntosh MX200 A/V ProcessorDecember 4, 2024A wide variety of analog and digital inputs and outputs are included to give you great flexibility in creating your home entertainment system.AVPro Edge Introduces HDMI Extension Kit With Range Up to 150 Meters November 27, 2024AVPro Edge has introduced the AC-EX150-BKT, an HDMI extension kit developed to provide integrators with 150 meters of range when using HDMI connectivity.Zeppelin Pro: A Fresh Take on a Classic Wireless SpeakerNovember 20, 2024With the introduction of the Zeppelin Pro Edition, Bowers & Wilkins has refined and elevated this classic, focusing on both its form and functionality.Vinyl Royalty: Pro-Ject Unveils The Classic Reference Turntable with Elevated Elegance and PrecisionNovember 13, 2024Pro-Ject Audio Systems has released The Classic Reference turntable.Arc You Ready for the Ultra Experience?November 6, 2024Sonos Unveils Arc Ultra Soundbar and Sub 4 with Immersive Spatial Audio“Mirror, Mirror on the Wall—Is That a TV After All?”October 30, 2024Séura Unveils Next-Generation Smart TV Mirrors with Cutting-Edge TechnologyFocal Diva Utopia: High-End Performance in a Wireless SystemOctober 23, 2024Priced at $39,999, the Diva Utopia promises an audiophile experience without the clutter of traditional high-end systems. But does it live up to its price tag and ambitious design goals?JBL Synthesis SMA Series Amplifiers 2024October 16, 2024Harman unveils its latest high-performance, multichannel Class D amplifiers designed for immersive audio systems with state-of-the-art DSP, unparalleled power output, and custom installation flexibility.DoorBird Smart Door Controller D410 LTE/4G:October 9, 2024A cutting-edge solution designed to enhance both residential and commercial access control.Pro-Ject T1 EVO: The Perfect Entry Point to Hi-Fi Vinyl or a Great Addition to a CollectionOctober 2, 2024Pro-Ject has launched the T1 EVO series, designed to offer audiophile-level performance at a wallet-friendly price.Epson Unveils the Q-Series at CEDIA 2024September 25, 2024At the CEDIA Expo 2024, Epson made a major impact by launching its new Q-Series of 4K 3LCD laser projectors.Lutron’s Latest Innovations at CEDIA Expo 2024September 18, 2024At the CEDIA Expo 2024, Lutron introduced exciting expansions to its lighting and shading product lines.Sonance’s Elegant Innovations Unveiled at CEDIA Expo 2024September 11, 2024Sonance’s Elegant Innovations Unveiled at CEDIA Expo 2024Klipsch's Latest For 2024September 4, 2024Klipsch Introduces the Flexus Series Home Theater Speaker SystemGrimani Systems Launches The Reflectance™ SystemAugust 28, 2024This exciting system is designed to change how we hear sound in rooms with large video displays or video walls.Unpacking the Sony XR90 SeriesAugust 21, 2024This article breaks down the essential features of the XR90, giving you everything you need to know without the fluff.Transform Any Room with a ViewAugust 14, 2024AVIR Introduces LiquidView Virtual Windows: Transform Any Room with a ViewKaleidescape's Strato V Movie PlayerAugust 7, 2024A Movie/Series Streamer Player Redefining Home Entertainment QualitySmall But Mighty: The Best-Selling Sonus Faber Concertino G4July 31, 2024Meet the Sonus Faber Concertino G4, a compact yet powerful speaker that’s perfect for audiophiles who appreciate high-quality sound in a sleek design.Best JBL Audio Gear for Easy Home UpgradesJuly 24, 2024Best JBL Audio Gear for Easy Home UpgradesAVIR's Stellar Home Theater Installation Featured by Wisdom AudioJuly 17, 2024We're thrilled to share that AVIR was recently spotlighted on Wisdom Audio's Instagram for our exceptional home theater installation in Palm Desert, CA.Expert Tips for Designing Your Perfect Home TheaterJuly 10, 2024Screen Size, Projector Brightness, and MoreBang & Olufsen: Reviving ClassicsJuly 3, 2024Bang & Olufsen: Reviving Classics and Embracing Modernity with Beosystem 9000c and Beoconnect CoreEnhanced Control4 Smart HomeJune 26, 2024Elevate Your Smart Home Experience with Control4 OSC SEED N1 165 & 137 TVJune 19, 2024The Future of Outdoor TV's. The C SEED N1 Outdoor TV is a perfect marriage of the brand’s heritage, craftsmanship and luxurious minimalistic aesthetic.McIntosh and Sonus Faber Partner with Jeep and LamborghiniJune 12, 2024Top-Tier Audio at Home and On the Road: McIntosh and Sonus Faber Partner with Jeep and LamborghiniUnlock the Full Potential of Your Sonos Ace Wireless HeadphonesJune 5, 2024Unlock the Full Potential of Your Sonos Ace Wireless Headphones with These Essential Sound SettingsNew- Ketra D2 and Rania D2 Architectural DownlightsMay 29, 2024Ketra is expanding their already impressive lineup of luxury lighting solutions.How the Crestron and Luhkee Partnership Transforms Smart Homes in Palm DesertMay 22, 2024Revolutionizing the way homeowners interact with their living spacesCoastal Source Opens Showroom at Pacific Design CenterMay 15, 2024Coastal Source Expands Presence at Pacific Design Center IntroductionDynaudio Unveils New Sound at High-End Munich 2024May 8, 2024At this year’s much-anticipated High-End show in Munich, Dynaudio is set to captivate audiophiles and industry experts alike with the debut of four innovative products that promise to redefine the listening experience. Pristine Audio Connectivity: AVPro Edge’s New Dante-Enabled ProductsMay 1, 2024These cutting-edge devices promise to transform audio system configurations by leveraging Dante audio networking technologyCelebrating Sound: The Klipsch Jubilee 75th Anniversary EditionApril 24, 2024Celebrating Sound: The Klipsch Jubilee 75th Anniversary EditionOutdoor Entertainment: Comparisons and ConsiderationsApril 17, 2024Choosing the Best Outdoor Entertainment: Projection Systems vs. Outdoor TVsUnveiling Hyphn: The Pinnacle of Sound Sculpting by Monitor AudioApril 10, 2024Hyphn stands as a monument in Monitor Audio's journey, a bold affirmation of the company's prowess in design, engineering, and manufacturing.Soundscapes RedefinedApril 3, 2024Transform Your Home with Void AcousticsA Nod to Future Automation’s MasteryMarch 27, 2024The Subtle Elegance of Concealed Entertainment: A Nod to Future Automation’s MasteryEngage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareersContactServicesHome CinemaAutomationLightingShadingMusicSecurityNetworkingExciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out moreProudly serving the entire Coachella Valley and surrounding areas:BanningBeaumontBermuda DunesBig BearCathedral CityCoachellaIdyllwildIndian WellsIndioJoshua TreeLa QuintaLake ArrowheadMoreno ValleyMurrietaPalm DesertPalm SpringsRancho MirageRedlandsRiversideSan BernardinoTemeculaThermalThousand PalmsYucaipaYucca ValleyCopyright © 2023. All rights reserved.Website by",
+  "navigation": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Services",
+      "href": "/services"
+    },
+    {
+      "text": "Brands",
+      "href": "/brands"
+    },
+    {
+      "text": "Portfolio",
+      "href": "/portfolio"
+    },
+    {
+      "text": "About",
+      "href": "/about-avir"
+    },
+    {
+      "text": "Exciting Products",
+      "href": "/exciting-new-products"
+    },
+    {
+      "text": "Blog",
+      "href": "/blog"
+    },
+    {
+      "text": "Careers",
+      "href": "/careers"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer": {
+    "text": "Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareersContactServicesHome CinemaAutomationLightingShadingMusicSecurityNetworkingExciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out moreProudly serving the entire Coachella Valley and surrounding areas:BanningBeaumontBermuda DunesBig BearCathedral CityCoachellaIdyllwildIndian WellsIndioJoshua TreeLa QuintaLake ArrowheadMoreno ValleyMurrietaPalm DesertPalm SpringsRancho MirageRedlandsRiversideSan BernardinoTemeculaThermalThousand PalmsYucaipaYucca ValleyCopyright © 2023. All rights reserved.Website by",
+    "links": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Services",
+        "href": "/services"
+      },
+      {
+        "text": "Brands",
+        "href": "/brands"
+      },
+      {
+        "text": "Exciting Products",
+        "href": "/exciting-new-products"
+      },
+      {
+        "text": "Portfolio",
+        "href": "/portfolio"
+      },
+      {
+        "text": "About",
+        "href": "/about-avir"
+      },
+      {
+        "text": "Careers",
+        "href": "/careers"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      },
+      {
+        "text": "Banning",
+        "href": "/city/banning"
+      },
+      {
+        "text": "Beaumont",
+        "href": "/city/beaumont"
+      },
+      {
+        "text": "Bermuda Dunes",
+        "href": "/city/bermuda-dunes"
+      },
+      {
+        "text": "Big Bear",
+        "href": "/city/big-bear"
+      },
+      {
+        "text": "Cathedral City",
+        "href": "/city/cathedral-city"
+      },
+      {
+        "text": "Coachella",
+        "href": "/city/coachella"
+      },
+      {
+        "text": "Idyllwild",
+        "href": "/city/idyllwild"
+      },
+      {
+        "text": "Indian Wells",
+        "href": "/city/indian-wells"
+      },
+      {
+        "text": "Indio",
+        "href": "/city/indio"
+      },
+      {
+        "text": "Joshua Tree",
+        "href": "/city/joshua-tree"
+      },
+      {
+        "text": "La Quinta",
+        "href": "/city/la-quinta"
+      },
+      {
+        "text": "Lake Arrowhead",
+        "href": "/city/lake-arrowhead"
+      },
+      {
+        "text": "Moreno Valley",
+        "href": "/city/moreno-valley"
+      },
+      {
+        "text": "Murrieta",
+        "href": "/city/murrieta"
+      },
+      {
+        "text": "Palm Desert",
+        "href": "/city/palm-desert"
+      },
+      {
+        "text": "Palm Springs",
+        "href": "/city/palm-springs"
+      },
+      {
+        "text": "Rancho Mirage",
+        "href": "/city/rancho-mirage"
+      },
+      {
+        "text": "Redlands",
+        "href": "/city/redlands"
+      },
+      {
+        "text": "Riverside",
+        "href": "/city/riverside"
+      },
+      {
+        "text": "San Bernardino",
+        "href": "/city/san-bernardino"
+      },
+      {
+        "text": "Temecula",
+        "href": "/city/temecula"
+      },
+      {
+        "text": "Thermal",
+        "href": "/city/thermal"
+      },
+      {
+        "text": "Thousand Palms",
+        "href": "/city/thousand-palms"
+      },
+      {
+        "text": "Yucaipa",
+        "href": "/city/yucaipa"
+      },
+      {
+        "text": "Yucca Valley",
+        "href": "/city/yucca-valley"
+      },
+      {
+        "text": "Website by",
+        "href": "https://www.dunclyde.com/"
+      }
+    ]
+  },
+  "contentSections": [
+    {
+      "identifier": "section title",
+      "heading": "Blog",
+      "preview": "BlogCalifornia Living at its Finest: The Latest in Luxury Home Automation"
+    },
+    {
+      "identifier": "section",
+      "heading": "Meridian Introduces 2026 Editions of the DSP750 and DSP730 In-Wall Speakers",
+      "preview": "Meridian Introduces 2026 Editions of the DSP750 and DSP730 In-Wall SpeakersFebruary 25, 2026The 2026 Editions feature enhanced driver design, advanced DSP processing, and refined acoustic engineering.JBL Synthesis Introduces Nine New Loudspeakers and Three AV ProcessorsFebruary 18, 2026The expansion..."
+    },
+    {
+      "identifier": "section footer",
+      "heading": "Engage the experts",
+      "preview": "Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareer..."
+    },
+    {
+      "identifier": "footer-cta__wrap",
+      "heading": "Exciting Products",
+      "preview": "Exciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out more"
+    },
+    {
+      "identifier": "footer__cta",
+      "heading": "Exciting Products",
+      "preview": "Exciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out more"
+    },
+    {
+      "identifier": "footer-cta-para",
+      "heading": "",
+      "preview": "Browse some of the most exclusive products we can bring to your next technology installation."
+    }
+  ],
+  "scrapedAt": "2026-03-04T21:21:04.619Z"
+}

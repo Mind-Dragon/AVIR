@@ -1,0 +1,320 @@
+{
+  "url": "https://www.avir.com/contact",
+  "slug": "contact",
+  "templateType": "contact",
+  "title": "Contact",
+  "metaDescription": "We want to hear from you. Give us a call, send us an email or fill out one of the contact forms below.",
+  "ogImage": "https://cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/6361680bf3e6a52a0fd9470c_AVIR%20Opengraph.jpg",
+  "canonical": "",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Contact"
+    },
+    {
+      "level": 3,
+      "text": "Location"
+    },
+    {
+      "level": 3,
+      "text": "Visit the showroom"
+    },
+    {
+      "level": 3,
+      "text": "Residential Projects"
+    },
+    {
+      "level": 3,
+      "text": "Commercial Projects"
+    },
+    {
+      "level": 3,
+      "text": "Service Call"
+    },
+    {
+      "level": 2,
+      "text": "Engage the experts"
+    },
+    {
+      "level": 3,
+      "text": "Call"
+    },
+    {
+      "level": 4,
+      "text": "760.779.0881"
+    },
+    {
+      "level": 3,
+      "text": "Visit our Showroom"
+    },
+    {
+      "level": 4,
+      "text": "41905 Boardwalk, Suite XPalm Desert, CA 92211"
+    },
+    {
+      "level": 4,
+      "text": "Navigation"
+    },
+    {
+      "level": 4,
+      "text": "Services"
+    },
+    {
+      "level": 3,
+      "text": "Exciting Products"
+    }
+  ],
+  "bodyText": "MenuHomeServicesBrandsPortfolioAboutExciting PRoductsContactHome CinemaAutomationLightingShadingMusicSecurityNetworkingContactWe want to hear from you. Give us a call, send us an email or fill out one of the contact forms below.LocationAVIR operates within the Coachella Valley region, and serves Southern California.Visit the showroom41905 Boardwalk, Suite XPalm Desert, CA 92211Residential ProjectsWe partner with home owners and project managers to bring your luxury home to the next level.Get Started nowOr Call 760.779.0881Commercial ProjectsWe partner with builders, business owners, and corporations to create custom automation spaces of the highest standard.Get Started nowOr Call 760.779.0881Service CallAre you a current client? Did a power outage cause a service interruption? Is your television not turning on? Unable to control your Air Conditioning thermostat? We can help you with all of that and more. Please click below to tell us more:Book a service CallEngage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareersContactServicesHome CinemaAutomationLightingShadingMusicSecurityNetworkingExciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out moreProudly serving the entire Coachella Valley and surrounding areas:BanningBeaumontBermuda DunesBig BearCathedral CityCoachellaIdyllwildIndian WellsIndioJoshua TreeLa QuintaLake ArrowheadMoreno ValleyMurrietaPalm DesertPalm SpringsRancho MirageRedlandsRiversideSan BernardinoTemeculaThermalThousand PalmsYucaipaYucca ValleyCopyright © 2023. All rights reserved.Website by",
+  "navigation": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Services",
+      "href": "/services"
+    },
+    {
+      "text": "Brands",
+      "href": "/brands"
+    },
+    {
+      "text": "Portfolio",
+      "href": "/portfolio"
+    },
+    {
+      "text": "About",
+      "href": "/about-avir"
+    },
+    {
+      "text": "Exciting Products",
+      "href": "/exciting-new-products"
+    },
+    {
+      "text": "Blog",
+      "href": "/blog"
+    },
+    {
+      "text": "Careers",
+      "href": "/careers"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer": {
+    "text": "Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareersContactServicesHome CinemaAutomationLightingShadingMusicSecurityNetworkingExciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out moreProudly serving the entire Coachella Valley and surrounding areas:BanningBeaumontBermuda DunesBig BearCathedral CityCoachellaIdyllwildIndian WellsIndioJoshua TreeLa QuintaLake ArrowheadMoreno ValleyMurrietaPalm DesertPalm SpringsRancho MirageRedlandsRiversideSan BernardinoTemeculaThermalThousand PalmsYucaipaYucca ValleyCopyright © 2023. All rights reserved.Website by",
+    "links": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Services",
+        "href": "/services"
+      },
+      {
+        "text": "Brands",
+        "href": "/brands"
+      },
+      {
+        "text": "Exciting Products",
+        "href": "/exciting-new-products"
+      },
+      {
+        "text": "Portfolio",
+        "href": "/portfolio"
+      },
+      {
+        "text": "About",
+        "href": "/about-avir"
+      },
+      {
+        "text": "Careers",
+        "href": "/careers"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      },
+      {
+        "text": "Banning",
+        "href": "/city/banning"
+      },
+      {
+        "text": "Beaumont",
+        "href": "/city/beaumont"
+      },
+      {
+        "text": "Bermuda Dunes",
+        "href": "/city/bermuda-dunes"
+      },
+      {
+        "text": "Big Bear",
+        "href": "/city/big-bear"
+      },
+      {
+        "text": "Cathedral City",
+        "href": "/city/cathedral-city"
+      },
+      {
+        "text": "Coachella",
+        "href": "/city/coachella"
+      },
+      {
+        "text": "Idyllwild",
+        "href": "/city/idyllwild"
+      },
+      {
+        "text": "Indian Wells",
+        "href": "/city/indian-wells"
+      },
+      {
+        "text": "Indio",
+        "href": "/city/indio"
+      },
+      {
+        "text": "Joshua Tree",
+        "href": "/city/joshua-tree"
+      },
+      {
+        "text": "La Quinta",
+        "href": "/city/la-quinta"
+      },
+      {
+        "text": "Lake Arrowhead",
+        "href": "/city/lake-arrowhead"
+      },
+      {
+        "text": "Moreno Valley",
+        "href": "/city/moreno-valley"
+      },
+      {
+        "text": "Murrieta",
+        "href": "/city/murrieta"
+      },
+      {
+        "text": "Palm Desert",
+        "href": "/city/palm-desert"
+      },
+      {
+        "text": "Palm Springs",
+        "href": "/city/palm-springs"
+      },
+      {
+        "text": "Rancho Mirage",
+        "href": "/city/rancho-mirage"
+      },
+      {
+        "text": "Redlands",
+        "href": "/city/redlands"
+      },
+      {
+        "text": "Riverside",
+        "href": "/city/riverside"
+      },
+      {
+        "text": "San Bernardino",
+        "href": "/city/san-bernardino"
+      },
+      {
+        "text": "Temecula",
+        "href": "/city/temecula"
+      },
+      {
+        "text": "Thermal",
+        "href": "/city/thermal"
+      },
+      {
+        "text": "Thousand Palms",
+        "href": "/city/thousand-palms"
+      },
+      {
+        "text": "Yucaipa",
+        "href": "/city/yucaipa"
+      },
+      {
+        "text": "Yucca Valley",
+        "href": "/city/yucca-valley"
+      },
+      {
+        "text": "Website by",
+        "href": "https://www.dunclyde.com/"
+      }
+    ]
+  },
+  "contentSections": [
+    {
+      "identifier": "section title",
+      "heading": "Contact",
+      "preview": "ContactWe want to hear from you. Give us a call, send us an email or fill out one of the contact forms below."
+    },
+    {
+      "identifier": "section",
+      "heading": "Location",
+      "preview": "LocationAVIR operates within the Coachella Valley region, and serves Southern California.Visit the showroom41905 Boardwalk, Suite XPalm Desert, CA 92211Residential ProjectsWe partner with home owners and project managers to bring your luxury home to the next level.Get Started nowOr Call 760.779.0881..."
+    },
+    {
+      "identifier": "contact__cta",
+      "heading": "Residential Projects",
+      "preview": "Residential ProjectsWe partner with home owners and project managers to bring your luxury home to the next level.Get Started nowOr Call 760.779.0881"
+    },
+    {
+      "identifier": "contact__cta-text",
+      "heading": "",
+      "preview": "We partner with home owners and project managers to bring your luxury home to the next level."
+    },
+    {
+      "identifier": "contact__cta-bottom",
+      "heading": "",
+      "preview": "Get Started nowOr Call 760.779.0881"
+    },
+    {
+      "identifier": "contact__cta",
+      "heading": "Commercial Projects",
+      "preview": "Commercial ProjectsWe partner with builders, business owners, and corporations to create custom automation spaces of the highest standard.Get Started nowOr Call 760.779.0881"
+    },
+    {
+      "identifier": "contact__cta-text",
+      "heading": "",
+      "preview": "We partner with builders, business owners, and corporations to create custom automation spaces of the highest standard."
+    },
+    {
+      "identifier": "contact__cta-bottom",
+      "heading": "",
+      "preview": "Get Started nowOr Call 760.779.0881"
+    },
+    {
+      "identifier": "contact__cta last",
+      "heading": "Service Call",
+      "preview": "Service CallAre you a current client? Did a power outage cause a service interruption? Is your television not turning on? Unable to control your Air Conditioning thermostat? We can help you with all of that and more. Please click below to tell us more:Book a service Call"
+    },
+    {
+      "identifier": "contact__cta-text",
+      "heading": "",
+      "preview": "Are you a current client? Did a power outage cause a service interruption? Is your television not turning on? Unable to control your Air Conditioning thermostat? We can help you with all of that and more. Please click below to tell us more:"
+    },
+    {
+      "identifier": "section footer",
+      "heading": "Engage the experts",
+      "preview": "Engage the expertsAVIR operates within the Coachella Valley region, providing exclusive smart automation services for residential and commercial properties.Call760.779.0881Visit our Showroom41905 Boardwalk, Suite XPalm Desert, CA 92211NavigationHomeServicesBrandsExciting ProductsPortfolioAboutCareer..."
+    },
+    {
+      "identifier": "footer-cta__wrap",
+      "heading": "Exciting Products",
+      "preview": "Exciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out more"
+    },
+    {
+      "identifier": "footer__cta",
+      "heading": "Exciting Products",
+      "preview": "Exciting ProductsBrowse some of the most exclusive products we can bring to your next technology installation.Find out more"
+    },
+    {
+      "identifier": "footer-cta-para",
+      "heading": "",
+      "preview": "Browse some of the most exclusive products we can bring to your next technology installation."
+    }
+  ],
+  "scrapedAt": "2026-03-04T21:21:07.542Z"
+}
