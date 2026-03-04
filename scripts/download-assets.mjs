@@ -297,7 +297,7 @@ function cdnUrlToLocalPath(url) {
  * Detect image dimensions from a buffer.
  * Returns { width, height } or null.
  */
-function getImageDimensions(buffer, filePath) {
+function getImageDimensions(buffer) {
   try {
     const result = imageSize(buffer);
     if (result && result.width && result.height) {
@@ -353,7 +353,7 @@ async function downloadAsset(url) {
         fileSize: stat.size,
       };
       if (type === "image") {
-        const dims = getImageDimensions(buffer, localPath);
+        const dims = getImageDimensions(buffer);
         if (dims) {
           entry.width = dims.width;
           entry.height = dims.height;
@@ -390,7 +390,7 @@ async function downloadAsset(url) {
   };
 
   if (type === "image") {
-    const dims = getImageDimensions(result.buffer, localPath);
+    const dims = getImageDimensions(result.buffer);
     if (dims) {
       entry.width = dims.width;
       entry.height = dims.height;
