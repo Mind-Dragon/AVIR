@@ -170,7 +170,7 @@ export default function Footer() {
       {/* Bottom bar: copyright + credit */}
       <div className="footer-bottom" data-wf-class="container footer-bottom">
         <div className="footer-bottom-text" data-wf-class="footer-bottom-text">
-          Copyright &copy; 2023. All rights reserved.
+          Copyright &copy; {new Date().getFullYear()}. All rights reserved.
         </div>
         <a
           href="https://www.dunclyde.com/"

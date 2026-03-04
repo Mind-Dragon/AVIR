@@ -502,84 +502,86 @@ a {
 
 /* ===== Responsive ===== */
 
-@media screen and (max-width: 991px) {
-  .nav {
-    padding-left: 20px;
-    padding-right: 50px;
+@layer components {
+  @media screen and (max-width: 991px) {
+    .nav {
+      padding-left: 20px;
+      padding-right: 50px;
+    }
+
+    .nav__link-wrap {
+      display: none;
+    }
+
+    .mobile__nav {
+      margin-left: auto;
+      margin-right: 0;
+      display: block;
+      position: relative;
+    }
+
+    .nav-link {
+      font-size: 11px;
+    }
+
+    .footer__container {
+      flex-direction: column;
+    }
+
+    .footer__left-wrap {
+      max-width: 100%;
+    }
+
+    .footer__nav-wrap.last {
+      margin-right: 0;
+    }
   }
 
-  .nav__link-wrap {
-    display: none;
-  }
+  @media screen and (max-width: 767px) {
+    .nav {
+      height: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
-  .mobile__nav {
-    margin-left: auto;
-    margin-right: 0;
-    display: block;
-    position: relative;
-  }
+    .nav__site-logo {
+      padding-left: 0;
+    }
 
-  .nav-link {
-    font-size: 11px;
-  }
+    .mobile__nav-toggle {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
 
-  .footer__container {
-    flex-direction: column;
-  }
+    .section-footer {
+      padding-bottom: 20px;
+    }
 
-  .footer__left-wrap {
-    max-width: 100%;
-  }
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 35px;
+    }
 
-  .footer__nav-wrap.last {
-    margin-right: 0;
-  }
-}
+    .footer-dunclyde-link {
+      text-align: center;
+      margin-top: 10px;
+      padding-left: 0;
+      padding-right: 50px;
+    }
 
-@media screen and (max-width: 767px) {
-  .nav {
-    height: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .footer-cities-heading {
+      margin-top: 30px;
+    }
 
-  .nav__site-logo {
-    padding-left: 0;
-  }
+    .call-to-action {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
-  .mobile__nav-toggle {
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-
-  .section-footer {
-    padding-bottom: 20px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 35px;
-  }
-
-  .footer-dunclyde-link {
-    text-align: center;
-    margin-top: 10px;
-    padding-left: 0;
-    padding-right: 50px;
-  }
-
-  .footer-cities-heading {
-    margin-top: 30px;
-  }
-
-  .call-to-action {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .lander__cta {
-    margin-top: 40px;
+    .lander__cta {
+      margin-top: 40px;
+    }
   }
 }
 
