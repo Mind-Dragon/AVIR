@@ -298,15 +298,12 @@ function refineTemplateType(existingType, extracted, $) {
 
   // Verify / refine based on content signals
   const url = extracted.url.toLowerCase();
-  const title = extracted.title.toLowerCase();
   const hasGalleryGrid =
     $(".w-dyn-list, .gallery-grid, [class*='gallery'], [class*='portfolio']").length > 0;
   const hasBlogContent =
     $(".w-richtext, .rich-text-block, [class*='blog-content'], [class*='post-body']").length > 0;
   const hasForm =
     $("form, .w-form, [class*='form']").length > 0;
-  const hasHero =
-    $("[class*='hero'], .hero-section, .hero-wrap").length > 0;
 
   // Refine "page" catch-all
   if (type === "page") {
