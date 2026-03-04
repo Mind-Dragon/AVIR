@@ -1,0 +1,2429 @@
+{
+  "metadata": {
+    "generatedAt": "2026-03-04T22:05:24.279Z",
+    "sourceFile": "data/site-map.json",
+    "totalPages": 152,
+    "totalTemplates": 13,
+    "typeBreakdown": {
+      "home": 1,
+      "about": 1,
+      "blog-index": 1,
+      "brands": 1,
+      "careers": 3,
+      "city": 25,
+      "contact": 4,
+      "product": 1,
+      "gallery": 4,
+      "legacy": 1,
+      "blog-post": 108,
+      "process": 1,
+      "services": 1
+    }
+  },
+  "sharedComponents": {
+    "navigation": {
+      "description": "Global navigation bar present on all pages. Built on Webflow's w-nav pattern.",
+      "wrapper": "hero-wrap",
+      "navBar": "nav",
+      "logo": "nav__site-logo w-inline-block",
+      "desktopLinks": "nav-link, nav__link-wrap",
+      "dropdowns": "nav__dropdown w-dropdown",
+      "mobileMenu": "mobile__nav w-dropdown, mobile__dd w-dropdown-list",
+      "links": [
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Services",
+          "href": "/services"
+        },
+        {
+          "text": "Brands",
+          "href": "/brands"
+        },
+        {
+          "text": "Portfolio",
+          "href": "/portfolio"
+        },
+        {
+          "text": "About",
+          "href": "/about-avir"
+        },
+        {
+          "text": "Exciting Products",
+          "href": "/exciting-new-products"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Careers",
+          "href": "/careers"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "footerCTA": {
+      "description": "CTA section above footer. Standard version shows \"Engage the experts\" heading with \"Exciting Products\" sub-section. City/lander pages use a scheduling variant.",
+      "standardClass": "footer-cta__wrap",
+      "landerClass": "lander__cta"
+    },
+    "footer": {
+      "description": "Global footer with decorative swish element, multi-column navigation, contact info, social links, and copyright.",
+      "sectionClass": "section footer",
+      "swish": "footer__swish",
+      "container": "container footer__container",
+      "navColumns": [
+        "footer__nav-wrap",
+        "footer__nav-wrap last"
+      ],
+      "linkClass": "nav-link is--footer"
+    }
+  },
+  "templates": {
+    "home": {
+      "name": "home",
+      "description": "Homepage with full-screen video hero, scroll-animated service showcases (Automation, Sound & Vision, Shading, Lighting), process overview, and partner logos.",
+      "pageCount": 1,
+      "representativePage": "https://www.avir.com/",
+      "pages": [
+        {
+          "url": "https://www.avir.com/",
+          "slug": "index",
+          "title": "AVIR | Luxury Smart Home Solutions"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block w--current",
+          "desktopLinkClasses": [
+            "nav-link w--current",
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "full-screen-video-hero",
+          "description": "Full-screen background video with overlaid scroll-animated content panels showcasing service categories (Automation, Sound & Vision, Shading, Lighting).",
+          "classes": [
+            "hero-video__wrapper",
+            "home-hero__content-scroll-wrap",
+            "home-hero__content-wrap",
+            "home-hero__content-item first",
+            "home-hero__scroll-text",
+            "home-hero__content-item",
+            "home-hero__content-item last"
+          ],
+          "hasVideo": true,
+          "hasScrollAnimation": true,
+          "headingClasses": [
+            "hero-content__heading top",
+            "hero-content__heading top-bottom",
+            "hero-content__heading"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section scroller-section first",
+            "type": "cta",
+            "heading": "Automation"
+          },
+          {
+            "class": "section scroller-section",
+            "type": "cta",
+            "heading": "Sound & Vision"
+          },
+          {
+            "class": "section scroller-section transition",
+            "type": "scroll-animated"
+          },
+          {
+            "class": "section scroller-section transition long-transition",
+            "type": "scroll-animated"
+          },
+          {
+            "class": "section scroller-section-extended",
+            "type": "cta",
+            "heading": "Home Cinema"
+          },
+          {
+            "class": "section bg-shade process-home",
+            "id": "departments",
+            "type": "outline-heading",
+            "heading": "Our Process"
+          },
+          {
+            "class": "section-heading outline",
+            "type": "outline-heading"
+          },
+          {
+            "class": "section",
+            "type": "outline-heading",
+            "heading": "Professional Partners"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer w--current"
+        }
+      }
+    },
+    "about": {
+      "name": "about",
+      "description": "About page with title/hero section, company story, team member grid, process overview, partner logos, and CTA.",
+      "pageCount": 1,
+      "representativePage": "https://www.avir.com/about-avir",
+      "pages": [
+        {
+          "url": "https://www.avir.com/about-avir",
+          "slug": "about-avir",
+          "title": "About AVIR"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link w--current",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section extra--padding",
+            "type": "cta"
+          },
+          {
+            "class": "section",
+            "type": "content",
+            "heading": "Our Story"
+          },
+          {
+            "class": "section meet-the-team",
+            "type": "gallery-grid",
+            "heading": "Meet the team"
+          },
+          {
+            "class": "section process",
+            "type": "outline-heading",
+            "heading": "Our Processes"
+          },
+          {
+            "class": "section-heading outline",
+            "type": "outline-heading"
+          },
+          {
+            "class": "section partners",
+            "type": "partner-logos",
+            "heading": "Working with Partners"
+          },
+          {
+            "class": "section-anchor",
+            "id": "interior-designers",
+            "type": "content"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "blog-index": {
+      "name": "blog-index",
+      "description": "Blog listing page with title section and dynamic collection list of blog post cards with thumbnails, dates, and excerpts.",
+      "pageCount": 1,
+      "representativePage": "https://www.avir.com/blog",
+      "pages": [
+        {
+          "url": "https://www.avir.com/blog",
+          "slug": "blog",
+          "title": "Blog"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link w--current",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section",
+            "type": "gallery-grid",
+            "heading": "Meridian Introduces 2026 Editions of the DSP750 and DSP730 In-Wall Speakers"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "brands": {
+      "name": "brands",
+      "description": "Brand partnerships page with title section and logo grid / brand listing of partner companies.",
+      "pageCount": 1,
+      "representativePage": "https://www.avir.com/brands",
+      "pages": [
+        {
+          "url": "https://www.avir.com/brands",
+          "slug": "brands",
+          "title": "Brands"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link w--current",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section",
+            "type": "gallery-grid"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "careers": {
+      "name": "careers",
+      "description": "Careers section with two sub-types: index page listing open positions, and individual job detail pages with description and application form.",
+      "pageCount": 3,
+      "representativePage": "https://www.avir.com/careers",
+      "pages": [
+        {
+          "url": "https://www.avir.com/careers",
+          "slug": "careers",
+          "title": "Careers"
+        },
+        {
+          "url": "https://www.avir.com/careers/assistant-technician",
+          "slug": "careers--assistant-technician",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/careers/integration-technician",
+          "slug": "careers--integration-technician",
+          "title": "AVIR"
+        }
+      ],
+      "subTypes": [
+        {
+          "name": "careers-index",
+          "description": "Main careers listing page",
+          "slugPattern": "careers"
+        },
+        {
+          "name": "careers-detail",
+          "description": "Individual job posting",
+          "slugPattern": "careers--*"
+        }
+      ],
+      "hasVariations": true,
+      "variationNotes": [
+        "Content zone layout differs between pages (e.g., careers vs careers--assistant-technician)"
+      ],
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link w--current"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section",
+            "type": "content"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "city": {
+      "name": "city",
+      "description": "City/location landing pages (25 cities in Coachella Valley). SEO-focused with city name title, service description, city list grid, and scheduling CTA.",
+      "pageCount": 25,
+      "representativePage": "https://www.avir.com/city/banning",
+      "pages": [
+        {
+          "url": "https://www.avir.com/city/banning",
+          "slug": "city--banning",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/beaumont",
+          "slug": "city--beaumont",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/bermuda-dunes",
+          "slug": "city--bermuda-dunes",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/big-bear",
+          "slug": "city--big-bear",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/cathedral-city",
+          "slug": "city--cathedral-city",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/coachella",
+          "slug": "city--coachella",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/idyllwild",
+          "slug": "city--idyllwild",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/indian-wells",
+          "slug": "city--indian-wells",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/indio",
+          "slug": "city--indio",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/joshua-tree",
+          "slug": "city--joshua-tree",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/la-quinta",
+          "slug": "city--la-quinta",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/lake-arrowhead",
+          "slug": "city--lake-arrowhead",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/moreno-valley",
+          "slug": "city--moreno-valley",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/murrieta",
+          "slug": "city--murrieta",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/palm-desert",
+          "slug": "city--palm-desert",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/palm-springs",
+          "slug": "city--palm-springs",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/rancho-mirage",
+          "slug": "city--rancho-mirage",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/redlands",
+          "slug": "city--redlands",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/riverside",
+          "slug": "city--riverside",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/san-bernardino",
+          "slug": "city--san-bernardino",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/temecula",
+          "slug": "city--temecula",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/thermal",
+          "slug": "city--thermal",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/thousand-palms",
+          "slug": "city--thousand-palms",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/yucaipa",
+          "slug": "city--yucaipa",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/city/yucca-valley",
+          "slug": "city--yucca-valley",
+          "title": "AVIR"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section lander-image",
+            "type": "lander-content"
+          },
+          {
+            "class": "section no-top-padding",
+            "type": "content"
+          },
+          {
+            "class": "section",
+            "type": "content",
+            "heading": "Audio Video Services in"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "contact": {
+      "name": "contact",
+      "description": "Contact section with hub page linking to specific forms, plus individual form pages for residential, commercial, and service requests.",
+      "pageCount": 4,
+      "representativePage": "https://www.avir.com/commercial-form",
+      "pages": [
+        {
+          "url": "https://www.avir.com/commercial-form",
+          "slug": "commercial-form",
+          "title": "Commercial Form"
+        },
+        {
+          "url": "https://www.avir.com/contact",
+          "slug": "contact",
+          "title": "Contact"
+        },
+        {
+          "url": "https://www.avir.com/residential-form",
+          "slug": "residential-form",
+          "title": "Residential Form"
+        },
+        {
+          "url": "https://www.avir.com/service-request",
+          "slug": "service-request",
+          "title": "Service Request"
+        }
+      ],
+      "subTypes": [
+        {
+          "name": "contact-hub",
+          "description": "Main contact page with links to all forms",
+          "slugPattern": "contact"
+        },
+        {
+          "name": "contact-form",
+          "description": "Individual form page (residential, commercial, service)",
+          "slugPattern": "*-form, service-request"
+        }
+      ],
+      "hasVariations": true,
+      "variationNotes": [
+        "Content zone layout differs between pages (e.g., commercial-form vs contact)"
+      ],
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "none",
+          "description": "No dedicated hero section. Content begins immediately after navigation.",
+          "classes": []
+        },
+        "contentZones": [
+          {
+            "class": "section",
+            "type": "form",
+            "heading": "Planning an upcoming commercial project?​"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "product": {
+      "name": "product",
+      "description": "Product showcase page with title section and featured product cards/details (e.g., Sony CLED Video Wall).",
+      "pageCount": 1,
+      "representativePage": "https://www.avir.com/exciting-new-products",
+      "pages": [
+        {
+          "url": "https://www.avir.com/exciting-new-products",
+          "slug": "exciting-new-products",
+          "title": "Exciting New Products"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link w--current",
+            "nav-link in-dropdown last w-dropdown-link",
+            "nav-link in-dropdown first w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section",
+            "type": "gallery-grid",
+            "heading": "Sony CLED Video Wall"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "gallery": {
+      "name": "gallery",
+      "description": "Portfolio/gallery section with main portfolio index showing category grid, plus individual category galleries (Commercial, Home Cinema, Lifestyle) with lightbox image grids.",
+      "pageCount": 4,
+      "representativePage": "https://www.avir.com/galleries/commercial",
+      "pages": [
+        {
+          "url": "https://www.avir.com/galleries/commercial",
+          "slug": "galleries--commercial",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/galleries/home-cinema",
+          "slug": "galleries--home-cinema",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/galleries/lifestyle",
+          "slug": "galleries--lifestyle",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/portfolio",
+          "slug": "portfolio",
+          "title": "Portfolio"
+        }
+      ],
+      "subTypes": [
+        {
+          "name": "portfolio-index",
+          "description": "Main portfolio page with category grid",
+          "slugPattern": "portfolio"
+        },
+        {
+          "name": "gallery-category",
+          "description": "Category-specific gallery page",
+          "slugPattern": "galleries--*"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section",
+            "type": "gallery-grid"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "legacy": {
+      "name": "legacy",
+      "description": "Legacy/old homepage design with image-based hero, swish animation. Can be excluded from migration.",
+      "pageCount": 1,
+      "representativePage": "https://www.avir.com/old-home",
+      "pages": [
+        {
+          "url": "https://www.avir.com/old-home",
+          "slug": "old-home",
+          "title": "AVIR"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "image-hero-with-swish",
+          "description": "Image-based hero with decorative swish SVG overlay and text wrap. Legacy design pattern.",
+          "classes": [
+            "section hero-top",
+            "hero__swish",
+            "hero__text-wrap"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "hero__title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section",
+            "type": "gallery-grid",
+            "heading": "What we do"
+          },
+          {
+            "class": "section-heading outline",
+            "type": "outline-heading"
+          },
+          {
+            "class": "section bg-shade process-home",
+            "id": "departments",
+            "type": "outline-heading",
+            "heading": "Our Process"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "blog-post": {
+      "name": "blog-post",
+      "description": "Individual blog post with title section (background image), rich text article body, and related posts.",
+      "pageCount": 108,
+      "representativePage": "https://www.avir.com/post/a-legacy-in-sound--801-abbey-road-limited-edition",
+      "pages": [
+        {
+          "url": "https://www.avir.com/post/a-legacy-in-sound--801-abbey-road-limited-edition",
+          "slug": "post--a-legacy-in-sound--801-abbey-road-limited-edition",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/a-nod-to-future-automations-mastery",
+          "slug": "post--a-nod-to-future-automations-mastery",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/arc-you-ready-for-the-ultra-experience",
+          "slug": "post--arc-you-ready-for-the-ultra-experience",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/audiocontrol-bijou-5100d",
+          "slug": "post--audiocontrol-bijou-5100d",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/autonomic-and-urc-unveil-expanded-m-series-support-and-faster-ui-performance",
+          "slug": "post--autonomic-and-urc-unveil-expanded-m-series-support-and-faster-ui-performance",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/avirs-stellar-home-theater-installation-featured-by-wisdom-audio",
+          "slug": "post--avirs-stellar-home-theater-installation-featured-by-wisdom-audio",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/avpro-edge-introduces-hdmi-extension-kit-with-range-up-to-150-meters",
+          "slug": "post--avpro-edge-introduces-hdmi-extension-kit-with-range-up-to-150-meters",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/bang-olufsen-expands-customization-with-atelier-and-exclusive-limited-editions",
+          "slug": "post--bang-olufsen-expands-customization-with-atelier-and-exclusive-limited-editions",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/bang-olufsen-reviving-classics",
+          "slug": "post--bang-olufsen-reviving-classics",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/best-jbl-audio-gear-for-easy-home-upgrades",
+          "slug": "post--best-jbl-audio-gear-for-easy-home-upgrades",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/beyond-the-curve---32-years-of-nautilus",
+          "slug": "post--beyond-the-curve---32-years-of-nautilus",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/c-seed-n1-165-137-tv",
+          "slug": "post--c-seed-n1-165-137-tv",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/case-study-comprehensive-high-end-audio-and-video-installation-project",
+          "slug": "post--case-study-comprehensive-high-end-audio-and-video-installation-project",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/celebrating-sound-the-klipsch-jubilee-75th-anniversary-edition",
+          "slug": "post--celebrating-sound-the-klipsch-jubilee-75th-anniversary-edition",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/coastal-source-opens-showroom-at-pacific-design-center",
+          "slug": "post--coastal-source-opens-showroom-at-pacific-design-center",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/discover-the-benefits-of-fortress-seatings-custom-home-theater-seats-for-luxury-consumers-in-california",
+          "slug": "post--discover-the-benefits-of-fortress-seatings-custom-home-theater-seats-for-luxury-consumers-in-california",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/doorbird-smart-door-controller-d410-lte-4g",
+          "slug": "post--doorbird-smart-door-controller-d410-lte-4g",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/dynaudio-unveils-new-sound-at-high-end-munich-2024",
+          "slug": "post--dynaudio-unveils-new-sound-at-high-end-munich-2024",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/dynaudio-unveils-updated-symphony-opus-one-immersive-soundbar-at-ces-2025",
+          "slug": "post--dynaudio-unveils-updated-symphony-opus-one-immersive-soundbar-at-ces-2025",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/energizing-control-savants-leap-into-the-future-of-smart-home-automation",
+          "slug": "post--energizing-control-savants-leap-into-the-future-of-smart-home-automation",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/enhanced-control4-smart-home",
+          "slug": "post--enhanced-control4-smart-home",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/epson-qb1000-4k-hdr-laser-projector",
+          "slug": "post--epson-qb1000-4k-hdr-laser-projector",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/epson-unveils-the-q-series-at-cedia-2024",
+          "slug": "post--epson-unveils-the-q-series-at-cedia-2024",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/experience-cutting-edge-luxury-home-cinema-with-barco-residential",
+          "slug": "post--experience-cutting-edge-luxury-home-cinema-with-barco-residential",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/expert-tips-for-designing-your-perfect-home-theater",
+          "slug": "post--expert-tips-for-designing-your-perfect-home-theater",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/focal-diva-mezza-utopia",
+          "slug": "post--focal-diva-mezza-utopia",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/focal-diva-utopia-high-end-performance-in-a-wireless-system",
+          "slug": "post--focal-diva-utopia-high-end-performance-in-a-wireless-system",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/focal-introduces-the-utopia-cinema-range",
+          "slug": "post--focal-introduces-the-utopia-cinema-range",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/focal-introduces-the-utopia-cinema-range-2",
+          "slug": "post--focal-introduces-the-utopia-cinema-range-2",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/grimani-systems-launches-the-reflectance-tm-system",
+          "slug": "post--grimani-systems-launches-the-reflectance-tm-system",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/grimani-systems-mp-84-seamless-design",
+          "slug": "post--grimani-systems-mp-84-seamless-design",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/how-the-crestron-and-luhkee-partnership-transforms-smart-homes-in-palm-desert",
+          "slug": "post--how-the-crestron-and-luhkee-partnership-transforms-smart-homes-in-palm-desert",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/how-to-keep-your-home-theater-safe",
+          "slug": "post--how-to-keep-your-home-theater-safe",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/innovations-in-home-automation-showcased-at-cedia-expo-2023",
+          "slug": "post--innovations-in-home-automation-showcased-at-cedia-expo-2023",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/introducing-the-mark-levinson-600-series",
+          "slug": "post--introducing-the-mark-levinson-600-series",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/is-this-the-ultimate-home-theater",
+          "slug": "post--is-this-the-ultimate-home-theater",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/james-loudspeaker-outdoor-tower-series",
+          "slug": "post--james-loudspeaker-outdoor-tower-series",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/jbl-summit-series-expands",
+          "slug": "post--jbl-summit-series-expands",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/jbl-synthesis-introduces-nine-new-loudspeakers-and-three-av-processors",
+          "slug": "post--jbl-synthesis-introduces-nine-new-loudspeakers-and-three-av-processors",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/jbl-synthesis-sma-series-amplifiers-2024",
+          "slug": "post--jbl-synthesis-sma-series-amplifiers-2024",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/jl-audio-gotham-tm-v2-powered-subwoofers",
+          "slug": "post--jl-audio-gotham-tm-v2-powered-subwoofers",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/jvc-partners-up-with-control4",
+          "slug": "post--jvc-partners-up-with-control4",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/kaleidescape-strato-v",
+          "slug": "post--kaleidescape-strato-v",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/kaleidescapes-strato-v-movie-player",
+          "slug": "post--kaleidescapes-strato-v-movie-player",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/kef-introduces-two-new-thx-certified-architectural-speakers",
+          "slug": "post--kef-introduces-two-new-thx-certified-architectural-speakers",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/kef-reference-5-meta",
+          "slug": "post--kef-reference-5-meta",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/ketra-lighting-the-best-smart-lighting-solution-for-luxury-home-automation-in-2023",
+          "slug": "post--ketra-lighting-the-best-smart-lighting-solution-for-luxury-home-automation-in-2023",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/klipsch-the-sevens-ii-and-the-nines-ii-powered-speakers-come-equipped-with-dirac-technology",
+          "slug": "post--klipsch-the-sevens-ii-and-the-nines-ii-powered-speakers-come-equipped-with-dirac-technology",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/klipschs-latest-for-2024",
+          "slug": "post--klipschs-latest-for-2024",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/leon-announces-the-new-sole-tv-frame-for-sonys-bravia-7",
+          "slug": "post--leon-announces-the-new-sole-tv-frame-for-sonys-bravia-7",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/lg-introduces-the-wallpaper-tv-thin-wireless-oled-tv",
+          "slug": "post--lg-introduces-the-wallpaper-tv-thin-wireless-oled-tv",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/lg-unveils-136-inch-magnit-active-micro-led-display",
+          "slug": "post--lg-unveils-136-inch-magnit-active-micro-led-display",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/lgs-transparent-oled-tv-brings-sci-fi-concepts-into-everyday-life",
+          "slug": "post--lgs-transparent-oled-tv-brings-sci-fi-concepts-into-everyday-life",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/lutron-introduces-new-rania-and-lumaris-form-factors",
+          "slug": "post--lutron-introduces-new-rania-and-lumaris-form-factors",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/lutrons-latest-innovations-at-cedia-expo-2024",
+          "slug": "post--lutrons-latest-innovations-at-cedia-expo-2024",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/marantz-expands-its-premium-hifi-separates-offerings-with-three-new-releases",
+          "slug": "post--marantz-expands-its-premium-hifi-separates-offerings-with-three-new-releases",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/marantz-introduces-av-30-and-amp-30-home-theater-components",
+          "slug": "post--marantz-introduces-av-30-and-amp-30-home-theater-components",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/marantz-link-10n",
+          "slug": "post--marantz-link-10n",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/mark-levinson-600-series",
+          "slug": "post--mark-levinson-600-series",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/mcintosh-and-sonus-faber-partner-with-jeep-and-lamborghini",
+          "slug": "post--mcintosh-and-sonus-faber-partner-with-jeep-and-lamborghini",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/mcintosh-mx200-a-v-processor",
+          "slug": "post--mcintosh-mx200-a-v-processor",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/mera-sound-sconce-a-new-approach-to-light-and-sound",
+          "slug": "post--mera-sound-sconce-a-new-approach-to-light-and-sound",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/meridian-audio-and-leon-collaborate-on-new-edge-media-frame",
+          "slug": "post--meridian-audio-and-leon-collaborate-on-new-edge-media-frame",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/meridian-ellipse-streaming-audio-at-its-finest",
+          "slug": "post--meridian-ellipse-streaming-audio-at-its-finest",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/meridian-introduces-2026-editions-of-the-dsp750-and-dsp730-in-wall-speakers",
+          "slug": "post--meridian-introduces-2026-editions-of-the-dsp750-and-dsp730-in-wall-speakers",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/mirror-mirror-on-the-wall--is-that-a-tv-after-all",
+          "slug": "post--mirror-mirror-on-the-wall--is-that-a-tv-after-all",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/monitor-audio-release-new-vestra-series-subwoofers",
+          "slug": "post--monitor-audio-release-new-vestra-series-subwoofers",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/monumental-style-minimal-distractions",
+          "slug": "post--monumental-style-minimal-distractions",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/mti100-integrated-turntable-sun-records-limited-edition",
+          "slug": "post--mti100-integrated-turntable-sun-records-limited-edition",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/new--ketra-d2-and-rania-d2-architectural-downlights",
+          "slug": "post--new--ketra-d2-and-rania-d2-architectural-downlights",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/outdoor-entertainment-comparisons-and-considerations",
+          "slug": "post--outdoor-entertainment-comparisons-and-considerations",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/outdoor-entertainment-ideas-for-desert-homes",
+          "slug": "post--outdoor-entertainment-ideas-for-desert-homes",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/planar-expands-award-winning-planar-carbonlight-led-display-family",
+          "slug": "post--planar-expands-award-winning-planar-carbonlight-led-display-family",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/planar-komodo-series",
+          "slug": "post--planar-komodo-series",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/polina-brings-beauty-and-stellar-performance-to-open-spaces",
+          "slug": "post--polina-brings-beauty-and-stellar-performance-to-open-spaces",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/pristine-audio-connectivity-avpro-edges-new-dante-enabled-products",
+          "slug": "post--pristine-audio-connectivity-avpro-edges-new-dante-enabled-products",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/pro-ject-t1-evo-the-perfect-entry-point-to-hi-fi-vinyl-or-a-great-addition-to-a-collection",
+          "slug": "post--pro-ject-t1-evo-the-perfect-entry-point-to-hi-fi-vinyl-or-a-great-addition-to-a-collection",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/rania-and-lumaris",
+          "slug": "post--rania-and-lumaris",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/sage-series-l150m",
+          "slug": "post--sage-series-l150m",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/samsung-smart-laser-projector-integrated-cabinets",
+          "slug": "post--samsung-smart-laser-projector-integrated-cabinets",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/samsung-unveils-worlds-first-samsung-r95h",
+          "slug": "post--samsung-unveils-worlds-first-samsung-r95h",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/savant-reveals-new-premium-proseo-ge-smart-lighting-and-shading-solutions",
+          "slug": "post--savant-reveals-new-premium-proseo-ge-smart-lighting-and-shading-solutions",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/screen-innovations-upgrades-kaos-outdoor-shades-with-features-from-its-zen-line",
+          "slug": "post--screen-innovations-upgrades-kaos-outdoor-shades-with-features-from-its-zen-line",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/small-but-mighty-the-best-selling-sonus-faber-concertino-g4",
+          "slug": "post--small-but-mighty-the-best-selling-sonus-faber-concertino-g4",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/smart-home-technology-wed-like-to-see-in-2025-a-vision-for-high-end-integration",
+          "slug": "post--smart-home-technology-wed-like-to-see-in-2025-a-vision-for-high-end-integration",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/sonances-elegant-innovations-unveiled-at-cedia-expo-2024",
+          "slug": "post--sonances-elegant-innovations-unveiled-at-cedia-expo-2024",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/sonus-faber-and-automobili-lamborghini",
+          "slug": "post--sonus-faber-and-automobili-lamborghini",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/sony-develops-next-generation-display-system",
+          "slug": "post--sony-develops-next-generation-display-system",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/sonys-2025-bravia-lineup",
+          "slug": "post--sonys-2025-bravia-lineup",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/soundscapes-redefined",
+          "slug": "post--soundscapes-redefined",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/stormaudio-isr-fusion-20-named-stereonet-product-of-the-year-2025",
+          "slug": "post--stormaudio-isr-fusion-20-named-stereonet-product-of-the-year-2025",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/the-arena-collection-by-sonus-faber",
+          "slug": "post--the-arena-collection-by-sonus-faber",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/the-future-is-bright-ketra",
+          "slug": "post--the-future-is-bright-ketra",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/the-m6800d-from-audiocontrol",
+          "slug": "post--the-m6800d-from-audiocontrol",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/the-worlds-first-single-apparent-source-loudspeaker",
+          "slug": "post--the-worlds-first-single-apparent-source-loudspeaker",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/transform-any-room-with-a-view",
+          "slug": "post--transform-any-room-with-a-view",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/trinnov-unveils-altitudeci",
+          "slug": "post--trinnov-unveils-altitudeci",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/unlock-the-full-potential-of-your-sonos-ace-wireless-headphones",
+          "slug": "post--unlock-the-full-potential-of-your-sonos-ace-wireless-headphones",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/unpacking-the-sony-xr90-series",
+          "slug": "post--unpacking-the-sony-xr90-series",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/unveiling-hyphn-the-pinnacle-of-sound-sculpting-by-monitor-audio",
+          "slug": "post--unveiling-hyphn-the-pinnacle-of-sound-sculpting-by-monitor-audio",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/upgrade-your-home-audio-with-the-james-loudspeaker-on-wall-qt-series",
+          "slug": "post--upgrade-your-home-audio-with-the-james-loudspeaker-on-wall-qt-series",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/urc-furrion-announce-expanded-partnership",
+          "slug": "post--urc-furrion-announce-expanded-partnership",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/urcs-tdc-8300-and-trc-1120-for-smart-home-control",
+          "slug": "post--urcs-tdc-8300-and-trc-1120-for-smart-home-control",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/vinyl-royalty-pro-ject-unveils-the-classic-reference-turntable-with-elevated-elegance-and-precision",
+          "slug": "post--vinyl-royalty-pro-ject-unveils-the-classic-reference-turntable-with-elevated-elegance-and-precision",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/void-acoustics-a-preview-of-offerings-and-pro-audio-dj-speaker-systems",
+          "slug": "post--void-acoustics-a-preview-of-offerings-and-pro-audio-dj-speaker-systems",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/void-acoustics-unveils-three-new-products",
+          "slug": "post--void-acoustics-unveils-three-new-products",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/wisdom-audio-s57i-a-subwoofer-that-fits-anywhere-and-sounds-amazing",
+          "slug": "post--wisdom-audio-s57i-a-subwoofer-that-fits-anywhere-and-sounds-amazing",
+          "title": "AVIR"
+        },
+        {
+          "url": "https://www.avir.com/post/zeppelin-pro-a-fresh-take-on-a-classic-wireless-speaker",
+          "slug": "post--zeppelin-pro-a-fresh-take-on-a-classic-wireless-speaker",
+          "title": "AVIR"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg with-image",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section",
+            "type": "rich-text",
+            "heading": "A Legacy in Sound"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "process": {
+      "name": "process",
+      "description": "Process page detailing residential, commercial, and partner workflows with tabbed/hidden sections for each track.",
+      "pageCount": 1,
+      "representativePage": "https://www.avir.com/processes",
+      "pages": [
+        {
+          "url": "https://www.avir.com/processes",
+          "slug": "processes",
+          "title": "Processes"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section is--hidden",
+            "type": "content",
+            "heading": "For Residences"
+          },
+          {
+            "class": "section",
+            "type": "content",
+            "heading": "Working with Partners"
+          },
+          {
+            "class": "section-anchor",
+            "id": "interior-designers",
+            "type": "content"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    },
+    "services": {
+      "name": "services",
+      "description": "Services page with sub-navigation tabs for service categories (Home Cinema, Multi-Room Audio, etc.), service detail listings, VIP treatment section.",
+      "pageCount": 1,
+      "representativePage": "https://www.avir.com/services",
+      "pages": [
+        {
+          "url": "https://www.avir.com/services",
+          "slug": "services",
+          "title": "Services"
+        }
+      ],
+      "hasVariations": false,
+      "components": {
+        "navigation": {
+          "pattern": "shared-global-nav",
+          "description": "Fixed top navigation bar shared across all pages. Includes logo, desktop links, dropdown menus (Portfolio > gallery sub-pages), and hamburger mobile menu.",
+          "wrapper": "hero-wrap",
+          "navBar": "nav",
+          "logo": "nav__site-logo w-inline-block",
+          "desktopLinkClasses": [
+            "nav-link",
+            "nav-link w--current",
+            "nav-link is--dropdown w-dropdown-toggle",
+            "nav-link in-dropdown first w-dropdown-link",
+            "nav-link in-dropdown last w-dropdown-link"
+          ],
+          "dropdownClasses": [
+            "nav__dropdown w-dropdown",
+            "nav__dropdown-list w-dropdown-list"
+          ],
+          "mobileMenuClasses": [
+            "mobile__nav w-dropdown",
+            "mobile__nav-toggle w-dropdown-toggle",
+            "mobile__nav-icon w-icon-dropdown-toggle",
+            "mobile__dd w-dropdown-list"
+          ],
+          "links": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Services",
+              "href": "/services"
+            },
+            {
+              "text": "Brands",
+              "href": "/brands"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about-avir"
+            },
+            {
+              "text": "Exciting Products",
+              "href": "/exciting-new-products"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            },
+            {
+              "text": "Careers",
+              "href": "/careers"
+            },
+            {
+              "text": "Contact",
+              "href": "/contact"
+            }
+          ]
+        },
+        "hero": {
+          "pattern": "title-section",
+          "description": "Split-layout title section with left-aligned heading and right-side background image or decorative element.",
+          "classes": [
+            "section title",
+            "title__bg",
+            "col-50 title-right"
+          ],
+          "hasImage": true,
+          "headingClasses": [
+            "page-title"
+          ]
+        },
+        "contentZones": [
+          {
+            "class": "section sub-nav is--hidden",
+            "type": "tabbed-content"
+          },
+          {
+            "class": "section",
+            "id": "services",
+            "type": "gallery-grid",
+            "heading": "Home Cinema"
+          },
+          {
+            "class": "section vip",
+            "id": "support",
+            "type": "outline-heading",
+            "heading": "VIP Treatment"
+          },
+          {
+            "class": "section-heading outline",
+            "type": "outline-heading"
+          }
+        ],
+        "footer": {
+          "pattern": "shared-global-footer",
+          "description": "Shared footer across all pages. Includes CTA block, decorative swish, multi-column nav links, contact info, and social links.",
+          "sectionClass": "section footer",
+          "ctaBlock": {
+            "class": "footer-cta__wrap",
+            "heading": "Exciting Products",
+            "text": "Browse some of the most exclusive products we can bring to your next technology installation.",
+            "buttonText": "Find out more"
+          },
+          "hasSwish": true,
+          "containerClass": "container footer__container",
+          "navWrapClasses": [
+            "footer__nav-wrap",
+            "footer__nav-wrap last"
+          ],
+          "linkClass": "nav-link is--footer"
+        }
+      }
+    }
+  }
+}
