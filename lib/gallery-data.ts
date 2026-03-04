@@ -14,8 +14,6 @@ import galleryDataJson from "@/data/gallery-data.json";
 export interface GalleryImage {
   /** Local path for <img src> (thumbnail / grid) */
   src: string;
-  /** srcset string with local paths */
-  srcset: string;
   /** sizes attribute for responsive images */
   sizes: string;
   /** Alt text */
@@ -36,7 +34,6 @@ export interface GalleryPageData {
 export interface PortfolioItem {
   href: string;
   src: string;
-  srcset: string;
   sizes: string;
   alt: string;
   title: string;
@@ -65,21 +62,6 @@ function cdnToLocal(url: string): string {
   } catch {
     return url;
   }
-}
-
-/** Convert a full srcset string from CDN URLs to local paths */
-function convertSrcset(srcset: string): string {
-  if (!srcset) return "";
-  return srcset
-    .split(",")
-    .map((entry) => {
-      const parts = entry.trim().split(/\s+/);
-      if (parts[0]) {
-        parts[0] = cdnToLocal(parts[0]);
-      }
-      return parts.join(" ");
-    })
-    .join(", ");
 }
 
 /* ------------------------------------------------------------------ */
@@ -113,7 +95,6 @@ export function getGalleryData(slug: string): GalleryPageData | null {
     tagline: rawGallery.tagline || "",
     images: rawGallery.images.map((img) => ({
       src: cdnToLocal(img.src),
-      srcset: convertSrcset(img.srcset),
       sizes: img.sizes || "",
       alt: img.alt || "",
       lightboxSrc: cdnToLocal(img.lightboxUrl || img.src),
@@ -130,7 +111,6 @@ export function getPortfolioData(): PortfolioPageData {
     items: raw.items.map((item) => ({
       href: item.href,
       src: cdnToLocal(item.src),
-      srcset: convertSrcset(item.srcset),
       sizes: item.sizes || "",
       alt: item.alt || "",
       title: item.title,
