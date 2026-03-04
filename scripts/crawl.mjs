@@ -130,9 +130,10 @@ function classifyPage(url) {
 /** Fetch a page with timeout and retries */
 async function fetchPage(url, retries = MAX_RETRIES) {
   for (let attempt = 0; attempt <= retries; attempt++) {
+    let timer;
     try {
       const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+      timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
       const res = await fetch(url, {
         signal: controller.signal,
         headers: {
