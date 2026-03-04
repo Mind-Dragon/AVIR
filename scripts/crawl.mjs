@@ -142,14 +142,19 @@ async function fetchPage(url, retries = MAX_RETRIES) {
         },
         redirect: "follow",
       });
-      clearTimeout(timer);
       if (!res.ok) {
+        clearTimeout(timer);
         console.warn(`  [${res.status}] ${url}`);
         return null;
       }
       const contentType = res.headers.get("content-type") || "";
-      if (!contentType.includes("text/html")) return null;
-      return await res.text();
+      if (!contentType.includes("text/html")) {
+        clearTimeout(timer);
+        return null;
+      }
+      const text = await res.text();
+      clearTimeout(timer);
+      return text;
     } catch (err) {
       if (attempt < retries) {
         await sleep(1000 * (attempt + 1));
