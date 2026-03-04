@@ -156,6 +156,7 @@ async function fetchPage(url, retries = MAX_RETRIES) {
       clearTimeout(timer);
       return text;
     } catch (err) {
+      clearTimeout(timer);
       if (attempt < retries) {
         await sleep(1000 * (attempt + 1));
         continue;
