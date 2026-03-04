@@ -185,7 +185,12 @@ function parsePage(html, baseUrl) {
   $("a[href]").each((_, el) => {
     const href = $(el).attr("href");
     if (!href) return;
-    const resolved = normaliseUrl(new URL(href, baseUrl).href);
+    let resolved;
+    try {
+      resolved = normaliseUrl(new URL(href, baseUrl).href);
+    } catch {
+      return;
+    }
     if (resolved && isInternal(resolved) && isPageUrl(resolved)) {
       links.add(resolved);
     }
