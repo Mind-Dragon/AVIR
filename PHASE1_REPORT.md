@@ -61,7 +61,6 @@ Phase 1 is complete. All pages from avir.com have been discovered, scraped, and 
 |------|-------|
 | image | 1,548 |
 | video | 1 |
-| font | 0 |
 
 **Data location:** `data/asset-map.json` (CDN URL → local path mapping)
 
