@@ -15,7 +15,6 @@ import * as cheerio from "cheerio";
 import {
   readFileSync,
   writeFileSync,
-  readdirSync,
   existsSync,
 } from "node:fs";
 import { resolve, dirname } from "node:path";
@@ -30,16 +29,6 @@ const OUTPUT_PATH = resolve(ROOT, "data", "templates.json");
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                           */
 /* ------------------------------------------------------------------ */
-
-/** Collect unique CSS class values matching a pattern from an HTML string. */
-function extractClassesMatching($, selector) {
-  const classes = new Set();
-  $(selector).each((_, el) => {
-    const cls = $(el).attr("class") || "";
-    if (cls.trim()) classes.add(cls.trim());
-  });
-  return [...classes];
-}
 
 /** Get unique class names from a set of elements matching a selector. */
 function getUniqueClasses($, selector) {
@@ -86,8 +75,11 @@ function analyzeNavigation($) {
     nav.logoClass = ($logo.attr("class") || "").trim();
   }
 
-  // Desktop nav links
-  const $desktopLinks = $(".nav-link, .nav__link-wrap a");
+  // Desktop nav links (exclude footer links)
+  const $desktopLinks = $(".nav-link, .nav__link-wrap a").filter((_, el) => {
+    const cls = $(el).attr("class") || "";
+    return !cls.includes("is--footer");
+  });
   const linkClasses = new Set();
   $desktopLinks.each((_, el) => {
     const cls = $(el).attr("class") || "";
