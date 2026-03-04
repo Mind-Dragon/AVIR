@@ -1,0 +1,5733 @@
+{
+  "metadata": {
+    "scrapeDate": "2026-03-04T21:31:09.935Z",
+    "totalPages": 152,
+    "failedPages": 0,
+    "typeBreakdown": {
+      "home": 1,
+      "about": 1,
+      "blog-index": 1,
+      "brands": 1,
+      "careers": 3,
+      "city": 25,
+      "contact": 4,
+      "product": 1,
+      "gallery": 4,
+      "legacy": 1,
+      "blog-post": 108,
+      "process": 1,
+      "services": 1
+    }
+  },
+  "pages": [
+    {
+      "url": "https://www.avir.com/",
+      "slug": "index",
+      "templateType": "home",
+      "title": "AVIR | Luxury Smart Home Solutions",
+      "metaDescription": "Luxury smart home solutions, designed for the discerning.",
+      "contentSections": [
+        {
+          "heading": "LUXURY SMART HOME SOLUTIONS",
+          "identifier": "hero-video__wrapper"
+        },
+        {
+          "heading": "LUXURY SMART HOME SOLUTIONS",
+          "identifier": "home-hero__content-scroll-wrap"
+        },
+        {
+          "heading": "LUXURY SMART HOME SOLUTIONS",
+          "identifier": "home-hero__content-wrap"
+        },
+        {
+          "heading": "LUXURY SMART HOME SOLUTIONS",
+          "identifier": "home-hero__content-item first"
+        },
+        {
+          "heading": "",
+          "identifier": "hero-content__heading top"
+        },
+        {
+          "heading": "",
+          "identifier": "hero-content__heading top-bottom"
+        },
+        {
+          "heading": "",
+          "identifier": "home-hero__scroll-text"
+        },
+        {
+          "heading": "Automation",
+          "identifier": "home-hero__content-item"
+        },
+        {
+          "heading": "Automation",
+          "identifier": "hero-content__middle-wrap"
+        },
+        {
+          "heading": "Sound & Vision",
+          "identifier": "home-hero__content-item"
+        },
+        {
+          "heading": "Sound & Vision",
+          "identifier": "hero-content__middle-wrap"
+        },
+        {
+          "heading": "shading",
+          "identifier": "home-hero__content-item"
+        },
+        {
+          "heading": "shading",
+          "identifier": "hero-content__middle-wrap"
+        },
+        {
+          "heading": "Lighting",
+          "identifier": "home-hero__content-item"
+        },
+        {
+          "heading": "Lighting",
+          "identifier": "hero-content__middle-wrap"
+        },
+        {
+          "heading": "Home Cinema",
+          "identifier": "home-hero__content-item last"
+        },
+        {
+          "heading": "Home Cinema",
+          "identifier": "hero-content__middle-wrap"
+        },
+        {
+          "heading": "Automation",
+          "identifier": "hero-anim-wrap"
+        },
+        {
+          "heading": "Automation",
+          "identifier": "section scroller-section first"
+        },
+        {
+          "heading": "Sound & Vision",
+          "identifier": "section scroller-section"
+        },
+        {
+          "heading": "shading",
+          "identifier": "section scroller-section"
+        },
+        {
+          "heading": "Lighting",
+          "identifier": "section scroller-section"
+        },
+        {
+          "heading": "Home Cinema",
+          "identifier": "section scroller-section-extended"
+        },
+        {
+          "heading": "Our Process",
+          "identifier": "departments"
+        },
+        {
+          "heading": "Professional Partners",
+          "identifier": "section"
+        },
+        {
+          "heading": "",
+          "identifier": "section-heading"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section"
+        },
+        {
+          "heading": "",
+          "identifier": "cta__small-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/about-avir",
+      "slug": "about-avir",
+      "templateType": "about",
+      "title": "About AVIR",
+      "metaDescription": "Serving the West Coast, Based in Coachella Valley, AVIR provides elite smart environment solutions for high-end residential and commercial projects.",
+      "contentSections": [
+        {
+          "heading": "About",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Our Story",
+          "identifier": "section"
+        },
+        {
+          "heading": "Meet the team",
+          "identifier": "section meet-the-team"
+        },
+        {
+          "heading": "Our Processes",
+          "identifier": "section process"
+        },
+        {
+          "heading": "For Commercial Projects",
+          "identifier": "section process"
+        },
+        {
+          "heading": "Working with Partners",
+          "identifier": "section partners"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/blog",
+      "slug": "blog",
+      "templateType": "blog-index",
+      "title": "Blog",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Blog",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Meridian Introduces 2026 Editions of the DSP750 and DSP730 In-Wall Speakers",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/brands",
+      "slug": "brands",
+      "templateType": "brands",
+      "title": "Brands",
+      "metaDescription": "AVIR cultivates exclusive partnerships to secure only the best products for our solutions.",
+      "contentSections": [
+        {
+          "heading": "Brand Partner­­ships",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/careers",
+      "slug": "careers",
+      "templateType": "careers",
+      "title": "Careers",
+      "metaDescription": "Work with us.",
+      "contentSections": [
+        {
+          "heading": "Careers",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section"
+        },
+        {
+          "heading": "Open Positions",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/careers/assistant-technician",
+      "slug": "careers--assistant-technician",
+      "templateType": "careers",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Assistant Technician",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section"
+        },
+        {
+          "heading": "Apply",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/careers/integration-technician",
+      "slug": "careers--integration-technician",
+      "templateType": "careers",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Integration Technician",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section"
+        },
+        {
+          "heading": "Apply",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/banning",
+      "slug": "city--banning",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Banning",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/beaumont",
+      "slug": "city--beaumont",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Beaumont",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/bermuda-dunes",
+      "slug": "city--bermuda-dunes",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Bermuda Dunes",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/big-bear",
+      "slug": "city--big-bear",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Big Bear",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/cathedral-city",
+      "slug": "city--cathedral-city",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Cathedral City",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/coachella",
+      "slug": "city--coachella",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Coachella",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/idyllwild",
+      "slug": "city--idyllwild",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Idyllwild",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/indian-wells",
+      "slug": "city--indian-wells",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Indian Wells",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/indio",
+      "slug": "city--indio",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Indio",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/joshua-tree",
+      "slug": "city--joshua-tree",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Joshua Tree",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/la-quinta",
+      "slug": "city--la-quinta",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "La Quinta",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/lake-arrowhead",
+      "slug": "city--lake-arrowhead",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Lake Arrowhead",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/moreno-valley",
+      "slug": "city--moreno-valley",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Moreno Valley",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/murrieta",
+      "slug": "city--murrieta",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Murrieta",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/palm-desert",
+      "slug": "city--palm-desert",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Palm Desert",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/palm-springs",
+      "slug": "city--palm-springs",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Palm Springs",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/rancho-mirage",
+      "slug": "city--rancho-mirage",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Rancho Mirage",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/redlands",
+      "slug": "city--redlands",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Redlands",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/riverside",
+      "slug": "city--riverside",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Riverside",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/san-bernardino",
+      "slug": "city--san-bernardino",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "San Bernardino",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/temecula",
+      "slug": "city--temecula",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Temecula",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/thermal",
+      "slug": "city--thermal",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Thermal",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/thousand-palms",
+      "slug": "city--thousand-palms",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Thousand Palms",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/yucaipa",
+      "slug": "city--yucaipa",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Yucaipa",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/city/yucca-valley",
+      "slug": "city--yucca-valley",
+      "templateType": "city",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Yucca Valley",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section no-top-padding"
+        },
+        {
+          "heading": "Audio Video Services in",
+          "identifier": "section"
+        },
+        {
+          "heading": "The Best Audio Video Integration Company In The Coachella Valley",
+          "identifier": "section"
+        },
+        {
+          "heading": "Below is a list of cities we serve:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Schedule a professional consultation",
+          "identifier": "lander__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "lander__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/commercial-form",
+      "slug": "commercial-form",
+      "templateType": "contact",
+      "title": "Commercial Form",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Planning an upcoming commercial project?​",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/contact",
+      "slug": "contact",
+      "templateType": "contact",
+      "title": "Contact",
+      "metaDescription": "We want to hear from you. Give us a call, send us an email or fill out one of the contact forms below.",
+      "contentSections": [
+        {
+          "heading": "Contact",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Location",
+          "identifier": "section"
+        },
+        {
+          "heading": "Residential Projects",
+          "identifier": "contact__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "contact__cta-text"
+        },
+        {
+          "heading": "",
+          "identifier": "contact__cta-bottom"
+        },
+        {
+          "heading": "Commercial Projects",
+          "identifier": "contact__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "contact__cta-text"
+        },
+        {
+          "heading": "",
+          "identifier": "contact__cta-bottom"
+        },
+        {
+          "heading": "Service Call",
+          "identifier": "contact__cta last"
+        },
+        {
+          "heading": "",
+          "identifier": "contact__cta-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/exciting-new-products",
+      "slug": "exciting-new-products",
+      "templateType": "product",
+      "title": "Exciting New Products",
+      "metaDescription": "Browse some of the most exclusive products we can bring to your next technology installation.",
+      "contentSections": [
+        {
+          "heading": "Exciting Products",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Sony CLED Video Wall",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/galleries/commercial",
+      "slug": "galleries--commercial",
+      "templateType": "gallery",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Commercial",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/galleries/home-cinema",
+      "slug": "galleries--home-cinema",
+      "templateType": "gallery",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Home Cinema",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/galleries/lifestyle",
+      "slug": "galleries--lifestyle",
+      "templateType": "gallery",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Lifestyle",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/old-home",
+      "slug": "old-home",
+      "templateType": "legacy",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Luxury smart home solutions",
+          "identifier": "section hero-top"
+        },
+        {
+          "heading": "Luxury smart home solutions",
+          "identifier": "hero__swish"
+        },
+        {
+          "heading": "Luxury smart home solutions",
+          "identifier": "hero__text-wrap"
+        },
+        {
+          "heading": "",
+          "identifier": "hero__title"
+        },
+        {
+          "heading": "",
+          "identifier": "hero__title"
+        },
+        {
+          "heading": "What we do",
+          "identifier": "section"
+        },
+        {
+          "heading": "Our Process",
+          "identifier": "departments"
+        },
+        {
+          "heading": "Professional Partners",
+          "identifier": "section"
+        },
+        {
+          "heading": "",
+          "identifier": "section-heading"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section"
+        },
+        {
+          "heading": "",
+          "identifier": "cta__small-text"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/portfolio",
+      "slug": "portfolio",
+      "templateType": "gallery",
+      "title": "Portfolio",
+      "metaDescription": "Browse a small sample of some of our favorite projects.",
+      "contentSections": [
+        {
+          "heading": "Portfolio",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Home Cinema",
+          "identifier": "section gallires"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/a-legacy-in-sound--801-abbey-road-limited-edition",
+      "slug": "post--a-legacy-in-sound--801-abbey-road-limited-edition",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "A Legacy in Sound- 801 Abbey Road Limited Edition",
+          "identifier": "section title"
+        },
+        {
+          "heading": "A Legacy in Sound",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/a-nod-to-future-automations-mastery",
+      "slug": "post--a-nod-to-future-automations-mastery",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "A Nod to Future Automation’s Mastery",
+          "identifier": "section title"
+        },
+        {
+          "heading": "The Subtle Elegance of Concealed Entertainment: A Nod to Future Automation’s Mastery",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/arc-you-ready-for-the-ultra-experience",
+      "slug": "post--arc-you-ready-for-the-ultra-experience",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Arc You Ready for the Ultra Experience?",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Arc You Ready for the Ultra Experience? Sonos Unveils Arc Ultra Soundbar and Sub 4 with Immersive Spatial Audio",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/audiocontrol-bijou-5100d",
+      "slug": "post--audiocontrol-bijou-5100d",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "AudioControl Bijou 5100D",
+          "identifier": "section title"
+        },
+        {
+          "heading": "AudioControl Bijou 5100D",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/autonomic-and-urc-unveil-expanded-m-series-support-and-faster-ui-performance",
+      "slug": "post--autonomic-and-urc-unveil-expanded-m-series-support-and-faster-ui-performance",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Autonomic and URC Unveil Expanded M Series Support and Faster UI Performance",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Autonomic and URC Unveil Expanded M Series Support and Faster UI Performance",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/avirs-stellar-home-theater-installation-featured-by-wisdom-audio",
+      "slug": "post--avirs-stellar-home-theater-installation-featured-by-wisdom-audio",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "AVIR's Stellar Home Theater Installation Featured by Wisdom Audio",
+          "identifier": "section title"
+        },
+        {
+          "heading": "AVIR's Stellar Home Theater Installation Featured by Wisdom Audio",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/avpro-edge-introduces-hdmi-extension-kit-with-range-up-to-150-meters",
+      "slug": "post--avpro-edge-introduces-hdmi-extension-kit-with-range-up-to-150-meters",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "AVPro Edge Introduces HDMI Extension Kit With Range Up to 150 Meters",
+          "identifier": "section title"
+        },
+        {
+          "heading": "AVPro Edge Introduces HDMI Extension Kit With Range Up to 150 Meters",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/bang-olufsen-expands-customization-with-atelier-and-exclusive-limited-editions",
+      "slug": "post--bang-olufsen-expands-customization-with-atelier-and-exclusive-limited-editions",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Bang & Olufsen Expands Customization with Atelier and Exclusive Limited Editions",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Bang & Olufsen Expands Customization with Atelier and Exclusive Limited Editions",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/bang-olufsen-reviving-classics",
+      "slug": "post--bang-olufsen-reviving-classics",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Bang & Olufsen: Reviving Classics",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Bang & Olufsen: Reviving Classics and Embracing Modernity with Beosystem 9000c and Beoconnect Core",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/best-jbl-audio-gear-for-easy-home-upgrades",
+      "slug": "post--best-jbl-audio-gear-for-easy-home-upgrades",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Best JBL Audio Gear for Easy Home Upgrades",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Upgrade Your Home Audio with JBL’s Modern Audio Solutions",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/beyond-the-curve---32-years-of-nautilus",
+      "slug": "post--beyond-the-curve---32-years-of-nautilus",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Beyond the Curve - 32 Years of Nautilus",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Beyond the Curve - 32 Years of Nautilus",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/c-seed-n1-165-137-tv",
+      "slug": "post--c-seed-n1-165-137-tv",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "C SEED N1 165 & 137 TV",
+          "identifier": "section title"
+        },
+        {
+          "heading": "C SEED N1 165 & 137 TV",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/case-study-comprehensive-high-end-audio-and-video-installation-project",
+      "slug": "post--case-study-comprehensive-high-end-audio-and-video-installation-project",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Case Study: La Quinta Country Club Home Gets Comprehensive Audio/Video Upgrade",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Comprehensive AV Installation:",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/celebrating-sound-the-klipsch-jubilee-75th-anniversary-edition",
+      "slug": "post--celebrating-sound-the-klipsch-jubilee-75th-anniversary-edition",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Celebrating Sound: The Klipsch Jubilee 75th Anniversary Edition",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Celebrating Sound: The Klipsch Jubilee 75th Anniversary Edition",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/coastal-source-opens-showroom-at-pacific-design-center",
+      "slug": "post--coastal-source-opens-showroom-at-pacific-design-center",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Coastal Source Opens Showroom at Pacific Design Center",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Coastal Source Expands Presence at Pacific Design Center",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/discover-the-benefits-of-fortress-seatings-custom-home-theater-seats-for-luxury-consumers-in-california",
+      "slug": "post--discover-the-benefits-of-fortress-seatings-custom-home-theater-seats-for-luxury-consumers-in-california",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Discover the Benefits of Fortress Seating's Custom Home Theater Seats for Luxury Consumers in California",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Luxury custom home theaters have become increasingly popular in recent years, with homeowners seeking to bring the experience of a movie theater into their own homes.",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/doorbird-smart-door-controller-d410-lte-4g",
+      "slug": "post--doorbird-smart-door-controller-d410-lte-4g",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "DoorBird Smart Door Controller D410 LTE/4G:",
+          "identifier": "section title"
+        },
+        {
+          "heading": "DoorBird Smart Door Controller D410 LTE/4G",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/dynaudio-unveils-new-sound-at-high-end-munich-2024",
+      "slug": "post--dynaudio-unveils-new-sound-at-high-end-munich-2024",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Dynaudio Unveils New Sound at High-End Munich 2024",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Dynaudio Unveils New Sound at High-End Munich 2024",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/dynaudio-unveils-updated-symphony-opus-one-immersive-soundbar-at-ces-2025",
+      "slug": "post--dynaudio-unveils-updated-symphony-opus-one-immersive-soundbar-at-ces-2025",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Dynaudio Unveils Updated Symphony Opus One Immersive Soundbar at CES 2025",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Dynaudio Unveils Updated Symphony Opus One Immersive Soundbar at CES 2025",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/energizing-control-savants-leap-into-the-future-of-smart-home-automation",
+      "slug": "post--energizing-control-savants-leap-into-the-future-of-smart-home-automation",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Energizing Control: Savant’s Leap into the Future of Smart Home Automation",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Energizing Control: Savant’s Leap into the Future of Smart Home Automation",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/enhanced-control4-smart-home",
+      "slug": "post--enhanced-control4-smart-home",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Enhanced Control4 Smart Home",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Enhanced Control4 Smart Home OS 3.3.0",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/epson-qb1000-4k-hdr-laser-projector",
+      "slug": "post--epson-qb1000-4k-hdr-laser-projector",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Epson QB1000 4K HDR Laser Projector",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Epson QB1000 4K HDR Laser Projector",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/epson-unveils-the-q-series-at-cedia-2024",
+      "slug": "post--epson-unveils-the-q-series-at-cedia-2024",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Epson Unveils the Q-Series at CEDIA 2024",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Epson Unveils the Q-Series at CEDIA 2024",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/experience-cutting-edge-luxury-home-cinema-with-barco-residential",
+      "slug": "post--experience-cutting-edge-luxury-home-cinema-with-barco-residential",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Experience cutting edge luxury home cinema with Barco Residential",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Experience cutting edge luxury home cinema with Barco Residential",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/expert-tips-for-designing-your-perfect-home-theater",
+      "slug": "post--expert-tips-for-designing-your-perfect-home-theater",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Expert Tips for Designing Your Perfect Home Theater",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Expert Tips for Designing Your Perfect Home Theater: Screen Size, Projector Brightness, and More",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/focal-diva-mezza-utopia",
+      "slug": "post--focal-diva-mezza-utopia",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Focal Diva Mezza Utopia",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Focal Introduces Diva Mezza Utopia Wireless Active Speaker",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/focal-diva-utopia-high-end-performance-in-a-wireless-system",
+      "slug": "post--focal-diva-utopia-high-end-performance-in-a-wireless-system",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Focal Diva Utopia: High-End Performance in a Wireless System",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Focal Diva Utopia: High-End Performance in a Wireless System",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/focal-introduces-the-utopia-cinema-range",
+      "slug": "post--focal-introduces-the-utopia-cinema-range",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Focal Introduces the Utopia Cinema Range",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Focal Introduces the Utopia Cinema Range",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/focal-introduces-the-utopia-cinema-range-2",
+      "slug": "post--focal-introduces-the-utopia-cinema-range-2",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Focal Introduces the Utopia Cinema Range",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Focal Introduces the Utopia Cinema Range",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/grimani-systems-launches-the-reflectance-tm-system",
+      "slug": "post--grimani-systems-launches-the-reflectance-tm-system",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Grimani Systems Launches The Reflectance™ System",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Grimani Systems Launches The Reflectance™ System: A New Way to Experience Sound",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/grimani-systems-mp-84-seamless-design",
+      "slug": "post--grimani-systems-mp-84-seamless-design",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Grimani Systems MP-84: Seamless Design",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Grimani Systems MP-84: Seamless Design",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/how-the-crestron-and-luhkee-partnership-transforms-smart-homes-in-palm-desert",
+      "slug": "post--how-the-crestron-and-luhkee-partnership-transforms-smart-homes-in-palm-desert",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "How the Crestron and Luhkee Partnership Transforms Smart Homes in Palm Desert",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Crestron and Luhkee Partnership: Elevating Smart Home Integration",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/how-to-keep-your-home-theater-safe",
+      "slug": "post--how-to-keep-your-home-theater-safe",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "How to Keep Your Home Theater Safe",
+          "identifier": "section title"
+        },
+        {
+          "heading": "It’s Dark in Here!",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/innovations-in-home-automation-showcased-at-cedia-expo-2023",
+      "slug": "post--innovations-in-home-automation-showcased-at-cedia-expo-2023",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Innovations in Home Automation Showcased at CEDIA Expo 2023",
+          "identifier": "section title"
+        },
+        {
+          "heading": "The annual CEDIA Expo, held in Denver from September 7-9, 2023, provided a detailed glimpse into the rapidly evolving landscape of home automation. The event focused on advancements in device integration, end-user accessibility, and market adaptability, highlighting how far the industry has come in terms of technological maturity.",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/introducing-the-mark-levinson-600-series",
+      "slug": "post--introducing-the-mark-levinson-600-series",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Introducing the Mark Levinson 600 Series",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Introducing the Mark Levinson 600 Series",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/is-this-the-ultimate-home-theater",
+      "slug": "post--is-this-the-ultimate-home-theater",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Is This The Ultimate Home Theater?",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Is this the ultimate home theater? A micro-LED wall with cinema-certified visual quality, and a 14.8.8-channel built-in sound system — yes, you are reading those numbers correctly",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/james-loudspeaker-outdoor-tower-series",
+      "slug": "post--james-loudspeaker-outdoor-tower-series",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "James Loudspeaker Outdoor Tower Series",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Outdoor, High-Output Tower Systems",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/jbl-summit-series-expands",
+      "slug": "post--jbl-summit-series-expands",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "JBL Summit Series Expands",
+          "identifier": "section title"
+        },
+        {
+          "heading": "JBL Summit Series Expands",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/jbl-synthesis-introduces-nine-new-loudspeakers-and-three-av-processors",
+      "slug": "post--jbl-synthesis-introduces-nine-new-loudspeakers-and-three-av-processors",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "JBL Synthesis Introduces Nine New Loudspeakers and Three AV Processors",
+          "identifier": "section title"
+        },
+        {
+          "heading": "JBL Synthesis Introduces Nine New Loudspeakers and Three AV Processors",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/jbl-synthesis-sma-series-amplifiers-2024",
+      "slug": "post--jbl-synthesis-sma-series-amplifiers-2024",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "JBL Synthesis SMA Series Amplifiers 2024",
+          "identifier": "section title"
+        },
+        {
+          "heading": "JBL Synthesis SMA Series Amplifiers",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/jl-audio-gotham-tm-v2-powered-subwoofers",
+      "slug": "post--jl-audio-gotham-tm-v2-powered-subwoofers",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "JL Audio Gotham™ v2 Powered Subwoofers",
+          "identifier": "section title"
+        },
+        {
+          "heading": "THE KING OF BASS",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/jvc-partners-up-with-control4",
+      "slug": "post--jvc-partners-up-with-control4",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "JVC Partners Up With Control4",
+          "identifier": "section title"
+        },
+        {
+          "heading": "JVC Partners Up With Control4",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/kaleidescape-strato-v",
+      "slug": "post--kaleidescape-strato-v",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Kaleidescape Strato V",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Kaleidescape Strato V: Commercial Theater Quality Films at Home",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/kaleidescapes-strato-v-movie-player",
+      "slug": "post--kaleidescapes-strato-v-movie-player",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Kaleidescape's Strato V Movie Player",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Kaleidescape's Strato V Movie Player: Redefining Home Entertainment",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/kef-introduces-two-new-thx-certified-architectural-speakers",
+      "slug": "post--kef-introduces-two-new-thx-certified-architectural-speakers",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "KEF Introduces Two New THX Certified Architectural Speakers",
+          "identifier": "section title"
+        },
+        {
+          "heading": "KEF Introduces Two New THX Certified Architectural Speakers",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/kef-reference-5-meta",
+      "slug": "post--kef-reference-5-meta",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "KEF Reference 5 Meta",
+          "identifier": "section title"
+        },
+        {
+          "heading": "KEF Reference 5 Meta",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/ketra-lighting-the-best-smart-lighting-solution-for-luxury-home-automation-in-2023",
+      "slug": "post--ketra-lighting-the-best-smart-lighting-solution-for-luxury-home-automation-in-2023",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Ketra Lighting: The Best Smart Lighting Solution in 2023",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Ketra is Unique Because it Mimics Natural Light",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/klipsch-the-sevens-ii-and-the-nines-ii-powered-speakers-come-equipped-with-dirac-technology",
+      "slug": "post--klipsch-the-sevens-ii-and-the-nines-ii-powered-speakers-come-equipped-with-dirac-technology",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Klipsch The Sevens II And The Nines II Powered Speakers Come Equipped With Dirac Technology",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Klipsch The Sevens II And The Nines II Powered Speakers Come Equipped With Dirac Technology",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/klipschs-latest-for-2024",
+      "slug": "post--klipschs-latest-for-2024",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Klipsch's Latest For 2024",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Klipsch Introduces the Flexus Series Home Theater Speaker System",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/leon-announces-the-new-sole-tv-frame-for-sonys-bravia-7",
+      "slug": "post--leon-announces-the-new-sole-tv-frame-for-sonys-bravia-7",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Leon Announces the New Solé TV Frame for Sony’s BRAVIA 7",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Leon Announces the New Solé TV Frame for Sony’s BRAVIA 7",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/lg-introduces-the-wallpaper-tv-thin-wireless-oled-tv",
+      "slug": "post--lg-introduces-the-wallpaper-tv-thin-wireless-oled-tv",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "LG Introduces The Wallpaper TV Thin Wireless OLED TV",
+          "identifier": "section title"
+        },
+        {
+          "heading": "LG Introduces The Wallpaper TV Thin Wireless OLED TV",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/lg-unveils-136-inch-magnit-active-micro-led-display",
+      "slug": "post--lg-unveils-136-inch-magnit-active-micro-led-display",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "LG Unveils 136-inch MAGNIT ‘Active Micro LED’ Display",
+          "identifier": "section title"
+        },
+        {
+          "heading": "LG Unveils 136-inch MAGNIT ‘Active Micro LED’ Display",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/lgs-transparent-oled-tv-brings-sci-fi-concepts-into-everyday-life",
+      "slug": "post--lgs-transparent-oled-tv-brings-sci-fi-concepts-into-everyday-life",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "LG's Transparent OLED TV Brings Sci-Fi Concepts Into Everyday Life",
+          "identifier": "section title"
+        },
+        {
+          "heading": "LG's Transparent OLED TV Brings Sci-Fi Concepts Into Everyday Life",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/lutron-introduces-new-rania-and-lumaris-form-factors",
+      "slug": "post--lutron-introduces-new-rania-and-lumaris-form-factors",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Lutron Introduces New Rania and Lumaris Form Factors",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Lutron Introduces New Rania and Lumaris Form Factors",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/lutrons-latest-innovations-at-cedia-expo-2024",
+      "slug": "post--lutrons-latest-innovations-at-cedia-expo-2024",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Lutron’s Latest Innovations at CEDIA Expo 2024",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Lutron’s Latest Innovations at CEDIA Expo 2024",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/marantz-expands-its-premium-hifi-separates-offerings-with-three-new-releases",
+      "slug": "post--marantz-expands-its-premium-hifi-separates-offerings-with-three-new-releases",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Marantz Expands Its Premium Hifi Separates Offerings with Three New Releases",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/marantz-introduces-av-30-and-amp-30-home-theater-components",
+      "slug": "post--marantz-introduces-av-30-and-amp-30-home-theater-components",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Marantz Introduces AV 30 and AMP 30 Home Theater Components",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Marantz Introduces AV 30 and AMP 30 Home Theater Components",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/marantz-link-10n",
+      "slug": "post--marantz-link-10n",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Marantz LINK 10n",
+          "identifier": "section title"
+        },
+        {
+          "heading": "LINK 10n",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/mark-levinson-600-series",
+      "slug": "post--mark-levinson-600-series",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Mark Levinson 600 Series",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Mark Levinson 600 Series",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/mcintosh-and-sonus-faber-partner-with-jeep-and-lamborghini",
+      "slug": "post--mcintosh-and-sonus-faber-partner-with-jeep-and-lamborghini",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "McIntosh and Sonus Faber Partner with Jeep and Lamborghini",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Top-Tier Audio at Home and On the Road: McIntosh and Sonus Faber, Partnerships with Jeep and Lamborghini",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/mcintosh-mx200-a-v-processor",
+      "slug": "post--mcintosh-mx200-a-v-processor",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "McIntosh MX200 A/V Processor",
+          "identifier": "section title"
+        },
+        {
+          "heading": "UNPARALLELED CINEMATIC PERFORMANCE IN YOUR HOME",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/mera-sound-sconce-a-new-approach-to-light-and-sound",
+      "slug": "post--mera-sound-sconce-a-new-approach-to-light-and-sound",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Mera Sound Sconce: A New Approach to Light and Sound",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Mera Sound Sconce: A New Approach to Light and Sound",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/meridian-audio-and-leon-collaborate-on-new-edge-media-frame",
+      "slug": "post--meridian-audio-and-leon-collaborate-on-new-edge-media-frame",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Meridian Audio and Leon Collaborate on New Edge Media Frame",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Meridian Audio and Leon Collaborate on New Edge Media Frame",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/meridian-ellipse-streaming-audio-at-its-finest",
+      "slug": "post--meridian-ellipse-streaming-audio-at-its-finest",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Meridian Ellipse: Streaming Audio At Its Finest",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Meridian Ellipse: Streaming Audio At Its Finest",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/meridian-introduces-2026-editions-of-the-dsp750-and-dsp730-in-wall-speakers",
+      "slug": "post--meridian-introduces-2026-editions-of-the-dsp750-and-dsp730-in-wall-speakers",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Meridian Introduces 2026 Editions of the DSP750 and DSP730 In-Wall Speakers",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Meridian Introduces 2026 Editions of the DSP750 and DSP730 In-Wall Speakers",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/mirror-mirror-on-the-wall--is-that-a-tv-after-all",
+      "slug": "post--mirror-mirror-on-the-wall--is-that-a-tv-after-all",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "“Mirror, Mirror on the Wall—Is That a TV After All?”",
+          "identifier": "section title"
+        },
+        {
+          "heading": "“Mirror, Mirror on the Wall—Is That a TV After All?”",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/monitor-audio-release-new-vestra-series-subwoofers",
+      "slug": "post--monitor-audio-release-new-vestra-series-subwoofers",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Monitor Audio Release New Vestra Series Subwoofers",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Monitor Audio Release New Vestra Series Subwoofers",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/monumental-style-minimal-distractions",
+      "slug": "post--monumental-style-minimal-distractions",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Monumental style. Minimal distractions",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Ultra-premium design. Jaw-dropping picture quality. The 89\", 101\", 110” and 114\" MICRO LED defies everything that you’ve experienced in home entertainment.",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/mti100-integrated-turntable-sun-records-limited-edition",
+      "slug": "post--mti100-integrated-turntable-sun-records-limited-edition",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "MTI100 Integrated Turntable: Sun Records Limited Edition",
+          "identifier": "section title"
+        },
+        {
+          "heading": "MTI100 Integrated Turntable: Sun Records Limited Edition",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/new--ketra-d2-and-rania-d2-architectural-downlights",
+      "slug": "post--new--ketra-d2-and-rania-d2-architectural-downlights",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "New- Ketra D2 and Rania D2 Architectural Downlights",
+          "identifier": "section title"
+        },
+        {
+          "heading": "FAQs about Lutron’s Ketra D2 and Rania D2 Downlights",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/outdoor-entertainment-comparisons-and-considerations",
+      "slug": "post--outdoor-entertainment-comparisons-and-considerations",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Outdoor Entertainment: Comparisons and Considerations",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Choosing the Best Outdoor Entertainment: Projection Systems vs. Outdoor TVs",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/outdoor-entertainment-ideas-for-desert-homes",
+      "slug": "post--outdoor-entertainment-ideas-for-desert-homes",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Outdoor Entertainment Ideas For Desert Homes",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Outdoor Entertainment Ideas For Coachella Valley Homes",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/planar-expands-award-winning-planar-carbonlight-led-display-family",
+      "slug": "post--planar-expands-award-winning-planar-carbonlight-led-display-family",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Planar Expands Award-Winning Planar CarbonLight LED Display Family",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Planar Expands Award-Winning Planar CarbonLight LED Display Family",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/planar-komodo-series",
+      "slug": "post--planar-komodo-series",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Planar Komodo Series",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Planar Komodo Series Sets a New Standard for Ultra-Fine Pixel Pitch LED Visual Performance",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/polina-brings-beauty-and-stellar-performance-to-open-spaces",
+      "slug": "post--polina-brings-beauty-and-stellar-performance-to-open-spaces",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Polina brings beauty and stellar performance to open spaces.",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Polina",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/pristine-audio-connectivity-avpro-edges-new-dante-enabled-products",
+      "slug": "post--pristine-audio-connectivity-avpro-edges-new-dante-enabled-products",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Pristine Audio Connectivity: AVPro Edge’s New Dante-Enabled Products",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Pristine Audio Connectivity: AVPro Edge’s New Dante-Enabled Products‍",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/pro-ject-t1-evo-the-perfect-entry-point-to-hi-fi-vinyl-or-a-great-addition-to-a-collection",
+      "slug": "post--pro-ject-t1-evo-the-perfect-entry-point-to-hi-fi-vinyl-or-a-great-addition-to-a-collection",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Pro-Ject T1 EVO: The Perfect Entry Point to Hi-Fi Vinyl or a Great Addition to a Collection",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Pro-Ject T1 EVO: The Perfect Entry Point to Hi-Fi Vinyl or a Great Addition to a Collection",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/rania-and-lumaris",
+      "slug": "post--rania-and-lumaris",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Rania and Lumaris",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Lutron Introduces New Rania and Lumaris Form Factors",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/sage-series-l150m",
+      "slug": "post--sage-series-l150m",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Sage Series L150m",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Line Source On-Wall Loudspeaker",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/samsung-smart-laser-projector-integrated-cabinets",
+      "slug": "post--samsung-smart-laser-projector-integrated-cabinets",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Samsung Smart Laser Projector Integrated Cabinets",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Samsung Smart Laser Projector Integrated Cabinets",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/samsung-unveils-worlds-first-samsung-r95h",
+      "slug": "post--samsung-unveils-worlds-first-samsung-r95h",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Samsung Unveils World’s First (Samsung R95H)",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Samsung Unveils World’s First 130-Inch Micro RGB TV Featuring Next-Generation Color and Bold New Design",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/savant-reveals-new-premium-proseo-ge-smart-lighting-and-shading-solutions",
+      "slug": "post--savant-reveals-new-premium-proseo-ge-smart-lighting-and-shading-solutions",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "SAVANT Reveals New Premium Proseo GE Smart Lighting And Shading Solutions",
+          "identifier": "section title"
+        },
+        {
+          "heading": "SAVANT Reveals New Premium Proseo GE Smart Lighting And Shading Solutions",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/screen-innovations-upgrades-kaos-outdoor-shades-with-features-from-its-zen-line",
+      "slug": "post--screen-innovations-upgrades-kaos-outdoor-shades-with-features-from-its-zen-line",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Screen Innovations Upgrades KAOS Outdoor Shades With Features from Its Zen Line",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Screen Innovations Upgrades KAOS Outdoor Shades With Features from Its Zen Line",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/small-but-mighty-the-best-selling-sonus-faber-concertino-g4",
+      "slug": "post--small-but-mighty-the-best-selling-sonus-faber-concertino-g4",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Small But Mighty: The Best-Selling Sonus Faber Concertino G4",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Small But Mighty: The Best-Selling Sonus Faber Concertino G4",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/smart-home-technology-wed-like-to-see-in-2025-a-vision-for-high-end-integration",
+      "slug": "post--smart-home-technology-wed-like-to-see-in-2025-a-vision-for-high-end-integration",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Smart Home Technology We'd Like to See in 2025: A Vision for High-End Integration",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Smart Home Technology We'd Like to See in 2025: A Vision for High-End Integration",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/sonances-elegant-innovations-unveiled-at-cedia-expo-2024",
+      "slug": "post--sonances-elegant-innovations-unveiled-at-cedia-expo-2024",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Sonance’s Elegant Innovations Unveiled at CEDIA Expo 2024",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Sonance’s Elegant Innovations Unveiled at CEDIA Expo 2024",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/sonus-faber-and-automobili-lamborghini",
+      "slug": "post--sonus-faber-and-automobili-lamborghini",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Sonus faber and Automobili Lamborghini",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/sony-develops-next-generation-display-system",
+      "slug": "post--sony-develops-next-generation-display-system",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Sony Develops Next-Generation Display System",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Sony Develops Next-Generation Display System with Individual RGB Control of High-Density LED Backlights",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/sonys-2025-bravia-lineup",
+      "slug": "post--sonys-2025-bravia-lineup",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Sony’s 2025 Bravia Lineup",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Sony’s 2025 Bravia Lineup",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/soundscapes-redefined",
+      "slug": "post--soundscapes-redefined",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Soundscapes Redefined",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Soundscapes Redefined: Transform Your Home with Void Acoustics",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/stormaudio-isr-fusion-20-named-stereonet-product-of-the-year-2025",
+      "slug": "post--stormaudio-isr-fusion-20-named-stereonet-product-of-the-year-2025",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "StormAudio ISR Fusion 20 named Stereonet Product of the Year 2025",
+          "identifier": "section title"
+        },
+        {
+          "heading": "StormAudio ISR Fusion 20 Immersive Sound Receiver",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/the-arena-collection-by-sonus-faber",
+      "slug": "post--the-arena-collection-by-sonus-faber",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "The Arena Collection by Sonus Faber",
+          "identifier": "section title"
+        },
+        {
+          "heading": "The Arena Collection: Precision, Power, and Italian Pride",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/the-future-is-bright-ketra",
+      "slug": "post--the-future-is-bright-ketra",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "The Future is Bright: Ketra",
+          "identifier": "section title"
+        },
+        {
+          "heading": "How Lutron is Shaping the Evolution of Smart Homes with Advanced Lighting by Ketra",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/the-m6800d-from-audiocontrol",
+      "slug": "post--the-m6800d-from-audiocontrol",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "The M6800D from AudioControl",
+          "identifier": "section title"
+        },
+        {
+          "heading": "The M6800D from AudioControl",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/the-worlds-first-single-apparent-source-loudspeaker",
+      "slug": "post--the-worlds-first-single-apparent-source-loudspeaker",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "The world’s first Single Apparent Source loudspeaker.",
+          "identifier": "section title"
+        },
+        {
+          "heading": "A sound statement. An icon that engages everysense.",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/transform-any-room-with-a-view",
+      "slug": "post--transform-any-room-with-a-view",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Transform Any Room with a View",
+          "identifier": "section title"
+        },
+        {
+          "heading": "AVIR Introduces LiquidView Virtual Windows: Transform Any Room with a View",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/trinnov-unveils-altitudeci",
+      "slug": "post--trinnov-unveils-altitudeci",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Trinnov Unveils AltitudeCI",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Trinnov Unveils AltitudeCI: Scalable Audio over IP",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/unlock-the-full-potential-of-your-sonos-ace-wireless-headphones",
+      "slug": "post--unlock-the-full-potential-of-your-sonos-ace-wireless-headphones",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Unlock the Full Potential of Your Sonos Ace Wireless Headphones",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Unlock the Full Potential of Your Sonos Ace Wireless Headphones with These Essential Sound Settings",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/unpacking-the-sony-xr90-series",
+      "slug": "post--unpacking-the-sony-xr90-series",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Unpacking the Sony XR90 Series",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Unpacking the Sony XR90 Series",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/unveiling-hyphn-the-pinnacle-of-sound-sculpting-by-monitor-audio",
+      "slug": "post--unveiling-hyphn-the-pinnacle-of-sound-sculpting-by-monitor-audio",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Unveiling Hyphn: The Pinnacle of Sound Sculpting by Monitor Audio",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Hyphn stands as a monument in Monitor Audio's journey",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/upgrade-your-home-audio-with-the-james-loudspeaker-on-wall-qt-series",
+      "slug": "post--upgrade-your-home-audio-with-the-james-loudspeaker-on-wall-qt-series",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Upgrade Your Home Audio with the James Loudspeaker On Wall QT Series",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Upgrade Your Home Audio with the James Loudspeaker On Wall QT Series",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/urc-furrion-announce-expanded-partnership",
+      "slug": "post--urc-furrion-announce-expanded-partnership",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "URC, Furrion Announce Expanded Partnership",
+          "identifier": "section title"
+        },
+        {
+          "heading": "URC, Furrion Announce Expanded Partnership",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/urcs-tdc-8300-and-trc-1120-for-smart-home-control",
+      "slug": "post--urcs-tdc-8300-and-trc-1120-for-smart-home-control",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "URC's TDC-8300 and TRC-1120 for Smart Home Control",
+          "identifier": "section title"
+        },
+        {
+          "heading": "URC's TDC-8300 and TRC-1120 for Smart Home Control",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/vinyl-royalty-pro-ject-unveils-the-classic-reference-turntable-with-elevated-elegance-and-precision",
+      "slug": "post--vinyl-royalty-pro-ject-unveils-the-classic-reference-turntable-with-elevated-elegance-and-precision",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Vinyl Royalty: Pro-Ject Unveils The Classic Reference Turntable with Elevated Elegance and Precision",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Vinyl Royalty: Pro-Ject Unveils The Classic Reference Turntable with Elevated Elegance and Precision",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/void-acoustics-a-preview-of-offerings-and-pro-audio-dj-speaker-systems",
+      "slug": "post--void-acoustics-a-preview-of-offerings-and-pro-audio-dj-speaker-systems",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Void Acoustics: A Preview of Offerings and Pro Audio DJ Speaker Systems",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Fresh off a successful display at the Integrated Systems Europe (ISE) event in Barcelona..",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/void-acoustics-unveils-three-new-products",
+      "slug": "post--void-acoustics-unveils-three-new-products",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Void Acoustics Unveils Three New Products",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Void Acoustics Unveils Three New Products",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/wisdom-audio-s57i-a-subwoofer-that-fits-anywhere-and-sounds-amazing",
+      "slug": "post--wisdom-audio-s57i-a-subwoofer-that-fits-anywhere-and-sounds-amazing",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Wisdom Audio S57i: A Subwoofer That Fits Anywhere and Sounds Amazing",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Wisdom Audio S57i: A Subwoofer That Fits Anywhere and Sounds Amazing",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/post/zeppelin-pro-a-fresh-take-on-a-classic-wireless-speaker",
+      "slug": "post--zeppelin-pro-a-fresh-take-on-a-classic-wireless-speaker",
+      "templateType": "blog-post",
+      "title": "AVIR",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Zeppelin Pro: A Fresh Take on a Classic Wireless Speaker",
+          "identifier": "section title"
+        },
+        {
+          "heading": "Zeppelin Pro: A Fresh Take on a Classic Wireless Speaker",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/processes",
+      "slug": "processes",
+      "templateType": "process",
+      "title": "Processes",
+      "metaDescription": "Working with us is as easy as it gets.",
+      "contentSections": [
+        {
+          "heading": "Partners",
+          "identifier": "section title"
+        },
+        {
+          "heading": "For Residences",
+          "identifier": "section is--hidden"
+        },
+        {
+          "heading": "For Commercial Projects",
+          "identifier": "section is--hidden"
+        },
+        {
+          "heading": "Working with Partners",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/residential-form",
+      "slug": "residential-form",
+      "templateType": "contact",
+      "title": "Residential Form",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Are you planning a home remodel or currently building your new home?​",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/service-request",
+      "slug": "service-request",
+      "templateType": "contact",
+      "title": "Service Request",
+      "metaDescription": "",
+      "contentSections": [
+        {
+          "heading": "Service Call",
+          "identifier": "section"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    },
+    {
+      "url": "https://www.avir.com/services",
+      "slug": "services",
+      "templateType": "services",
+      "title": "Services",
+      "metaDescription": "We offer an array of specialty services custom-tailored to your needs. From individual rooms to large-scale commercial buildings, we ensure quality each step of the way.",
+      "contentSections": [
+        {
+          "heading": "Services",
+          "identifier": "section title"
+        },
+        {
+          "heading": "",
+          "identifier": "section sub-nav is--hidden"
+        },
+        {
+          "heading": "Home Cinema",
+          "identifier": "services"
+        },
+        {
+          "heading": "VIP Treatment",
+          "identifier": "support"
+        },
+        {
+          "heading": "Engage the experts",
+          "identifier": "section footer"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer-cta__wrap"
+        },
+        {
+          "heading": "Exciting Products",
+          "identifier": "footer__cta"
+        },
+        {
+          "heading": "",
+          "identifier": "footer-cta-para"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}
