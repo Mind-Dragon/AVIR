@@ -482,6 +482,180 @@ a {
     margin-top: 10px;
   }
 
+  /* ===== City (lander) page styles ===== */
+
+  .section {
+    z-index: 5;
+    background-color: var(--white-sand);
+    padding: 100px 4vw;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section.title {
+    padding-top: 150px;
+  }
+
+  .section.lander-image {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .section.no-top-padding {
+    padding-top: 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container.is--all-centered {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .container.is--all-centered.is--dark-container {
+    background-color: var(--off-black);
+    color: var(--white-sand);
+    border-radius: 30px;
+    width: 75%;
+    padding: 45px;
+  }
+
+  .col-wrapper {
+    margin-right: -20px;
+    display: flex;
+  }
+
+  .col-50 {
+    width: 50%;
+    margin-right: 20px;
+    position: relative;
+  }
+
+  .col-50.title-right {
+    padding-left: 30px;
+  }
+
+  .title__bg {
+    background-color: var(--light-shade);
+    border-left: 1px solid rgba(96, 78, 68, 0.2);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    inset: 0% 0% 0% auto;
+  }
+
+  .page-title {
+    max-width: 90%;
+    margin-top: 0;
+    font-size: 64px;
+    font-weight: 400;
+  }
+
+  .is--inline {
+    display: inline;
+  }
+
+  .is--small-spaced-below {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .lander__intro {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  .lander__hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .lander__text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  .lander__info-box {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: rgba(221, 205, 192, 0.75);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 33px;
+    position: relative;
+  }
+
+  .lander__heading {
+    margin-bottom: 20px;
+  }
+
+  .lander__list {
+    margin-top: 25px;
+    padding-left: 65px;
+    list-style-type: none;
+  }
+
+  .lander__list-item {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 19px;
+    position: relative;
+  }
+
+  .lander__list-line {
+    background-color: var(--joshua-rocks);
+    opacity: 0.2;
+    width: 50px;
+    height: 1px;
+    margin-top: 11px;
+    margin-left: -65px;
+    position: absolute;
+    inset: 0% auto auto 0%;
+  }
+
+  .all-cities__list-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .all-cities__list {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .all-cities__item {
+    width: 33%;
+    font-size: 17px;
+  }
+
+  .all-cities__link {
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+  }
+
+  .all-cities__link:hover {
+    text-decoration: underline;
+  }
+
+  .lander__clients {
+    padding-top: 20px;
+  }
+
+  .lander__clients-list {
+    line-height: 1.6em;
+  }
+
   /* ===== FooterCTA (lander variant) ===== */
 
   .lander__cta {
@@ -581,6 +755,95 @@ a {
 
     .lander__cta {
       margin-top: 40px;
+    }
+  }
+
+  /* ===== City page tablet (≤991px) ===== */
+
+  @media screen and (max-width: 991px) {
+    .section {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .lander__info-box {
+      margin-top: -70px;
+    }
+  }
+
+  /* ===== City page mobile (≤767px) ===== */
+
+  @media screen and (max-width: 767px) {
+    .section {
+      padding: 60px 20px;
+    }
+
+    .section.title {
+      padding-top: 100px;
+    }
+
+    .col-50 {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .col-50.title-right {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    .col-wrapper {
+      flex-direction: column;
+      margin-right: 0;
+    }
+
+    .title__bg {
+      display: none;
+    }
+
+    .page-title {
+      font-size: 42px;
+    }
+
+    .lander__intro {
+      font-size: 17px;
+      line-height: 1.4em;
+    }
+
+    .lander__text {
+      font-size: 16px;
+      line-height: 1.4em;
+    }
+
+    .lander__list {
+      padding-left: 31px;
+      margin-bottom: -10px;
+    }
+
+    .lander__list.second {
+      margin-top: 0;
+    }
+
+    .lander__list-line {
+      width: 20px;
+      margin-left: -28px;
+    }
+
+    .lander__info-box {
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 0;
+      padding: 20px;
+      font-size: 17px;
+    }
+
+    .container.is--all-centered.is--dark-container {
+      width: 100%;
+      padding: 30px 20px;
+    }
+
+    .all-cities__item {
+      width: 50%;
     }
   }
 }
