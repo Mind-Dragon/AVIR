@@ -1,0 +1,784 @@
+{
+  "metadata": {
+    "crawlDate": "2026-03-04T19:33:41.058Z",
+    "seedUrl": "https://www.avir.com",
+    "totalUrls": 152,
+    "typeBreakdown": {
+      "home": 1,
+      "about": 1,
+      "blog-index": 1,
+      "brands": 1,
+      "careers": 3,
+      "city": 25,
+      "contact": 4,
+      "product": 1,
+      "gallery": 4,
+      "legacy": 1,
+      "blog-post": 108,
+      "process": 1,
+      "services": 1
+    }
+  },
+  "urls": [
+    {
+      "url": "https://www.avir.com/",
+      "title": "AVIR | Luxury Smart Home Solutions",
+      "type": "home"
+    },
+    {
+      "url": "https://www.avir.com/about-avir",
+      "title": "About AVIR",
+      "type": "about"
+    },
+    {
+      "url": "https://www.avir.com/blog",
+      "title": "Blog",
+      "type": "blog-index"
+    },
+    {
+      "url": "https://www.avir.com/brands",
+      "title": "Brands",
+      "type": "brands"
+    },
+    {
+      "url": "https://www.avir.com/careers",
+      "title": "Careers",
+      "type": "careers"
+    },
+    {
+      "url": "https://www.avir.com/careers/assistant-technician",
+      "title": "AVIR",
+      "type": "careers"
+    },
+    {
+      "url": "https://www.avir.com/careers/integration-technician",
+      "title": "AVIR",
+      "type": "careers"
+    },
+    {
+      "url": "https://www.avir.com/city/banning",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/beaumont",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/bermuda-dunes",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/big-bear",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/cathedral-city",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/coachella",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/idyllwild",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/indian-wells",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/indio",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/joshua-tree",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/la-quinta",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/lake-arrowhead",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/moreno-valley",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/murrieta",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/palm-desert",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/palm-springs",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/rancho-mirage",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/redlands",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/riverside",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/san-bernardino",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/temecula",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/thermal",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/thousand-palms",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/yucaipa",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/city/yucca-valley",
+      "title": "AVIR",
+      "type": "city"
+    },
+    {
+      "url": "https://www.avir.com/commercial-form",
+      "title": "Commercial Form",
+      "type": "contact"
+    },
+    {
+      "url": "https://www.avir.com/contact",
+      "title": "Contact",
+      "type": "contact"
+    },
+    {
+      "url": "https://www.avir.com/exciting-new-products",
+      "title": "Exciting New Products",
+      "type": "product"
+    },
+    {
+      "url": "https://www.avir.com/galleries/commercial",
+      "title": "AVIR",
+      "type": "gallery"
+    },
+    {
+      "url": "https://www.avir.com/galleries/home-cinema",
+      "title": "AVIR",
+      "type": "gallery"
+    },
+    {
+      "url": "https://www.avir.com/galleries/lifestyle",
+      "title": "AVIR",
+      "type": "gallery"
+    },
+    {
+      "url": "https://www.avir.com/old-home",
+      "title": "AVIR",
+      "type": "legacy"
+    },
+    {
+      "url": "https://www.avir.com/portfolio",
+      "title": "Portfolio",
+      "type": "gallery"
+    },
+    {
+      "url": "https://www.avir.com/post/a-legacy-in-sound--801-abbey-road-limited-edition",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/a-nod-to-future-automations-mastery",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/arc-you-ready-for-the-ultra-experience",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/audiocontrol-bijou-5100d",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/autonomic-and-urc-unveil-expanded-m-series-support-and-faster-ui-performance",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/avirs-stellar-home-theater-installation-featured-by-wisdom-audio",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/avpro-edge-introduces-hdmi-extension-kit-with-range-up-to-150-meters",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/bang-olufsen-expands-customization-with-atelier-and-exclusive-limited-editions",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/bang-olufsen-reviving-classics",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/best-jbl-audio-gear-for-easy-home-upgrades",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/beyond-the-curve---32-years-of-nautilus",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/c-seed-n1-165-137-tv",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/case-study-comprehensive-high-end-audio-and-video-installation-project",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/celebrating-sound-the-klipsch-jubilee-75th-anniversary-edition",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/coastal-source-opens-showroom-at-pacific-design-center",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/discover-the-benefits-of-fortress-seatings-custom-home-theater-seats-for-luxury-consumers-in-california",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/doorbird-smart-door-controller-d410-lte-4g",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/dynaudio-unveils-new-sound-at-high-end-munich-2024",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/dynaudio-unveils-updated-symphony-opus-one-immersive-soundbar-at-ces-2025",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/energizing-control-savants-leap-into-the-future-of-smart-home-automation",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/enhanced-control4-smart-home",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/epson-qb1000-4k-hdr-laser-projector",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/epson-unveils-the-q-series-at-cedia-2024",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/experience-cutting-edge-luxury-home-cinema-with-barco-residential",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/expert-tips-for-designing-your-perfect-home-theater",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/focal-diva-mezza-utopia",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/focal-diva-utopia-high-end-performance-in-a-wireless-system",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/focal-introduces-the-utopia-cinema-range",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/focal-introduces-the-utopia-cinema-range-2",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/grimani-systems-launches-the-reflectance-tm-system",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/grimani-systems-mp-84-seamless-design",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/how-the-crestron-and-luhkee-partnership-transforms-smart-homes-in-palm-desert",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/how-to-keep-your-home-theater-safe",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/innovations-in-home-automation-showcased-at-cedia-expo-2023",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/introducing-the-mark-levinson-600-series",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/is-this-the-ultimate-home-theater",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/james-loudspeaker-outdoor-tower-series",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/jbl-summit-series-expands",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/jbl-synthesis-introduces-nine-new-loudspeakers-and-three-av-processors",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/jbl-synthesis-sma-series-amplifiers-2024",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/jl-audio-gotham-tm-v2-powered-subwoofers",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/jvc-partners-up-with-control4",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/kaleidescape-strato-v",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/kaleidescapes-strato-v-movie-player",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/kef-introduces-two-new-thx-certified-architectural-speakers",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/kef-reference-5-meta",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/ketra-lighting-the-best-smart-lighting-solution-for-luxury-home-automation-in-2023",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/klipsch-the-sevens-ii-and-the-nines-ii-powered-speakers-come-equipped-with-dirac-technology",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/klipschs-latest-for-2024",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/leon-announces-the-new-sole-tv-frame-for-sonys-bravia-7",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/lg-introduces-the-wallpaper-tv-thin-wireless-oled-tv",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/lg-unveils-136-inch-magnit-active-micro-led-display",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/lgs-transparent-oled-tv-brings-sci-fi-concepts-into-everyday-life",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/lutron-introduces-new-rania-and-lumaris-form-factors",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/lutrons-latest-innovations-at-cedia-expo-2024",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/marantz-expands-its-premium-hifi-separates-offerings-with-three-new-releases",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/marantz-introduces-av-30-and-amp-30-home-theater-components",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/marantz-link-10n",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/mark-levinson-600-series",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/mcintosh-and-sonus-faber-partner-with-jeep-and-lamborghini",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/mcintosh-mx200-a-v-processor",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/mera-sound-sconce-a-new-approach-to-light-and-sound",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/meridian-audio-and-leon-collaborate-on-new-edge-media-frame",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/meridian-ellipse-streaming-audio-at-its-finest",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/meridian-introduces-2026-editions-of-the-dsp750-and-dsp730-in-wall-speakers",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/mirror-mirror-on-the-wall--is-that-a-tv-after-all",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/monitor-audio-release-new-vestra-series-subwoofers",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/monumental-style-minimal-distractions",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/mti100-integrated-turntable-sun-records-limited-edition",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/new--ketra-d2-and-rania-d2-architectural-downlights",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/outdoor-entertainment-comparisons-and-considerations",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/outdoor-entertainment-ideas-for-desert-homes",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/planar-expands-award-winning-planar-carbonlight-led-display-family",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/planar-komodo-series",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/polina-brings-beauty-and-stellar-performance-to-open-spaces",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/pristine-audio-connectivity-avpro-edges-new-dante-enabled-products",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/pro-ject-t1-evo-the-perfect-entry-point-to-hi-fi-vinyl-or-a-great-addition-to-a-collection",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/rania-and-lumaris",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/sage-series-l150m",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/samsung-smart-laser-projector-integrated-cabinets",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/samsung-unveils-worlds-first-samsung-r95h",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/savant-reveals-new-premium-proseo-ge-smart-lighting-and-shading-solutions",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/screen-innovations-upgrades-kaos-outdoor-shades-with-features-from-its-zen-line",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/small-but-mighty-the-best-selling-sonus-faber-concertino-g4",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/smart-home-technology-wed-like-to-see-in-2025-a-vision-for-high-end-integration",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/sonances-elegant-innovations-unveiled-at-cedia-expo-2024",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/sonus-faber-and-automobili-lamborghini",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/sony-develops-next-generation-display-system",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/sonys-2025-bravia-lineup",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/soundscapes-redefined",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/stormaudio-isr-fusion-20-named-stereonet-product-of-the-year-2025",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/the-arena-collection-by-sonus-faber",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/the-future-is-bright-ketra",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/the-m6800d-from-audiocontrol",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/the-worlds-first-single-apparent-source-loudspeaker",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/transform-any-room-with-a-view",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/trinnov-unveils-altitudeci",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/unlock-the-full-potential-of-your-sonos-ace-wireless-headphones",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/unpacking-the-sony-xr90-series",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/unveiling-hyphn-the-pinnacle-of-sound-sculpting-by-monitor-audio",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/upgrade-your-home-audio-with-the-james-loudspeaker-on-wall-qt-series",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/urc-furrion-announce-expanded-partnership",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/urcs-tdc-8300-and-trc-1120-for-smart-home-control",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/vinyl-royalty-pro-ject-unveils-the-classic-reference-turntable-with-elevated-elegance-and-precision",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/void-acoustics-a-preview-of-offerings-and-pro-audio-dj-speaker-systems",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/void-acoustics-unveils-three-new-products",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/wisdom-audio-s57i-a-subwoofer-that-fits-anywhere-and-sounds-amazing",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/zeppelin-pro-a-fresh-take-on-a-classic-wireless-speaker",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/processes",
+      "title": "Processes",
+      "type": "process"
+    },
+    {
+      "url": "https://www.avir.com/residential-form",
+      "title": "Residential Form",
+      "type": "contact"
+    },
+    {
+      "url": "https://www.avir.com/service-request",
+      "title": "Service Request",
+      "type": "contact"
+    },
+    {
+      "url": "https://www.avir.com/services",
+      "title": "Services",
+      "type": "services"
+    }
+  ]
+}
