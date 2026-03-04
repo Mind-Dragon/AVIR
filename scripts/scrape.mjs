@@ -105,12 +105,13 @@ async function fetchPage(url, retries = MAX_RETRIES) {
 /* ------------------------------------------------------------------ */
 
 /**
- * Extract structured content from HTML.
+ * Extract structured content from a parsed cheerio document.
  * Returns an object with: title, metaDescription, ogImage, headings,
  * bodyText, navigation, footer, and contentSections.
+ * @param {import('cheerio').CheerioAPI} $ - Parsed cheerio document
+ * @param {string} url - The page URL
  */
-function extractContent(html, url) {
-  const $ = cheerio.load(html);
+function extractContent($, url) {
 
   // --- Title ---
   const title =
@@ -149,7 +150,7 @@ function extractContent(html, url) {
 
   // Extract body text from main content area (skip nav/footer for body text)
   const $mainContent = $body.clone();
-  $mainContent.find("nav, header, footer, [role='navigation'], [role='banner'], [role='contentinfo']").remove();
+  $mainContent.find("nav, header, footer, [role='navigation'], [role='banner'], [role='contentinfo'], .w-nav, .w-nav-menu, .w-nav-overlay, .w-dropdown-list, [class*='nav-menu'], [class*='mobile-menu']").remove();
   const bodyText = $mainContent
     .text()
     .replace(/\s+/g, " ")
@@ -367,7 +368,7 @@ async function main() {
 
       // Extract content
       const $ = cheerio.load(html);
-      const extracted = extractContent(html, url);
+      const extracted = extractContent($, url);
 
       // Refine template type
       const templateType = refineTemplateType(existingType, extracted, $);
