@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
+import Link from "next/link";
 
 /** Service panels shown in the hero scroll area */
 const HERO_SERVICES = [
@@ -148,9 +149,9 @@ export default function HeroSection() {
                 <h2 className="hero-content__heading">{service.heading}</h2>
                 <p className="hero-content__desc">{service.desc}</p>
               </div>
-              <a href={service.href} className="button is--outline">
+              <Link href={service.href} className="button is--outline">
                 {service.btn}
-              </a>
+              </Link>
             </div>
           ))}
         </div>

@@ -901,6 +901,17 @@ a {
     overflow: hidden;
   }
 
+  .partners-section .container {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .partners-section .container.is--visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   .large-para {
     font-size: 20px;
     line-height: 1.6;
