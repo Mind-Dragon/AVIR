@@ -498,9 +498,8 @@ a {
   .lander__cta-text {
     max-width: 40ch;
   }
-}
 
-/* ===== Page Title Section ===== */
+  /* ===== Page Title Section ===== */
 
   .section-title {
     display: flex;
@@ -746,6 +745,7 @@ a {
     padding-top: 30px;
     border-top: 1px solid var(--desert-tan);
   }
+}
 
 /* ===== Responsive ===== */
 

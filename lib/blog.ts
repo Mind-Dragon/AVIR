@@ -25,7 +25,7 @@ export interface BlogPost {
   dateISO: string;
   author: string;
   metaDescription: string;
-  heroImage: HeroImage;
+  heroImage: HeroImage | null;
   ogImage: string | null;
   bodyHtml: string;
   bodyText: string;
@@ -42,7 +42,7 @@ export interface BlogIndexEntry {
   dateISO: string;
   author: string;
   metaDescription: string;
-  heroImage: HeroImage;
+  heroImage: HeroImage | null;
   imageCount: number;
   videoCount: number;
   excerpt: string;
@@ -84,7 +84,7 @@ export function resolveImageUrl(img: HeroImage | null): string {
       return publicPath;
     }
   }
-  return img.originalUrl;
+  return img.originalUrl || PLACEHOLDER_IMAGE;
 }
 
 /**
