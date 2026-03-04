@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "crawl": "node scripts/crawl.mjs",
+    "extract-blog": "node scripts/extract-blog.mjs",
     "scrape": "node scripts/scrape.mjs",
     "download-assets": "node scripts/download-assets.mjs"
   },
