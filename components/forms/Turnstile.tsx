@@ -80,8 +80,16 @@ const Turnstile = forwardRef<TurnstileHandle, TurnstileProps>(
         );
 
         if (existing) {
-          scriptLoadedRef.current = true;
-          renderWidget();
+          if (window.turnstile) {
+            scriptLoadedRef.current = true;
+            renderWidget();
+          } else {
+            /* Script tag exists but hasn't finished loading yet */
+            existing.addEventListener("load", () => {
+              scriptLoadedRef.current = true;
+              renderWidget();
+            });
+          }
         } else {
           const script = document.createElement("script");
           script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
