@@ -146,6 +146,8 @@ export interface AboutPageData {
   storyParagraphs: string[];
   ethosText: string;
   teamMembers: TeamMember[];
+  processSections: ProcessSection[];
+  partnerTypes: PartnerType[];
 }
 
 export function getAboutData(): AboutPageData {
@@ -193,7 +195,33 @@ export function getAboutData(): AboutPageData {
     teamMembers.push({ name, role, bio });
   });
 
-  return { title, subtitle, storyParagraphs, ethosText, teamMembers };
+  // Process sections and partner types from the about page
+  const processSections: ProcessSection[] = [];
+  const partnerTypes: PartnerType[] = [];
+
+  $("h3").each((_i, el) => {
+    const text = $(el).text().trim();
+    if (text === "For Residences" || text === "For Commercial Projects") {
+      const parentDiv = $(el).parent();
+      processSections.push({
+        name: text,
+        description: parentDiv.find("p").text().trim(),
+      });
+    }
+    if (
+      text === "Interior Designers" ||
+      text === "Architects" ||
+      text === "Builders"
+    ) {
+      const parentDiv = $(el).parent();
+      partnerTypes.push({
+        name: text,
+        description: parentDiv.find("p").text().trim(),
+      });
+    }
+  });
+
+  return { title, subtitle, storyParagraphs, ethosText, teamMembers, processSections, partnerTypes };
 }
 
 /* ------------------------------------------------------------------ */
