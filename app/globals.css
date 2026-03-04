@@ -1041,33 +1041,6 @@ a {
       font-size: 36px;
     }
 
-    .col-wrapper {
-      flex-direction: column;
-    }
-
-    .col-50 {
-      width: 100%;
-      padding-right: 0;
-    }
-
-    .col-50.title-right {
-      margin-top: 20px;
-    }
-
-    .col-50 + .col-50 {
-      margin-top: 30px;
-    }
-
-    .section-title {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    .section {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
     .careers__link {
       padding: 30px;
     }

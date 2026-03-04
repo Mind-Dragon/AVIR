@@ -20,6 +20,7 @@ export default function CareerApplicationForm({
 
   const handleClose = useCallback(() => {
     setIsOpen(false);
+    setFormState("idle");
   }, []);
 
   const handleSubmit = useCallback(
