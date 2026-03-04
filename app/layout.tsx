@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Nav from "@/components/layout/Nav";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "AVIR | Luxury Smart Home Solutions",
@@ -26,10 +16,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <head>
+        {/* Manrope from Google Fonts — weights 300-700 matching avir.com */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        {/* Termina from Adobe Typekit — used for nav links, buttons, headings */}
+        <link rel="stylesheet" href="https://use.typekit.net/dqw5qdb.css" />
+      </head>
+      <body className="font-manrope antialiased">
+        <Nav />
+        {/* Spacer for fixed nav: 97px desktop, 60px mobile */}
+        <div className="pt-[97px] max-md:pt-[60px]" />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
