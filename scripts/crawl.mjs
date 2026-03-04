@@ -249,11 +249,15 @@ async function discoverWithExa() {
 async function bfsCrawl(seedUrls) {
   const visited = new Map(); // url -> { title, type }
   const queue = [];
+  const enqueued = new Set(); // track URLs already added to queue to avoid duplicates
 
   // Seed the queue
-  const seeds = new Set([normaliseUrl(SEED_URL), ...seedUrls.map(normaliseUrl)].filter(Boolean));
+  const seeds = [normaliseUrl(SEED_URL), ...seedUrls.map(normaliseUrl)].filter(Boolean);
   for (const url of seeds) {
-    queue.push(url);
+    if (!enqueued.has(url)) {
+      queue.push(url);
+      enqueued.add(url);
+    }
   }
 
   console.log(`Starting BFS crawl with ${queue.length} seed URLs...\n`);
@@ -273,9 +277,10 @@ async function bfsCrawl(seedUrls) {
       const { title, links } = parsePage(html, url);
       visited.set(url, { title, type: classifyPage(url) });
 
-      // Add discovered links to queue
+      // Add discovered links to queue (deduplicated via enqueued set)
       for (const link of links) {
-        if (!visited.has(link)) {
+        if (!enqueued.has(link)) {
+          enqueued.add(link);
           queue.push(link);
         }
       }

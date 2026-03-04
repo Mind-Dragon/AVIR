@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "crawlDate": "2026-03-04T19:31:06.291Z",
+    "crawlDate": "2026-03-04T19:33:41.058Z",
     "seedUrl": "https://www.avir.com",
-    "totalUrls": 150,
+    "totalUrls": 152,
     "typeBreakdown": {
       "home": 1,
       "about": 1,
@@ -14,7 +14,7 @@
       "product": 1,
       "gallery": 4,
       "legacy": 1,
-      "blog-post": 106,
+      "blog-post": 108,
       "process": 1,
       "services": 1
     }
@@ -316,6 +316,11 @@
       "type": "blog-post"
     },
     {
+      "url": "https://www.avir.com/post/energizing-control-savants-leap-into-the-future-of-smart-home-automation",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
       "url": "https://www.avir.com/post/enhanced-control4-smart-home",
       "title": "AVIR",
       "type": "blog-post"
@@ -377,6 +382,11 @@
     },
     {
       "url": "https://www.avir.com/post/how-to-keep-your-home-theater-safe",
+      "title": "AVIR",
+      "type": "blog-post"
+    },
+    {
+      "url": "https://www.avir.com/post/innovations-in-home-automation-showcased-at-cedia-expo-2023",
       "title": "AVIR",
       "type": "blog-post"
     },
