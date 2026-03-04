@@ -155,7 +155,8 @@ export function getCareerDetailData(slug: CareerSlug): CareerDetailData {
   let jobDescription = descSection?.preview || "";
 
   // Get the full description from bodyText
-  const titleIdx = bodyText.indexOf(title);
+  // Use lastIndexOf to skip the modal header "Apply for <title>" which appears first
+  const titleIdx = bodyText.lastIndexOf(title);
   if (titleIdx >= 0) {
     const afterTitle = bodyText.substring(titleIdx + title.length);
     const applyIdx = afterTitle.indexOf("ApplyApply");

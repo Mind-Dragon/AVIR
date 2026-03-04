@@ -67,13 +67,13 @@ export default function CareerApplicationForm({
               if (e.key === "Enter" || e.key === " ") handleClose();
             }}
           />
-          <button
-            type="button"
-            className="modal-close"
-            onClick={handleClose}
-            aria-label="Close application form"
-          />
           <div className="model-box">
+            <button
+              type="button"
+              className="modal-close"
+              onClick={handleClose}
+              aria-label="Close application form"
+            />
             <h2 className="is--inline-2">Apply for </h2>
             <h2 className="is--inline-2">{positionTitle}</h2>
 
