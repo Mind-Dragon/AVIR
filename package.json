@@ -10,7 +10,8 @@
     "crawl": "node scripts/crawl.mjs",
     "extract-blog": "node scripts/extract-blog.mjs",
     "scrape": "node scripts/scrape.mjs",
-    "download-assets": "node scripts/download-assets.mjs"
+    "download-assets": "node scripts/download-assets.mjs",
+    "classify-templates": "node scripts/classify-templates.mjs"
   },
   "dependencies": {
     "next": "14.2.35",
