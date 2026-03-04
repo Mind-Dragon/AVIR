@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 interface LightboxProps {
@@ -24,6 +24,7 @@ interface LightboxProps {
 export default function Lightbox({ images, initialIndex, onClose }: LightboxProps) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const image = images[currentIndex];
+  const closeRef = useRef<HTMLButtonElement>(null);
 
   const goNext = useCallback(() => {
     setCurrentIndex((i) => (i + 1) % images.length);
@@ -52,10 +53,11 @@ export default function Lightbox({ images, initialIndex, onClose }: LightboxProp
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [onClose, goNext, goPrev]);
 
-  // Prevent body scroll when lightbox is open
+  // Prevent body scroll when lightbox is open; focus close button on mount
   useEffect(() => {
     const original = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    closeRef.current?.focus();
     return () => {
       document.body.style.overflow = original;
     };
@@ -71,6 +73,7 @@ export default function Lightbox({ images, initialIndex, onClose }: LightboxProp
     >
       {/* Close button */}
       <button
+        ref={closeRef}
         className="lightbox__close"
         onClick={onClose}
         aria-label="Close lightbox"
