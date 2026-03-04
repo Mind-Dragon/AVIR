@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import Turnstile from "@/components/forms/Turnstile";
+import { useState, useCallback, useRef } from "react";
+import Turnstile, { type TurnstileHandle } from "@/components/forms/Turnstile";
 import useContactForm from "@/components/forms/useContactForm";
 import FooterCTA from "@/components/layout/FooterCTA";
 
@@ -33,6 +33,7 @@ const SERVICE_CATEGORIES = [
 export default function ServiceRequestPage() {
   const { status, errorMessage, setTurnstileToken, handleSubmit, reset } =
     useContactForm();
+  const turnstileRef = useRef<TurnstileHandle>(null);
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -226,7 +227,7 @@ export default function ServiceRequestPage() {
               </div>
 
               {/* Turnstile + Submit */}
-              <Turnstile onVerify={setTurnstileToken} />
+              <Turnstile ref={turnstileRef} onVerify={setTurnstileToken} />
 
               <button
                 type="submit"
@@ -245,7 +246,7 @@ export default function ServiceRequestPage() {
                   <button
                     type="button"
                     className="button is--outline is--dark"
-                    onClick={reset}
+                    onClick={() => reset(() => turnstileRef.current?.reset())}
                     style={{ marginTop: "12px" }}
                   >
                     Try Again

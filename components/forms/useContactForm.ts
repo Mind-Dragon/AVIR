@@ -10,7 +10,7 @@ interface UseContactFormReturn {
   turnstileToken: string;
   setTurnstileToken: (token: string) => void;
   handleSubmit: (formType: string, data: Record<string, unknown>) => Promise<void>;
-  reset: () => void;
+  reset: (resetTurnstile?: () => void) => void;
 }
 
 export default function useContactForm(): UseContactFormReturn {
@@ -52,10 +52,15 @@ export default function useContactForm(): UseContactFormReturn {
     [turnstileToken]
   );
 
-  const reset = useCallback(() => {
-    setStatus("idle");
-    setErrorMessage("");
-  }, []);
+  const reset = useCallback(
+    (resetTurnstile?: () => void) => {
+      setStatus("idle");
+      setErrorMessage("");
+      setTurnstileToken("");
+      if (resetTurnstile) resetTurnstile();
+    },
+    []
+  );
 
   return {
     status,
