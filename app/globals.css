@@ -725,7 +725,6 @@ a {
     font-size: 48px;
     font-weight: 400;
     line-height: 1.15;
-    hyphens: auto;
     margin: 0;
   }
 
@@ -2236,6 +2235,7 @@ a {
   font-weight: 500;
   line-height: 1.1em;
   text-transform: uppercase;
+  hyphens: none;
 }
 
 .page-container {
@@ -2478,28 +2478,6 @@ a {
   display: flex;
 }
 
-.partner__product-image {
-  border-radius: 20px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.partner__product-img {
-  object-fit: cover;
-  border-radius: 20px;
-  width: 100%;
-  height: auto;
-}
-
-.partner__bottom {
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .partner__logo {
   object-fit: contain;
   height: 40px;
@@ -2514,21 +2492,23 @@ a {
 }
 
 .partner__link {
+  display: inline-block;
   text-decoration: none;
-  color: inherit;
-  font-size: 13px;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
-  white-space: nowrap;
+  color: var(--joshua-rocks, #604e44);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid var(--joshua-rocks, #604e44);
+  border-radius: 100px;
+  padding: 10px 22px;
+  margin-top: 18px;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .partner__link:hover {
-  border-bottom-color: currentColor;
-}
-
-.partner__arrow {
-  margin-left: 5px;
+  background-color: var(--joshua-rocks, #604e44);
+  color: #fff;
 }
 
 /* --- About page -------------------------------------------------- */
