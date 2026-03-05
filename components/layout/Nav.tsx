@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect, useRef } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,25 +14,13 @@ const NAV_LINKS = [
   { text: "About", href: "/about-avir" },
 ] as const;
 
-/** Dropdown: "Exciting Products" group */
-const EXCITING_DROPDOWN = {
-  label: "Exciting Products",
-  items: [
-    { text: "Exciting Products", href: "/exciting-new-products", position: "first" as const },
-    { text: "Blog", href: "/blog", position: "last" as const },
-  ],
-};
+/** Dropdown: "Exciting Products" — single link, no sub-items in top nav per avir.com */
+const EXCITING_LINK = { text: "Exciting Products", href: "/exciting-new-products" } as const;
 
-/** Dropdown: "Contact" group */
-const CONTACT_DROPDOWN = {
-  label: "Contact",
-  items: [
-    { text: "Contact Us", href: "/contact", position: "first" as const },
-    { text: "Careers", href: "/careers", position: "last" as const },
-  ],
-};
+/** Contact link — single link per avir.com (Blog & Careers stay in footer only) */
+const CONTACT_LINK = { text: "Contact", href: "/contact" } as const;
 
-/** All mobile links in order */
+/** All mobile links in order — matches avir.com top-level nav */
 const MOBILE_LINKS = [
   { text: "Home", href: "/" },
   { text: "Services", href: "/services" },
@@ -40,96 +28,12 @@ const MOBILE_LINKS = [
   { text: "Portfolio", href: "/portfolio" },
   { text: "About", href: "/about-avir" },
   { text: "Exciting Products", href: "/exciting-new-products" },
-  { text: "Blog", href: "/blog" },
-  { text: "Careers", href: "/careers" },
   { text: "Contact", href: "/contact" },
 ] as const;
 
 function isActive(pathname: string, href: string): boolean {
   if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(href + "/");
-}
-
-function isDropdownActive(
-  pathname: string,
-  items: ReadonlyArray<{ href: string }>
-): boolean {
-  return items.some((item) => isActive(pathname, item.href));
-}
-
-interface NavDropdownProps {
-  label: string;
-  items: ReadonlyArray<{
-    text: string;
-    href: string;
-    position: "first" | "last";
-  }>;
-  pathname: string;
-}
-
-function NavDropdown({ label, items, pathname }: NavDropdownProps) {
-  const [open, setOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  const handleMouseEnter = useCallback(() => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-    }
-    setOpen(true);
-  }, []);
-
-  const handleMouseLeave = useCallback(() => {
-    timeoutRef.current = setTimeout(() => {
-      setOpen(false);
-    }, 300);
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, []);
-
-  const dropdownActive = isDropdownActive(pathname, items);
-
-  return (
-    <div
-      ref={dropdownRef}
-      className="nav__dropdown"
-      data-wf-class="nav__dropdown w-dropdown"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <button
-        className={`nav-link is--dropdown${dropdownActive ? " is--active" : ""}`}
-        data-wf-class="nav-link is--dropdown w-dropdown-toggle"
-        onClick={() => setOpen((prev) => !prev)}
-        type="button"
-        aria-expanded={open}
-      >
-        <span className="dd-icon" aria-hidden="true" />
-        <span className="nav-link__text">{label}</span>
-      </button>
-      <nav
-        className={`nav__dropdown-list${open ? " is--open" : ""}`}
-        data-wf-class="nav__dropdown-list w-dropdown-list"
-      >
-        {items.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={`nav-link in-dropdown ${item.position}${isActive(pathname, item.href) ? " is--active" : ""}`}
-            data-wf-class={`nav-link in-dropdown ${item.position} w-dropdown-link`}
-            onClick={() => setOpen(false)}
-          >
-            {item.text}
-          </Link>
-        ))}
-      </nav>
-    </div>
-  );
 }
 
 export default function Nav() {
@@ -215,19 +119,23 @@ export default function Nav() {
           </Link>
         ))}
 
-        {/* Exciting Products dropdown */}
-        <NavDropdown
-          label={EXCITING_DROPDOWN.label}
-          items={EXCITING_DROPDOWN.items}
-          pathname={pathname}
-        />
+        {/* Exciting Products — flat link per avir.com */}
+        <Link
+          href={EXCITING_LINK.href}
+          className={`nav-link${isActive(pathname, EXCITING_LINK.href) ? " is--active" : ""}`}
+          data-wf-class="nav-link"
+        >
+          {EXCITING_LINK.text}
+        </Link>
 
-        {/* Contact dropdown */}
-        <NavDropdown
-          label={CONTACT_DROPDOWN.label}
-          items={CONTACT_DROPDOWN.items}
-          pathname={pathname}
-        />
+        {/* Contact — flat link per avir.com */}
+        <Link
+          href={CONTACT_LINK.href}
+          className={`nav-link${isActive(pathname, CONTACT_LINK.href) ? " is--active" : ""}`}
+          data-wf-class="nav-link"
+        >
+          {CONTACT_LINK.text}
+        </Link>
       </div>
     </div>
   );
