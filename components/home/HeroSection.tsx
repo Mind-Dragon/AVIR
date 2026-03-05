@@ -113,15 +113,8 @@ export default function HeroSection() {
           className="hero-video__element"
           poster="/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/627031527309863b09abc49b_Shutterstock Partners Pic 220502.jpg"
         >
-          {/* Local asset first, CDN fallback for Vercel where assets may not be downloaded */}
-          <source
-            src="/assets/www.dropbox.com/s/smwoyb18m04n2jn/Animation Longer Lines Website.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://www.dropbox.com/s/smwoyb18m04n2jn/Animation%20Longer%20Lines%20Website.mp4?raw=1"
-            type="video/mp4"
-          />
+          <source src="/videos/hero/hero.webm" type="video/webm" />
+          <source src="/videos/hero/hero.mp4" type="video/mp4" />
         </video>
       </div>
 
