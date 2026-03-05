@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { isSvg } from "@/lib/image-utils";
 
 interface ProductItem {
   title: string;
@@ -34,16 +35,28 @@ export default function ProductGrid({ products }: ProductGridProps) {
 
           {/* Logo overlay */}
           <div className="exciting__logo" data-wf-class="exciting__logo">
-            {product.logoImg && (
-              <Image
-                src={product.logoImg}
-                alt={`${product.title} logo`}
-                width={120}
-                height={50}
-                className="exciting__logo-img"
-                data-wf-class="exciting__logo-img"
-              />
-            )}
+            {product.logoImg &&
+              (isSvg(product.logoImg) ? (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img
+                  src={product.logoImg}
+                  alt={`${product.title} logo`}
+                  width={120}
+                  height={50}
+                  className="exciting__logo-img"
+                  data-wf-class="exciting__logo-img"
+                  loading="lazy"
+                />
+              ) : (
+                <Image
+                  src={product.logoImg}
+                  alt={`${product.title} logo`}
+                  width={120}
+                  height={50}
+                  className="exciting__logo-img"
+                  data-wf-class="exciting__logo-img"
+                />
+              ))}
           </div>
 
           {/* Info overlay on hover */}

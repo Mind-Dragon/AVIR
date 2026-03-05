@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { isSvg } from "@/lib/image-utils";
 
 interface BrandItem {
   logoImg: string;
@@ -19,16 +20,28 @@ export default function BrandGrid({ brands }: BrandGridProps) {
           data-wf-class="partner__item w-dyn-item"
         >
           <div className="partner__logo">
-            {brand.logoImg && (
-              <Image
-                src={brand.logoImg}
-                alt=""
-                width={200}
-                height={60}
-                className="partner__logo-img"
-                data-wf-class="partner__logo-img"
-              />
-            )}
+            {brand.logoImg &&
+              (isSvg(brand.logoImg) ? (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img
+                  src={brand.logoImg}
+                  alt=""
+                  width={200}
+                  height={60}
+                  className="partner__logo-img"
+                  data-wf-class="partner__logo-img"
+                  loading="lazy"
+                />
+              ) : (
+                <Image
+                  src={brand.logoImg}
+                  alt=""
+                  width={200}
+                  height={60}
+                  className="partner__logo-img"
+                  data-wf-class="partner__logo-img"
+                />
+              ))}
           </div>
           {brand.link && (
             <a
