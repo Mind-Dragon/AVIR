@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { CITIES } from "@/lib/cities";
 
 /** Navigation links in footer (first column) */
 const FOOTER_NAV_LINKS = [
@@ -24,34 +25,11 @@ const FOOTER_SERVICES = [
   { text: "Networking", href: "/services#networking" },
 ] as const;
 
-/** Cities served — from index.html footer */
-const FOOTER_CITIES = [
-  { text: "Banning", href: "/city/banning" },
-  { text: "Beaumont", href: "/city/beaumont" },
-  { text: "Bermuda Dunes", href: "/city/bermuda-dunes" },
-  { text: "Big Bear", href: "/city/big-bear" },
-  { text: "Cathedral City", href: "/city/cathedral-city" },
-  { text: "Coachella", href: "/city/coachella" },
-  { text: "Idyllwild", href: "/city/idyllwild" },
-  { text: "Indian Wells", href: "/city/indian-wells" },
-  { text: "Indio", href: "/city/indio" },
-  { text: "Joshua Tree", href: "/city/joshua-tree" },
-  { text: "La Quinta", href: "/city/la-quinta" },
-  { text: "Lake Arrowhead", href: "/city/lake-arrowhead" },
-  { text: "Moreno Valley", href: "/city/moreno-valley" },
-  { text: "Murrieta", href: "/city/murrieta" },
-  { text: "Palm Desert", href: "/city/palm-desert" },
-  { text: "Palm Springs", href: "/city/palm-springs" },
-  { text: "Rancho Mirage", href: "/city/rancho-mirage" },
-  { text: "Redlands", href: "/city/redlands" },
-  { text: "Riverside", href: "/city/riverside" },
-  { text: "San Bernardino", href: "/city/san-bernardino" },
-  { text: "Temecula", href: "/city/temecula" },
-  { text: "Thermal", href: "/city/thermal" },
-  { text: "Thousand Palms", href: "/city/thousand-palms" },
-  { text: "Yucaipa", href: "/city/yucaipa" },
-  { text: "Yucca Valley", href: "/city/yucca-valley" },
-] as const;
+/** Cities served — derived from shared city data */
+const FOOTER_CITIES = CITIES.map((city) => ({
+  text: city.name,
+  href: `/city/${city.slug}`,
+}));
 
 export default function Footer() {
   return (
@@ -157,7 +135,6 @@ export default function Footer() {
                   key={city.href}
                   href={city.href}
                   className="footer-cities-link"
-                  data-wf-class="footer-cities-link"
                 >
                   {city.text}
                 </Link>

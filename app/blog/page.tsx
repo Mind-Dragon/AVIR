@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, resolveImageUrl } from "@/lib/blog";
+import { canonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Blog | AVIR",
   description:
     "California Living at its Finest: The Latest in Luxury Home Automation. Read the AVIR blog for news on home cinema, automation, lighting, shading, and more.",
+  alternates: { canonical: canonicalUrl("/blog") },
   openGraph: {
     title: "Blog | AVIR",
     description:
       "California Living at its Finest: The Latest in Luxury Home Automation.",
     type: "website",
-    url: "https://www.avir.com/blog",
+    url: canonicalUrl("/blog"),
   },
 };
 

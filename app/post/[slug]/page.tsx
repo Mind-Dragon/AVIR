@@ -7,6 +7,7 @@ import {
   resolveImageUrl,
   rewriteBodyImages,
 } from "@/lib/blog";
+import { canonicalUrl } from "@/lib/seo";
 
 /* ------------------------------------------------------------------ */
 /*  Static params — pre-render all 108 slugs                           */
@@ -36,12 +37,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
   return {
     title: `${post.title} | AVIR`,
     description,
+    alternates: { canonical: canonicalUrl(`/post/${post.slug}`) },
     openGraph: {
       title: post.title,
       description,
       type: "article",
       publishedTime: post.dateISO,
-      url: `https://www.avir.com/post/${post.slug}`,
+      url: canonicalUrl(`/post/${post.slug}`),
       images: [{ url: ogImage, alt: post.title }],
     },
     twitter: {

@@ -3,11 +3,19 @@ import { getServicesData } from "@/lib/page-data";
 import FooterCTA from "@/components/layout/FooterCTA";
 import ServiceItem from "@/components/services/ServiceItem";
 import VipSection from "@/components/services/VipSection";
+import { canonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Services | AVIR",
   description:
     "We offer an array of specialty services custom-tailored to your needs. From individual rooms to large-scale commercial buildings, we ensure quality each step of the way.",
+  alternates: { canonical: canonicalUrl("/services") },
+  openGraph: {
+    title: "Services | AVIR",
+    description:
+      "We offer an array of specialty services custom-tailored to your needs. From individual rooms to large-scale commercial buildings, we ensure quality each step of the way.",
+    url: canonicalUrl("/services"),
+  },
 };
 
 export default function ServicesPage() {
