@@ -100,7 +100,6 @@ export function getServicesData(): ServicesPageData {
 /* ------------------------------------------------------------------ */
 
 export interface BrandItem {
-  productImg: string;
   logoImg: string;
   link: string;
 }
@@ -114,22 +113,20 @@ export interface BrandsPageData {
 export function getBrandsData(): BrandsPageData {
   const $ = loadPageHtml("brands");
 
-  const title = $(".section.title .page-title").text().trim();
+  // Strip soft hyphens (\u00AD) from the title so it never hyphenates
+  const title = $(".section.title .page-title").text().trim().replace(/\u00AD/g, "");
   const subtitle = $(".section.title p").first().text().trim();
 
   const brands: BrandItem[] = [];
   $(".partner__item").each((_i, el) => {
-    const allImgs: string[] = [];
-    $(el)
-      .find("img")
-      .each((_j, img) => {
-        allImgs.push($(img).attr("src") || "");
-      });
+    // The logo image has class "partner__logo"
+    const logoImg =
+      $(el).find("img.partner__logo").attr("src") || "";
+    // Links use class "button partner" (not target=_blank)
     const link =
-      $(el).find("a[target=_blank]").attr("href") || "";
+      $(el).find("a.button.partner").first().attr("href") || "";
     brands.push({
-      productImg: resolveAsset(allImgs[0] || ""),
-      logoImg: resolveAsset(allImgs[1] || ""),
+      logoImg: resolveAsset(logoImg),
       link,
     });
   });
