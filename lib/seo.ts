@@ -32,7 +32,8 @@ export const DEFAULT_OG_IMAGE_CDN =
  * skips downloading the 571 MB asset bundle.
  */
 export function resolveDefaultOgImage(): string {
-  const absPath = path.join(process.cwd(), "public", DEFAULT_OG_IMAGE_PATH);
+  const decodedPath = decodeURIComponent(DEFAULT_OG_IMAGE_PATH);
+  const absPath = path.join(process.cwd(), "public", decodedPath);
   if (fs.existsSync(absPath)) {
     return DEFAULT_OG_IMAGE_PATH;
   }
@@ -45,7 +46,8 @@ export function resolveDefaultOgImage(): string {
  * otherwise returns the CDN URL directly.
  */
 export function resolveDefaultOgImageAbsolute(): string {
-  const absPath = path.join(process.cwd(), "public", DEFAULT_OG_IMAGE_PATH);
+  const decodedPath = decodeURIComponent(DEFAULT_OG_IMAGE_PATH);
+  const absPath = path.join(process.cwd(), "public", decodedPath);
   if (fs.existsSync(absPath)) {
     return `${SITE_URL}${DEFAULT_OG_IMAGE_PATH}`;
   }
