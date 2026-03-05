@@ -71,6 +71,9 @@ const Turnstile = forwardRef<TurnstileHandle, TurnstileProps>(
     }, [onVerify, onExpire, onError]);
 
     useEffect(() => {
+      let loadHandler: (() => void) | null = null;
+      let loadTarget: Element | null = null;
+
       if (scriptLoadedRef.current) {
         renderWidget();
       } else {
@@ -80,8 +83,18 @@ const Turnstile = forwardRef<TurnstileHandle, TurnstileProps>(
         );
 
         if (existing) {
-          scriptLoadedRef.current = true;
-          renderWidget();
+          if (window.turnstile) {
+            scriptLoadedRef.current = true;
+            renderWidget();
+          } else {
+            /* Script tag exists but hasn't finished loading yet */
+            loadHandler = () => {
+              scriptLoadedRef.current = true;
+              renderWidget();
+            };
+            loadTarget = existing;
+            existing.addEventListener("load", loadHandler);
+          }
         } else {
           const script = document.createElement("script");
           script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
@@ -95,6 +108,9 @@ const Turnstile = forwardRef<TurnstileHandle, TurnstileProps>(
       }
 
       return () => {
+        if (loadHandler && loadTarget) {
+          loadTarget.removeEventListener("load", loadHandler);
+        }
         if (widgetIdRef.current !== null && window.turnstile) {
           window.turnstile.remove(widgetIdRef.current);
           widgetIdRef.current = null;
