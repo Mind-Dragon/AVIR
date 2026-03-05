@@ -11,6 +11,13 @@
  *   node scripts/prebuild-assets.mjs
  */
 
+// Skip asset download on Vercel — assets are served from CDN during preview
+// The 567MB public/assets/ folder exceeds Vercel's 300MB Lambda size limit
+if (process.env.VERCEL) {
+  console.log("[prebuild-assets] Running on Vercel — skipping asset download (CDN URLs used at runtime)");
+  process.exit(0);
+}
+
 import {
   writeFileSync,
   mkdirSync,
