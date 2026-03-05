@@ -2783,3 +2783,289 @@ a {
     min-width: unset;
   }
 }
+
+/* ================================================================== */
+/*  Gallery / Portfolio / Lightbox Styles (HEI-252)                    */
+/* ================================================================== */
+
+/* --- Gallery-specific title helpers ------------------------------- */
+
+.title__content {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.title__left {
+  flex: 1;
+}
+
+.title__right {
+  flex: 1;
+  padding-top: 12px;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--joshua-rocks);
+  margin: 0;
+}
+
+/* --- Gallery Grid ------------------------------------------------- */
+
+.gallery-section {
+  padding: 60px 0 80px;
+}
+
+.gallery__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery__item {
+  width: calc(50% - 8px);
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Every 3rd item spans full width — matches Webflow :nth-child(3n) rule */
+.gallery__item:nth-child(3n) {
+  width: 100%;
+}
+
+.gallery__link {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery__link:hover .gallery__image {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+.gallery__back-wrap {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.button__icon-left {
+  margin-right: 8px;
+}
+
+/* --- Portfolio Grid ----------------------------------------------- */
+
+.portfolio-section {
+  padding: 60px 0 80px;
+}
+
+.portfolio__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio__item {
+  flex: 1;
+  min-width: 280px;
+}
+
+.portfolio__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  color: var(--off-black);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio__inner:hover {
+  transform: translateY(-4px);
+}
+
+.portfolio__cover-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.portfolio__title {
+  font-family: termina, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 20px 0 12px;
+}
+
+.button.is--with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button__icon {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio__inner:hover .button__icon {
+  transform: translateX(4px);
+}
+
+/* --- Lightbox ----------------------------------------------------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10001;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.lightbox__close:hover {
+  opacity: 1;
+}
+
+.lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10001;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px 12px;
+  border-radius: 8px;
+  opacity: 0.7;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.lightbox__nav:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox__nav--prev {
+  left: 20px;
+}
+
+.lightbox__nav--next {
+  right: 20px;
+}
+
+.lightbox__image-wrap {
+  position: relative;
+  width: 90vw;
+  height: 85vh;
+  cursor: default;
+}
+
+.lightbox__image {
+  object-fit: contain;
+}
+
+.lightbox__counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-family: termina, sans-serif;
+}
+
+/* --- Footer CTA Section ------------------------------------------ */
+
+.footer-cta-section {
+  padding: 0;
+}
+
+/* --- Gallery / Portfolio / Lightbox Responsive -------------------- */
+
+@media screen and (max-width: 991px) {
+  .title__content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .portfolio__cover-image {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__item {
+    width: 100%;
+  }
+
+  .gallery__item:nth-child(3n) {
+    width: 100%;
+  }
+
+  .portfolio__cover-image {
+    height: 250px;
+  }
+
+  .lightbox__nav--prev {
+    left: 8px;
+  }
+
+  .lightbox__nav--next {
+    right: 8px;
+  }
+
+  .lightbox__image-wrap {
+    width: 96vw;
+    height: 80vh;
+  }
+}
