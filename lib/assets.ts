@@ -1,4 +1,5 @@
-import assetMapData from "@/data/asset-map.json";
+import fs from "fs";
+import path from "path";
 
 interface AssetEntry {
   originalUrl: string;
@@ -24,14 +25,35 @@ interface AssetMap {
   failed: unknown[];
 }
 
-const assetMap = assetMapData as unknown as AssetMap;
+// Use fs.readFileSync instead of static import to prevent webpack from
+// bundling the 1MB asset-map.json into the Lambda — reads at runtime instead.
+let _assetMap: AssetMap | null = null;
+function getAssetMap(): AssetMap {
+  if (_assetMap) return _assetMap;
+  const filePath = path.join(process.cwd(), "data", "asset-map.json");
+  const raw = fs.readFileSync(filePath, "utf-8");
+  _assetMap = JSON.parse(raw) as AssetMap;
+  return _assetMap;
+}
 
 /** Lookup table: CDN URL → local path (prefixed with /) */
-const urlToLocal: Record<string, string> = {};
-for (const asset of assetMap.assets) {
-  // localPath is "public/assets/..." — strip "public" so Next.js serves from /assets/
-  // Percent-encode each path segment to handle spaces and special characters
-  urlToLocal[asset.originalUrl] = "/" + asset.localPath.replace(/^public\//, "").split("/").map(segment => encodeURIComponent(segment)).join("/");
+let _urlToLocal: Record<string, string> | null = null;
+function getUrlToLocal(): Record<string, string> {
+  if (_urlToLocal) return _urlToLocal;
+  const assetMap = getAssetMap();
+  _urlToLocal = {};
+  for (const asset of assetMap.assets) {
+    // localPath is "public/assets/..." — strip "public" so Next.js serves from /assets/
+    // Percent-encode each path segment to handle spaces and special characters
+    _urlToLocal[asset.originalUrl] =
+      "/" +
+      asset.localPath
+        .replace(/^\/public\//, "")
+        .split("/")
+        .map((segment) => encodeURIComponent(segment))
+        .join("/");
+  }
+  return _urlToLocal;
 }
 
 /**
@@ -40,7 +62,7 @@ for (const asset of assetMap.assets) {
  */
 export function resolveAsset(cdnUrl: string): string {
   if (!cdnUrl) return "";
-  return urlToLocal[cdnUrl] ?? cdnUrl;
+  return getUrlToLocal()[cdnUrl] ?? cdnUrl;
 }
 
 /**
@@ -49,6 +71,7 @@ export function resolveAsset(cdnUrl: string): string {
 export function getAssetDimensions(
   cdnUrl: string
 ): { width: number; height: number } | null {
+  const assetMap = getAssetMap();
   const entry = assetMap.assets.find((a) => a.originalUrl === cdnUrl);
   if (entry && entry.width > 0 && entry.height > 0) {
     return { width: entry.width, height: entry.height };
