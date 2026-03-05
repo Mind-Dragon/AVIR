@@ -46,22 +46,32 @@ export default function CareerDetailPage({ params }: CareerDetailPageProps) {
     <>
       {/* Title Section */}
       <div className="section-title" data-wf-class="section title">
+        <div className="title__bg" aria-hidden="true" />
         <div className="container">
-          <h1>{data.title}</h1>
-        </div>
-      </div>
-
-      {/* Job Description Section */}
-      <div className="section" data-wf-class="section">
-        <div className="container">
-          <div className="w-richtext" data-wf-class="w-richtext">
-            <p>{data.jobDescription}</p>
+          <div className="col-wrapper">
+            <div className="col-50">
+              <h1 className="page-title">{data.title}</h1>
+            </div>
+            <div className="col-50 title-right" />
           </div>
         </div>
       </div>
 
-      {/* Apply Section + Modal (client component) */}
-      <CareerApplicationForm positionTitle={data.title} />
+      {/* Two-column section: Job Description (left) + Application Form (right) */}
+      <div className="section" data-wf-class="section">
+        <div className="container">
+          <div className="career-detail-grid">
+            <div className="career-detail-grid__description">
+              <div className="w-richtext" data-wf-class="w-richtext">
+                <p>{data.jobDescription}</p>
+              </div>
+            </div>
+            <div className="career-detail-grid__form">
+              <CareerApplicationForm positionTitle={data.title} />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Footer CTA */}
       <FooterCTA />

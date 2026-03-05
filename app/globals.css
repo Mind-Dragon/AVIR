@@ -1167,6 +1167,26 @@ a {
     border-radius: 12px;
     color: #c83232;
   }
+
+  /* ===== Career Detail Two-Column Layout ===== */
+
+  .career-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .career-detail-grid__description {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .career-detail-grid__form {
+    background-color: var(--light-shade);
+    border-radius: 20px;
+    padding: 40px;
+  }
 }
 
 /* ===== Responsive ===== */
@@ -1227,6 +1247,14 @@ a {
     }
 
     .model-box {
+      padding: 30px;
+    }
+
+    .career-detail-grid {
+      gap: 40px;
+    }
+
+    .career-detail-grid__form {
       padding: 30px;
     }
   }
@@ -1295,6 +1323,15 @@ a {
 
     .section-title {
       min-height: 200px;
+    }
+
+    .career-detail-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .career-detail-grid__form {
+      padding: 25px;
     }
 
     .title__bg {
