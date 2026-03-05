@@ -19,9 +19,14 @@ for (const asset of (assetMapData as unknown as { assets: AssetEntry[] }).assets
   urlToLocal[asset.originalUrl] = "/" + asset.localPath.replace(/^public\//, "").split("/").map(segment => encodeURIComponent(segment)).join("/");
 }
 
-/** Resolve CDN URL → local /public/assets/ path */
+/**
+ * Resolve CDN URL → local /public/assets/ path.
+ * On Vercel the assets are not downloaded (prebuild skips), so fall back to
+ * the original CDN URL which next/image can serve via remotePatterns.
+ */
 export function resolveAsset(cdnUrl: string): string {
   if (!cdnUrl) return "";
+  if (process.env.VERCEL) return cdnUrl;
   return urlToLocal[cdnUrl] ?? cdnUrl;
 }
 
@@ -142,14 +147,26 @@ export interface TeamMember {
   bio: string;
 }
 
+export interface AboutImage {
+  src: string;
+  alt: string;
+}
+
+export interface PartnerSection {
+  name: string;
+  description: string;
+  image: AboutImage | null;
+}
+
 export interface AboutPageData {
   title: string;
   subtitle: string;
   storyParagraphs: string[];
+  storyImage: AboutImage | null;
   ethosText: string;
   teamMembers: TeamMember[];
   processSections: ProcessSection[];
-  partnerTypes: PartnerType[];
+  partnerSections: PartnerSection[];
 }
 
 export function getAboutData(): AboutPageData {
@@ -197,17 +214,29 @@ export function getAboutData(): AboutPageData {
     teamMembers.push({ name, role, bio });
   });
 
+  // Our Story hero image (full-bleed photo)
+  const storyImg = $(".image-rounded.full-height").first();
+  const storyImage: AboutImage | null = storyImg.length
+    ? { src: resolveAsset(storyImg.attr("src") || ""), alt: storyImg.attr("alt") || "" }
+    : null;
+
   // Process sections and partner types from the about page
   const processSections: ProcessSection[] = [];
-  const partnerTypes: PartnerType[] = [];
+  const partnerSections: PartnerSection[] = [];
 
   $("h3").each((_i, el) => {
     const text = $(el).text().trim();
     if (text === "For Residences" || text === "For Commercial Projects") {
+      const colWrapper = $(el).closest(".col-wrapper");
+      const processImg = colWrapper.find("img.process__image").first();
+      const processImage: AboutImage | null = processImg.length
+        ? { src: resolveAsset(processImg.attr("src") || ""), alt: processImg.attr("alt") || "" }
+        : null;
       const parentDiv = $(el).parent();
       processSections.push({
         name: text,
         description: parentDiv.find("p").text().trim(),
+        image: processImage,
       });
     }
     if (
@@ -215,15 +244,22 @@ export function getAboutData(): AboutPageData {
       text === "Architects" ||
       text === "Builders"
     ) {
+      // Walk up to the .col-wrapper.partners row and find the image
+      const colWrapper = $(el).closest(".col-wrapper");
+      const img = colWrapper.find("img.partner__image").first();
+      const partnerImage: AboutImage | null = img.length
+        ? { src: resolveAsset(img.attr("src") || ""), alt: img.attr("alt") || "" }
+        : null;
       const parentDiv = $(el).parent();
-      partnerTypes.push({
+      partnerSections.push({
         name: text,
         description: parentDiv.find("p").text().trim(),
+        image: partnerImage,
       });
     }
   });
 
-  return { title, subtitle, storyParagraphs, ethosText, teamMembers, processSections, partnerTypes };
+  return { title, subtitle, storyParagraphs, storyImage, ethosText, teamMembers, processSections, partnerSections };
 }
 
 /* ------------------------------------------------------------------ */
@@ -233,6 +269,7 @@ export function getAboutData(): AboutPageData {
 export interface ProcessSection {
   name: string;
   description: string;
+  image?: AboutImage | null;
 }
 
 export interface PartnerType {
