@@ -8,7 +8,12 @@ import {
   CLIENT_LOCATIONS,
   getCityBySlug,
 } from "@/lib/cities";
-import { canonicalUrl, DEFAULT_OG_IMAGE } from "@/lib/seo";
+import {
+  canonicalUrl,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_PATH,
+  AVIR_LOGO_SVG,
+} from "@/lib/seo";
 
 /* ---------- Static generation ---------- */
 
@@ -64,8 +69,7 @@ function LocalBusinessJsonLd({ cityName }: { cityName: string }) {
       "@type": "City",
       name: cityName,
     },
-    image:
-      "https://cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/6375d62b597feaaa92009bc5_AVIR%20logo%20website%20Final.svg",
+    image: AVIR_LOGO_SVG,
   };
 
   return (
@@ -110,7 +114,7 @@ function LanderImageSection() {
       <div className="container">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/622dcbe20434a82a5cb8e04b_BH15%20Optimized-p-1600.jpeg"
+          src={DEFAULT_OG_IMAGE_PATH}
           alt="A large commercial private club set in the mountains of California, with comprehensive audio and video systems installed by AVIR."
           width={1600}
           height={1057}
