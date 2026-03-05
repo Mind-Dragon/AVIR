@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import { getExcitingProductsData } from "@/lib/page-data";
 import FooterCTA from "@/components/layout/FooterCTA";
 import ProductGrid from "@/components/exciting-products/ProductGrid";
+import { canonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Exciting New Products | AVIR",
   description:
     "Browse some of the most exclusive products we can bring to your next technology installation.",
+  alternates: { canonical: canonicalUrl("/exciting-new-products") },
+  openGraph: {
+    title: "Exciting New Products | AVIR",
+    description:
+      "Browse some of the most exclusive products we can bring to your next technology installation.",
+    url: canonicalUrl("/exciting-new-products"),
+  },
 };
 
 export default function ExcitingProductsPage() {

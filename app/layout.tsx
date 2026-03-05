@@ -2,11 +2,25 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
+import { SITE_URL, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "AVIR | Luxury Smart Home Solutions",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "AVIR | Luxury Smart Home Solutions",
+    template: "%s",
+  },
   description:
     "AVIR provides elite audiovisual, automation, lighting, shading, and home cinema solutions for high-end residential and commercial projects in the Coachella Valley and beyond.",
+  openGraph: {
+    type: "website",
+    siteName: "AVIR",
+    locale: "en_US",
+    images: [{ url: DEFAULT_OG_IMAGE, alt: "AVIR" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FooterCTA from "@/components/layout/FooterCTA";
+import { canonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact | AVIR",
   description:
     "We want to hear from you. Give us a call, send us an email or fill out one of the contact forms below.",
+  alternates: { canonical: canonicalUrl("/contact") },
+  openGraph: {
+    title: "Contact | AVIR",
+    description:
+      "We want to hear from you. Give us a call, send us an email or fill out one of the contact forms below.",
+    url: canonicalUrl("/contact"),
+  },
 };
 
 /* ------------------------------------------------------------------ */
@@ -53,9 +61,40 @@ const CONTACT_CARDS: ContactCard[] = [
 /*  Page                                                               */
 /* ------------------------------------------------------------------ */
 
+function ContactPageJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact AVIR",
+    description:
+      "We want to hear from you. Give us a call, send us an email or fill out one of the contact forms below.",
+    url: "https://www.avir.com/contact",
+    mainEntity: {
+      "@type": "LocalBusiness",
+      name: "AVIR",
+      telephone: "+17607790881",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "41905 Boardwalk, Suite X",
+        addressLocality: "Palm Desert",
+        addressRegion: "CA",
+        postalCode: "92211",
+        addressCountry: "US",
+      },
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function ContactPage() {
   return (
     <>
+      <ContactPageJsonLd />
       {/* Title section */}
       <section className="section title" data-wf-class="section title">
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "80px 20px 40px" }}>

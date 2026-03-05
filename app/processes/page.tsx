@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import { getProcessesData } from "@/lib/page-data";
 import FooterCTA from "@/components/layout/FooterCTA";
+import { canonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Processes | AVIR",
   description: "Working with us is as easy as it gets.",
+  alternates: { canonical: canonicalUrl("/processes") },
+  openGraph: {
+    title: "Processes | AVIR",
+    description: "Working with us is as easy as it gets.",
+    url: canonicalUrl("/processes"),
+  },
 };
 
 export default function ProcessesPage() {
