@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { isSvg } from "@/lib/image-utils";
 
 interface BrandItem {
   logoImg: string;
@@ -7,15 +8,6 @@ interface BrandItem {
 
 interface BrandGridProps {
   brands: BrandItem[];
-}
-
-function isSvg(src: string): boolean {
-  try {
-    const pathname = new URL(src, "https://placeholder.invalid").pathname;
-    return pathname.toLowerCase().endsWith(".svg");
-  } catch {
-    return src.toLowerCase().endsWith(".svg");
-  }
 }
 
 export default function BrandGrid({ brands }: BrandGridProps) {
