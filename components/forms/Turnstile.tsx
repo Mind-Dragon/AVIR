@@ -37,6 +37,12 @@ interface TurnstileProps {
   onError?: () => void;
 }
 
+/**
+ * Cloudflare-provided test site key that always passes validation.
+ * @see https://developers.cloudflare.com/turnstile/troubleshooting/testing/
+ */
+const TURNSTILE_TEST_SITE_KEY = "1x00000000000000000000AA";
+
 const Turnstile = forwardRef<TurnstileHandle, TurnstileProps>(
   function Turnstile({ onVerify, onExpire, onError }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -55,7 +61,11 @@ const Turnstile = forwardRef<TurnstileHandle, TurnstileProps>(
       if (!containerRef.current || !window.turnstile) return;
       if (widgetIdRef.current !== null) return;
 
-      const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+      const siteKey =
+        process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ||
+        (process.env.NODE_ENV !== "production"
+          ? TURNSTILE_TEST_SITE_KEY
+          : undefined);
       if (!siteKey) {
         console.error("NEXT_PUBLIC_TURNSTILE_SITE_KEY is not set");
         return;

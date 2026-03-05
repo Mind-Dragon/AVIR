@@ -5,8 +5,16 @@ import { ServerClient } from "postmark";
 /*  Cloudflare Turnstile verification                                  */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Cloudflare-provided test secret key that always passes validation.
+ * @see https://developers.cloudflare.com/turnstile/troubleshooting/testing/
+ */
+const TURNSTILE_TEST_SECRET_KEY = "1x0000000000000000000000000000000AA";
+
 async function verifyTurnstile(token: string): Promise<boolean> {
-  const secret = process.env.TURNSTILE_SECRET_KEY;
+  const secret =
+    process.env.TURNSTILE_SECRET_KEY ||
+    (process.env.NODE_ENV !== "production" ? TURNSTILE_TEST_SECRET_KEY : undefined);
   if (!secret) {
     console.error("TURNSTILE_SECRET_KEY is not configured");
     return false;
