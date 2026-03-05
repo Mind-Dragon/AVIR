@@ -3,7 +3,6 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { isSvg } from "@/lib/image-utils";
 
 export interface PartnerLogo {
   logoImg: string;
@@ -88,26 +87,17 @@ export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] 
                 rel={logo.link ? "noopener noreferrer" : undefined}
                 className="partner-logos__item"
               >
-                {logo.logoImg &&
-                  (isSvg(logo.logoImg) ? (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img
-                      src={logo.logoImg}
-                      alt=""
-                      width={140}
-                      height={50}
-                      className="partner-logos__img"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <Image
-                      src={logo.logoImg}
-                      alt=""
-                      width={140}
-                      height={50}
-                      className="partner-logos__img"
-                    />
-                  ))}
+                {logo.logoImg && (
+                  /* eslint-disable-next-line @next/next/no-img-element */
+                  <img
+                    src={logo.logoImg}
+                    alt=""
+                    width={140}
+                    height={50}
+                    className="partner-logos__img"
+                    loading="lazy"
+                  />
+                )}
               </a>
             ))}
           </div>
