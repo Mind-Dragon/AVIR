@@ -63,9 +63,10 @@ const Turnstile = forwardRef<TurnstileHandle, TurnstileProps>(
 
       const siteKey =
         process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || TURNSTILE_TEST_SITE_KEY;
-      if (!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY) {
+      if (!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && typeof window !== "undefined") {
         console.warn(
-          "NEXT_PUBLIC_TURNSTILE_SITE_KEY is not set — using Cloudflare test key"
+          "NEXT_PUBLIC_TURNSTILE_SITE_KEY is not set — using Cloudflare test key. " +
+          "Set this env var in your deployment for real bot protection."
         );
       }
 
