@@ -4,13 +4,18 @@ import { useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+export interface PartnerLogo {
+  logoImg: string;
+  link: string;
+}
+
 const PARTNER_TYPES = [
   { text: "Interior Designers", href: "/processes#interior-designers" },
   { text: "Architects", href: "/processes#architects" },
   { text: "Builders", href: "/processes#builders" },
 ] as const;
 
-export default function PartnersSection() {
+export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -70,6 +75,31 @@ export default function PartnersSection() {
             />
           </div>
         </div>
+
+        {/* Brand partner logos grid */}
+        {logos.length > 0 && (
+          <div className="partner-logos__grid">
+            {logos.map((logo, i) => (
+              <a
+                key={i}
+                href={logo.link || "#"}
+                target={logo.link ? "_blank" : undefined}
+                rel={logo.link ? "noopener noreferrer" : undefined}
+                className="partner-logos__item"
+              >
+                {logo.logoImg && (
+                  <Image
+                    src={logo.logoImg}
+                    alt=""
+                    width={140}
+                    height={50}
+                    className="partner-logos__img"
+                  />
+                )}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

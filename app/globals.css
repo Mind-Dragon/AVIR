@@ -1173,12 +1173,7 @@ a {
 /* ===== Responsive ===== */
 
 @layer components {
-  @media screen and (max-width: 991px) {
-    .nav {
-      padding-left: 20px;
-      padding-right: 50px;
-    }
-
+  @media screen and (max-width: 767px) {
     .nav__link-wrap {
       display: none;
     }
@@ -1192,6 +1187,19 @@ a {
 
     .nav-link {
       font-size: 11px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .nav {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .nav-link {
+      font-size: 11px;
+      padding: 5px 8px 2px;
+      margin-right: 1px;
     }
 
     .footer__container {
@@ -1362,6 +1370,14 @@ a {
     pointer-events: none;
   }
 
+  .grain.darken-overlay-new {
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 10, 9, 0.45);
+    z-index: 1;
+    pointer-events: none;
+  }
+
   .home-hero__content-scroll-wrap {
     position: absolute;
     inset: 0;
@@ -1430,8 +1446,35 @@ a {
     opacity: 0.7;
   }
 
+  .hero-content__subheadline {
+    font-size: clamp(14px, 1.5vw, 18px);
+    max-width: 50ch;
+    opacity: 0.75;
+    line-height: 1.6;
+    margin: 20px 0 0;
+    text-align: center;
+    color: var(--white-sand);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .button.is--hero-cta {
+    margin-top: 30px;
+    border: 1px solid var(--white-sand);
+    color: var(--white-sand);
+    background-color: rgba(12, 10, 9, 0.3);
+    transition: color 0.5s, background-color 0.5s;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+
+  .button.is--hero-cta:hover {
+    background-color: var(--white-sand);
+    color: var(--off-black);
+  }
+
   .home-hero__scroll-text {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 14px;
     opacity: 0.6;
     letter-spacing: 0.05em;
@@ -1605,36 +1648,55 @@ a {
     gap: 40px 60px;
   }
 
-  .process-home__step {
+  /* dept__item — matches avir.com process step layout */
+  .dept__item {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
+    position: relative;
+    padding-left: 20px;
   }
 
-  .process-home__step.is--visible {
+  .dept__item.is--visible {
     opacity: 1;
     transform: translateY(0);
   }
 
-  .process-home__heading {
+  .dept__line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: var(--joshua-rocks);
+    opacity: 0.3;
+    border-radius: 2px;
+  }
+
+  .dept__heading-wrap {
+    margin-bottom: 12px;
+  }
+
+  .dept__heading {
     font-family: termina, sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 12px;
     color: var(--off-black);
     background-color: rgba(221, 205, 192, 0.4);
     display: inline-block;
     padding: 10px 20px 7px;
     border-radius: 10px;
+    margin: 0;
   }
 
-  .process-home__para {
+  .dept__para {
     font-size: 15px;
     line-height: 1.7;
     color: var(--off-black);
     opacity: 0.85;
+    margin: 0;
   }
 }
 
@@ -1723,6 +1785,39 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+  }
+
+  /* Brand partner logos grid */
+  .partner-logos__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 24px;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(96, 78, 68, 0.15);
+  }
+
+  .partner-logos__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: rgba(221, 205, 192, 0.2);
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+
+  .partner-logos__item:hover {
+    background-color: rgba(221, 205, 192, 0.5);
+  }
+
+  .partner-logos__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0);
+    transition: filter 0.3s;
   }
 }
 

@@ -5,6 +5,7 @@ import ProcessSection from "@/components/home/ProcessSection";
 import PartnersSection from "@/components/home/PartnersSection";
 import FooterCTA from "@/components/layout/FooterCTA";
 import { canonicalUrl, AVIR_LOCAL_BUSINESS, AVIR_ORGANIZATION } from "@/lib/seo";
+import { getBrandsData } from "@/lib/page-data";
 
 export const metadata: Metadata = {
   title: "AVIR | Luxury Smart Home Solutions",
@@ -23,6 +24,12 @@ export default function Home() {
     { "@context": "https://schema.org", ...AVIR_ORGANIZATION },
   ];
 
+  // Load brand logos for the partners section
+  const { brands } = getBrandsData();
+  const partnerLogos = brands
+    .filter((b) => b.logoImg)
+    .map((b) => ({ logoImg: b.logoImg, link: b.link }));
+
   return (
     <>
       <script
@@ -32,7 +39,7 @@ export default function Home() {
       <HeroSection />
       <ServicesShowcase />
       <ProcessSection />
-      <PartnersSection />
+      <PartnersSection logos={partnerLogos} />
       <FooterCTA />
     </>
   );

@@ -65,11 +65,14 @@ function ProcessStep({
   return (
     <div
       ref={ref}
-      className="process-home__step"
+      className="dept__item"
       style={{ transitionDelay: `${index * 0.08}s` }}
     >
-      <h3 className="process-home__heading">{heading}</h3>
-      <p className="process-home__para">{desc}</p>
+      <div className="dept__line" />
+      <div className="dept__heading-wrap">
+        <h3 className="dept__heading">{heading}</h3>
+      </div>
+      <p className="dept__para">{desc}</p>
     </div>
   );
 }
@@ -88,7 +91,7 @@ export default function ProcessSection() {
           <h2 className="section-heading">Our Process</h2>
         </div>
 
-        {/* Steps */}
+        {/* Steps — matches avir.com dept__item layout */}
         <div className="process-home__grid">
           {PROCESS_STEPS.map((step, i) => (
             <ProcessStep
