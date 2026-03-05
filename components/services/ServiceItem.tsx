@@ -44,7 +44,7 @@ export default function ServiceItem({
           className="button is--with-icon"
           data-wf-class="button is--with-icon w-inline-block"
         >
-          <span>Home Cinema Gallery</span>
+          <span>{name} Gallery</span>
           <span className="button__line" />
           <span className="button__circle" />
         </Link>
