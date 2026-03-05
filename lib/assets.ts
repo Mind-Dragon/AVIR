@@ -30,7 +30,8 @@ const assetMap = assetMapData as unknown as AssetMap;
 const urlToLocal: Record<string, string> = {};
 for (const asset of assetMap.assets) {
   // localPath is "public/assets/..." — strip "public" so Next.js serves from /assets/
-  urlToLocal[asset.originalUrl] = "/" + asset.localPath.replace(/^public\//, "");
+  // Percent-encode each path segment to handle spaces and special characters
+  urlToLocal[asset.originalUrl] = "/" + asset.localPath.replace(/^public\//, "").split("/").map(segment => encodeURIComponent(segment)).join("/");
 }
 
 /**

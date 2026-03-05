@@ -9,14 +9,14 @@ export const SITE_URL =
 
 /** AVIR logo — local asset path (SVG) */
 export const AVIR_LOGO_PATH =
-  "/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/6375d62b597feaaa92009bc5_AVIR logo website Final.svg";
+  "/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/6375d62b597feaaa92009bc5_AVIR%20logo%20website%20Final.svg";
 
 /** AVIR logo — absolute URL for JSON-LD / external consumers */
 export const AVIR_LOGO_SVG = `${SITE_URL}${AVIR_LOGO_PATH}`;
 
 /** Default OG image — local asset path (raster) */
 export const DEFAULT_OG_IMAGE_PATH =
-  "/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/622dcbe20434a82a5cb8e04b_BH15 Optimized-p-1600.jpeg";
+  "/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/622dcbe20434a82a5cb8e04b_BH15%20Optimized-p-1600.jpeg";
 
 /** Default OG image — absolute URL for JSON-LD / external consumers */
 export const DEFAULT_OG_IMAGE = `${SITE_URL}${DEFAULT_OG_IMAGE_PATH}`;
