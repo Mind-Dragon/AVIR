@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import { getAboutData } from "@/lib/page-data";
 import FooterCTA from "@/components/layout/FooterCTA";
 import TeamGrid from "@/components/about/TeamGrid";
+import { canonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "About AVIR | AVIR",
+  title: "About AVIR",
   description:
     "Serving the West Coast, Based in Coachella Valley, AVIR provides elite smart environment solutions for high-end residential and commercial projects.",
+  alternates: { canonical: canonicalUrl("/about-avir") },
+  openGraph: {
+    title: "About AVIR",
+    description:
+      "Serving the West Coast, Based in Coachella Valley, AVIR provides elite smart environment solutions for high-end residential and commercial projects.",
+    url: canonicalUrl("/about-avir"),
+  },
 };
 
 export default function AboutPage() {

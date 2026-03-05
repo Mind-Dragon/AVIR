@@ -3,12 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import FooterCTA from "@/components/layout/FooterCTA";
 import { getCareersIndexData } from "@/lib/careers-data";
+import { canonicalUrl } from "@/lib/seo";
 
 const data = getCareersIndexData();
 
 export const metadata: Metadata = {
-  title: data.title,
-  description: data.metaDescription,
+  title: `${data.title} | AVIR`,
+  description: data.metaDescription || "Work with us.",
+  alternates: { canonical: canonicalUrl("/careers") },
+  openGraph: {
+    title: `${data.title} | AVIR`,
+    description: data.metaDescription || "Work with us.",
+    url: canonicalUrl("/careers"),
+  },
 };
 
 export default function CareersPage() {

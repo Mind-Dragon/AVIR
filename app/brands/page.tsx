@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import { getBrandsData } from "@/lib/page-data";
 import FooterCTA from "@/components/layout/FooterCTA";
 import BrandGrid from "@/components/brands/BrandGrid";
+import { canonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Brands | AVIR",
   description:
     "AVIR cultivates exclusive partnerships to secure only the best products for our solutions.",
+  alternates: { canonical: canonicalUrl("/brands") },
+  openGraph: {
+    title: "Brands | AVIR",
+    description:
+      "AVIR cultivates exclusive partnerships to secure only the best products for our solutions.",
+    url: canonicalUrl("/brands"),
+  },
 };
 
 export default function BrandsPage() {

@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import FooterCTA from "@/components/layout/FooterCTA";
 import { getPortfolioData } from "@/lib/gallery-data";
+import { canonicalUrl } from "@/lib/seo";
 
 /* ------------------------------------------------------------------ */
 /*  Metadata                                                           */
@@ -11,7 +12,14 @@ import { getPortfolioData } from "@/lib/gallery-data";
 export const metadata: Metadata = {
   title: "Portfolio | AVIR",
   description:
-    "Explore AVIR's portfolio of luxury smart home and commercial installations — Home Cinema, Lifestyle, and Commercial galleries.",
+    "Browse a small sample of some of our favorite projects.",
+  alternates: { canonical: canonicalUrl("/portfolio") },
+  openGraph: {
+    title: "Portfolio | AVIR",
+    description:
+      "Browse a small sample of some of our favorite projects.",
+    url: canonicalUrl("/portfolio"),
+  },
 };
 
 /* ------------------------------------------------------------------ */

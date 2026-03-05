@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
 import FooterCTA from "@/components/layout/FooterCTA";
 import { getGalleryData, getAllGallerySlugs } from "@/lib/gallery-data";
+import { canonicalUrl } from "@/lib/seo";
 
 /* ------------------------------------------------------------------ */
 /*  Static generation                                                  */
@@ -24,11 +25,18 @@ interface PageProps {
 export function generateMetadata({ params }: PageProps): Metadata {
   const data = getGalleryData(params.slug);
   if (!data) return {};
+  const description =
+    data.tagline ||
+    `Browse AVIR's ${data.title.toLowerCase()} gallery — luxury smart home installations.`;
   return {
     title: `${data.title} Gallery | AVIR`,
-    description:
-      data.tagline ||
-      `Browse AVIR's ${data.title.toLowerCase()} gallery — luxury smart home installations.`,
+    description,
+    alternates: { canonical: canonicalUrl(`/galleries/${params.slug}`) },
+    openGraph: {
+      title: `${data.title} Gallery | AVIR`,
+      description,
+      url: canonicalUrl(`/galleries/${params.slug}`),
+    },
   };
 }
 
@@ -36,12 +44,38 @@ export function generateMetadata({ params }: PageProps): Metadata {
 /*  Page                                                               */
 /* ------------------------------------------------------------------ */
 
+function ImageGalleryJsonLd({ title, slug, images }: { title: string; slug: string; images: Array<{ src: string; alt: string }> }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    name: `${title} Gallery`,
+    url: `https://www.avir.com/galleries/${slug}`,
+    publisher: {
+      "@type": "Organization",
+      name: "AVIR",
+      url: "https://www.avir.com",
+    },
+    image: images.slice(0, 20).map((img) => ({
+      "@type": "ImageObject",
+      url: img.src.startsWith("http") ? img.src : `https://www.avir.com${img.src}`,
+      name: img.alt || title,
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function GalleryPage({ params }: PageProps) {
   const data = getGalleryData(params.slug);
   if (!data) notFound();
 
   return (
     <>
+      <ImageGalleryJsonLd title={data.title} slug={data.slug} images={data.images} />
       {/* Title section — split layout matching Webflow "section title" */}
       <section className="section-title">
         <div className="title__bg" />

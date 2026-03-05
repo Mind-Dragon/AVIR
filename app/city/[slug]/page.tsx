@@ -8,6 +8,7 @@ import {
   CLIENT_LOCATIONS,
   getCityBySlug,
 } from "@/lib/cities";
+import { canonicalUrl, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 /* ---------- Static generation ---------- */
 
@@ -25,11 +26,18 @@ export function generateMetadata({ params }: CityPageProps): Metadata {
   const city = getCityBySlug(params.slug);
   if (!city) return {};
 
+  const title = `Audio Video & Smart Home Services in ${city.name} | AVIR`;
+  const description = `AVIR provides luxury smart home solutions in ${city.name} — home cinema, automation, lighting, shading, music, security & networking. Call (760) 779-0881.`;
+
   return {
-    title: `Audio Video & Smart Home Services in ${city.name} | AVIR`,
-    description: `AVIR provides luxury smart home solutions in ${city.name} — home cinema, automation, lighting, shading, music, security & networking. Call (760) 779-0881.`,
-    alternates: {
-      canonical: `/city/${city.slug}`,
+    title,
+    description,
+    alternates: { canonical: canonicalUrl(`/city/${city.slug}`) },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl(`/city/${city.slug}`),
+      images: [{ url: DEFAULT_OG_IMAGE, alt: `AVIR in ${city.name}` }],
     },
   };
 }

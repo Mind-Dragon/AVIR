@@ -7,6 +7,7 @@ import {
   getCareerDetailData,
   isValidCareerSlug,
 } from "@/lib/careers-data";
+import { canonicalUrl } from "@/lib/seo";
 
 interface CareerDetailPageProps {
   params: { slug: string };
@@ -21,9 +22,16 @@ export function generateMetadata({ params }: CareerDetailPageProps): Metadata {
     return { title: "Not Found" };
   }
   const data = getCareerDetailData(params.slug);
+  const description = data.metaDescription || `${data.title} - AVIR Careers`;
   return {
     title: `${data.title} — AVIR Careers`,
-    description: data.metaDescription,
+    description,
+    alternates: { canonical: canonicalUrl(`/careers/${params.slug}`) },
+    openGraph: {
+      title: `${data.title} — AVIR Careers`,
+      description,
+      url: canonicalUrl(`/careers/${params.slug}`),
+    },
   };
 }
 
