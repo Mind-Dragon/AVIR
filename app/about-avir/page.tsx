@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getAboutData } from "@/lib/page-data";
 import FooterCTA from "@/components/layout/FooterCTA";
 import TeamGrid from "@/components/about/TeamGrid";
@@ -44,6 +45,17 @@ export default function AboutPage() {
         <div className="page-container">
           <h2 className="section__heading">Our Story</h2>
           <div className="about-story__content">
+            {data.storyImage && (
+              <div className="about-story__image-wrap">
+                <Image
+                  src={data.storyImage.src}
+                  alt={data.storyImage.alt}
+                  width={1200}
+                  height={800}
+                  className="about-story__image"
+                />
+              </div>
+            )}
             {data.storyParagraphs.map((para, i) => (
               <p key={i} className="about-story__para">
                 {para}
@@ -98,7 +110,7 @@ export default function AboutPage() {
       )}
 
       {/* Working with Partners */}
-      {data.partnerTypes.length > 0 && (
+      {data.partnerSections.length > 0 && (
         <section
           className="section-content section-partners"
           data-wf-class="section partners"
@@ -106,10 +118,26 @@ export default function AboutPage() {
           <div className="page-container">
             <h2 className="section__heading">Working with Partners</h2>
             <div className="partners__grid">
-              {data.partnerTypes.map((partner) => (
-                <div key={partner.name} className="partner-type__item">
-                  <h3 className="partner-type__title">{partner.name}</h3>
-                  <p className="partner-type__text">{partner.description}</p>
+              {data.partnerSections.map((partner, idx) => (
+                <div
+                  key={partner.name}
+                  className={`col-wrapper partners ${idx % 2 !== 0 ? "is--reverse" : ""}`}
+                >
+                  {partner.image && (
+                    <div className="col-40">
+                      <Image
+                        src={partner.image.src}
+                        alt={partner.image.alt}
+                        width={800}
+                        height={600}
+                        className="partner__image"
+                      />
+                    </div>
+                  )}
+                  <div className="col-60 is--vertical-middle">
+                    <h3 className="partner-type__title">{partner.name}</h3>
+                    <p className="partner-type__text">{partner.description}</p>
+                  </div>
                 </div>
               ))}
             </div>

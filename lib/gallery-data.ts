@@ -50,11 +50,12 @@ export interface PortfolioPageData {
 
 /**
  * Convert a CDN URL to a local /assets/ path.
- * e.g. https://cdn.prod.website-files.com/61d8.../img.jpeg
- *   → /assets/cdn.prod.website-files.com/61d8.../img.jpeg
+ * On Vercel the assets are not downloaded (prebuild skips), so return
+ * the original CDN URL which next/image can serve via remotePatterns.
  */
 function cdnToLocal(url: string): string {
   if (!url || !url.startsWith("http")) return url;
+  if (process.env.VERCEL) return url;
   try {
     const parsed = new URL(url);
     const decodedPath = decodeURIComponent(parsed.pathname);
