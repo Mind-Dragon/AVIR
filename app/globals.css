@@ -2005,6 +2005,11 @@ a {
 /* ===== Form Page Styles ===== */
 
 @layer components {
+  /* Override the global .section overflow:hidden so long forms are never clipped */
+  .section:has(.form-page__container) {
+    overflow: visible;
+  }
+
   .form-page__container {
     max-width: 900px;
     margin: 0 auto;
@@ -2144,11 +2149,41 @@ a {
   }
 
   .form__checkbox {
+    /* Hide the native checkbox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 18px;
     height: 18px;
-    accent-color: var(--joshua-rocks);
+    border: 1px solid rgba(96, 78, 68, 0.35);
+    border-radius: 2px;
+    background-color: transparent;
     cursor: pointer;
     flex-shrink: 0;
+    position: relative;
+    transition: border-color 0.2s, background-color 0.2s;
+  }
+
+  .form__checkbox:checked {
+    background-color: var(--joshua-rocks);
+    border-color: var(--joshua-rocks);
+  }
+
+  .form__checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .form__checkbox:focus-visible {
+    outline: 2px solid var(--joshua-rocks);
+    outline-offset: 2px;
   }
 
   .form__success {
@@ -2175,6 +2210,10 @@ a {
   .form__error p {
     color: #9a2020;
     font-size: 14px;
+  }
+
+  .form-submit {
+    margin-top: 24px;
   }
 
   /* Responsive */
