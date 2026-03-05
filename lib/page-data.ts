@@ -14,7 +14,8 @@ interface AssetEntry {
 
 const urlToLocal: Record<string, string> = {};
 for (const asset of (assetMapData as unknown as { assets: AssetEntry[] }).assets) {
-  urlToLocal[asset.originalUrl] = "/" + asset.localPath;
+  // localPath is "public/assets/..." — strip "public" so Next.js serves from /assets/
+  urlToLocal[asset.originalUrl] = "/" + asset.localPath.replace(/^public\//, "");
 }
 
 /** Resolve CDN URL → local /public/assets/ path */
