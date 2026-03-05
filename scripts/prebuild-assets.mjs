@@ -24,9 +24,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const ASSET_MAP_PATH = resolve(ROOT, "data", "asset-map.json");
 
-const MAX_CONCURRENT = 25;
-const FETCH_TIMEOUT_MS = 30_000;
-const MAX_RETRIES = 2;
+const MAX_CONCURRENT = 50;
+const FETCH_TIMEOUT_MS = 15_000;
+const MAX_RETRIES = 1;
+const GLOBAL_TIMEOUT_MS = 10 * 60 * 1000; // 10 minutes max for entire script
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -97,11 +98,20 @@ async function mapWithConcurrency(items, concurrency, fn) {
 /* ------------------------------------------------------------------ */
 
 async function main() {
-  console.log("=== AVIR Prebuild Asset Downloader (HEI-253) ===\n");
+  console.log("=== AVIR Prebuild Asset Downloader (HEI-253) ===");
+  console.log(`  CWD: ${process.cwd()}`);
+  console.log(`  ROOT: ${ROOT}\n`);
+
+  // Global timeout to prevent Vercel build from hanging
+  const globalTimer = setTimeout(() => {
+    console.warn("\nGlobal timeout reached — stopping downloads.");
+    process.exit(0); // exit cleanly so next build still runs
+  }, GLOBAL_TIMEOUT_MS);
 
   if (!existsSync(ASSET_MAP_PATH)) {
-    console.error("ERROR: data/asset-map.json not found.");
-    process.exit(1);
+    console.warn("WARNING: data/asset-map.json not found — skipping asset download.");
+    clearTimeout(globalTimer);
+    return;
   }
 
   const assetMap = JSON.parse(readFileSync(ASSET_MAP_PATH, "utf-8"));
@@ -144,12 +154,15 @@ async function main() {
     `  Downloaded: ${downloaded} | Skipped (cached): ${skipped} | Failed: ${failed} / ${assets.length} total`
   );
 
+  clearTimeout(globalTimer);
+
   if (failed > 0) {
     console.warn(`\nWARNING: ${failed} assets failed to download.`);
   }
 }
 
 main().catch((err) => {
-  console.error("Prebuild asset download failed:", err);
-  process.exit(1);
+  console.error("Prebuild asset download failed (non-fatal):", err);
+  // Exit cleanly so the Next.js build still proceeds
+  process.exit(0);
 });
