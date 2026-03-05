@@ -989,71 +989,7 @@ a {
     margin-bottom: 10px;
   }
 
-  /* ===== Career Detail + Modal Styles ===== */
-
-  .career-modal-wrap {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  .career-modal-wrap.is--visible {
-    display: flex;
-  }
-
-  .modal-outer-close {
-    position: absolute;
-    inset: 0;
-    cursor: pointer;
-  }
-
-  .modal-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 1001;
-    background: none;
-    border: none;
-    padding: 0;
-  }
-
-  .modal-close::before,
-  .modal-close::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 24px;
-    height: 2px;
-    background-color: var(--off-black);
-  }
-
-  .modal-close::before {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  .modal-close::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  .model-box {
-    position: relative;
-    background-color: var(--white-sand);
-    border-radius: 20px;
-    padding: 50px;
-    max-width: 900px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    z-index: 1001;
-  }
+  /* ===== Career Detail + Form Styles ===== */
 
   .is--inline-2 {
     display: inline;
@@ -1246,9 +1182,6 @@ a {
       padding: 30px;
     }
 
-    .model-box {
-      padding: 30px;
-    }
 
     .career-detail-grid {
       gap: 40px;
