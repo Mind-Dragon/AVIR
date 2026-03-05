@@ -2614,6 +2614,17 @@ a {
 }
 
 /* Process sections */
+.col-wrapper.process {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.col-wrapper.process.is--reverse {
+  flex-direction: row-reverse;
+}
+
 .process__item {
   margin-bottom: 60px;
 }
@@ -3171,6 +3182,18 @@ a {
 
   .portfolio__cover-image {
     height: 300px;
+  }
+
+  .col-wrapper.process,
+  .col-wrapper.process.is--reverse,
+  .partners__grid .col-wrapper.partners,
+  .partners__grid .col-wrapper.partners.is--reverse {
+    flex-direction: column;
+  }
+
+  .col-40,
+  .col-60 {
+    width: 100%;
   }
 }
 

@@ -227,10 +227,16 @@ export function getAboutData(): AboutPageData {
   $("h3").each((_i, el) => {
     const text = $(el).text().trim();
     if (text === "For Residences" || text === "For Commercial Projects") {
+      const colWrapper = $(el).closest(".col-wrapper");
+      const processImg = colWrapper.find("img.process__image").first();
+      const processImage: AboutImage | null = processImg.length
+        ? { src: resolveAsset(processImg.attr("src") || ""), alt: processImg.attr("alt") || "" }
+        : null;
       const parentDiv = $(el).parent();
       processSections.push({
         name: text,
         description: parentDiv.find("p").text().trim(),
+        image: processImage,
       });
     }
     if (
@@ -263,6 +269,7 @@ export function getAboutData(): AboutPageData {
 export interface ProcessSection {
   name: string;
   description: string;
+  image?: AboutImage | null;
 }
 
 export interface PartnerType {

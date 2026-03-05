@@ -99,10 +99,26 @@ export default function AboutPage() {
             </div>
             <h2 className="section__heading">Our Processes</h2>
 
-            {data.processSections.map((section) => (
-              <div key={section.name} className="process__item">
-                <h3 className="process__item-title">{section.name}</h3>
-                <p className="process__item-text">{section.description}</p>
+            {data.processSections.map((section, idx) => (
+              <div
+                key={section.name}
+                className={`col-wrapper process ${idx % 2 !== 0 ? "is--reverse" : ""}`}
+              >
+                {section.image && (
+                  <div className="col-40">
+                    <Image
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      width={800}
+                      height={600}
+                      className="process__image"
+                    />
+                  </div>
+                )}
+                <div className="col-60 is--vertical-middle">
+                  <h3 className="process__item-title">{section.name}</h3>
+                  <p className="process__item-text">{section.description}</p>
+                </div>
               </div>
             ))}
           </div>
