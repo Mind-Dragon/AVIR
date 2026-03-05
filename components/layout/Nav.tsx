@@ -59,7 +59,7 @@ export default function Nav() {
         aria-label="AVIR Home"
       >
         <Image
-          src="/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/6375d62b597feaaa92009bc5_AVIR logo website Final.svg"
+          src="/images/avir-logo.svg"
           alt="AVIR"
           width={100}
           height={22}

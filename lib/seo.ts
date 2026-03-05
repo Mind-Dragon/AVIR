@@ -8,8 +8,7 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.avir.com";
 
 /** AVIR logo — local asset path (SVG) */
-export const AVIR_LOGO_PATH =
-  "/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/6375d62b597feaaa92009bc5_AVIR%20logo%20website%20Final.svg";
+export const AVIR_LOGO_PATH = "/images/avir-logo.svg";
 
 /** AVIR logo — absolute URL for JSON-LD / external consumers */
 export const AVIR_LOGO_SVG = `${SITE_URL}${AVIR_LOGO_PATH}`;
