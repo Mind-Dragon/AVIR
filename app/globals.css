@@ -2784,6 +2784,8 @@ a {
   }
 }
 
+@layer components {
+
 
   /* ===== Title / Hero Section ===== */
 
@@ -3057,6 +3059,7 @@ a {
     padding: 0 20px;
   }
 }
+
 
 /* ===== Responsive ===== */
 
