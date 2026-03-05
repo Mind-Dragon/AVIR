@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
-import { SITE_URL, DEFAULT_OG_IMAGE } from "@/lib/seo";
+import { SITE_URL, resolveDefaultOgImageAbsolute } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "AVIR",
     locale: "en_US",
-    images: [{ url: DEFAULT_OG_IMAGE, alt: "AVIR" }],
+    images: [{ url: resolveDefaultOgImageAbsolute(), alt: "AVIR" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -3,6 +3,9 @@
  * Used across all page metadata and structured data.
  */
 
+import fs from "node:fs";
+import path from "node:path";
+
 /** Canonical base — falls back to production URL */
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.avir.com";
@@ -17,7 +20,40 @@ export const AVIR_LOGO_SVG = `${SITE_URL}${AVIR_LOGO_PATH}`;
 export const DEFAULT_OG_IMAGE_PATH =
   "/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/622dcbe20434a82a5cb8e04b_BH15%20Optimized-p-1600.jpeg";
 
-/** Default OG image — absolute URL for JSON-LD / external consumers */
+/** Original CDN URL for the default OG image (used as fallback when local asset is unavailable, e.g. on Vercel) */
+export const DEFAULT_OG_IMAGE_CDN =
+  "https://cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/622dcbe20434a82a5cb8e04b_BH15%20Optimized-p-1600.jpeg";
+
+/**
+ * Resolve the default OG image URL.
+ * Returns the local public path when the downloaded asset exists on disk,
+ * otherwise falls back to the original CDN URL.
+ * This ensures images render correctly on Vercel where prebuild-assets
+ * skips downloading the 571 MB asset bundle.
+ */
+export function resolveDefaultOgImage(): string {
+  const absPath = path.join(process.cwd(), "public", DEFAULT_OG_IMAGE_PATH);
+  if (fs.existsSync(absPath)) {
+    return DEFAULT_OG_IMAGE_PATH;
+  }
+  return DEFAULT_OG_IMAGE_CDN;
+}
+
+/**
+ * Resolve the absolute default OG image URL (for metadata / JSON-LD).
+ * Uses the local path on the site URL when assets exist on disk,
+ * otherwise returns the CDN URL directly.
+ */
+export function resolveDefaultOgImageAbsolute(): string {
+  const absPath = path.join(process.cwd(), "public", DEFAULT_OG_IMAGE_PATH);
+  if (fs.existsSync(absPath)) {
+    return `${SITE_URL}${DEFAULT_OG_IMAGE_PATH}`;
+  }
+  return DEFAULT_OG_IMAGE_CDN;
+}
+
+/** Default OG image — absolute URL for JSON-LD / external consumers
+ * @deprecated Use resolveDefaultOgImageAbsolute() for runtime resolution */
 export const DEFAULT_OG_IMAGE = `${SITE_URL}${DEFAULT_OG_IMAGE_PATH}`;
 
 /** Build an absolute canonical URL from a relative path */
