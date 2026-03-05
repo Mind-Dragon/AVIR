@@ -102,7 +102,7 @@ export default function AboutPage() {
             {data.processSections.map((section, idx) => (
               <div
                 key={section.name}
-                className={`col-wrapper process ${idx % 2 !== 0 ? "is--reverse" : ""}`}
+                className={`col-wrapper process ${idx % 2 === 0 ? "is--reverse" : ""}`}
               >
                 {section.image && (
                   <div className="col-40">
@@ -133,11 +133,11 @@ export default function AboutPage() {
         >
           <div className="page-container">
             <h2 className="section__heading">Working with Partners</h2>
-            <div className="partners__grid">
+            <div className="partners__grid partners__grid--stacked">
               {data.partnerSections.map((partner, idx) => (
                 <div
                   key={partner.name}
-                  className={`col-wrapper partners ${idx % 2 !== 0 ? "is--reverse" : ""}`}
+                  className={`col-wrapper partners ${idx % 2 === 0 ? "is--reverse" : ""}`}
                 >
                   {partner.image && (
                     <div className="col-40">

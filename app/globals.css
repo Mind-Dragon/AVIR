@@ -2655,6 +2655,11 @@ a {
 /* Partner types */
 .partners__grid {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.partners__grid--stacked {
   flex-direction: column;
   gap: 40px;
 }
