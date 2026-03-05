@@ -1,5 +1,6 @@
 import { readFileSync } from "fs";
 import { join } from "path";
+import { resolveAsset } from "@/lib/page-data";
 
 const DATA_DIR = join(process.cwd(), "data", "pages");
 
@@ -119,8 +120,9 @@ export function getCareersIndexData(): CareersIndexData {
     emailContact: "careers@avir.com",
     imageAlt:
       "Someone from AVIR drawing out an interior design plan for a new installation.",
-    imageSrc:
-      "/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/627aabcf9bd322c34ba5291b_Careers shutterstock writing 250510.jpg",
+    imageSrc: resolveAsset(
+      "https://cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/627aabcf9bd322c34ba5291b_Careers%20shutterstock%20writing%20250510.jpg"
+    ),
     positions,
   };
 }
