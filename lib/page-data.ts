@@ -49,6 +49,8 @@ export interface ServiceItem {
   description: string;
   image: string;
   slug: string;
+  icon: string;
+  galleryHref: string;
 }
 
 export interface VipItem {
@@ -78,7 +80,13 @@ export function getServicesData(): ServicesPageData {
       const description = $(el).find("p").text().trim();
       const img = $(el).find("img").first().attr("src") || "";
       const slug = name.toLowerCase().replace(/\s+/g, "-");
-      services.push({ name, description, image: resolveAsset(img), slug });
+      const icon = $(el).find("img.service-listing__icon").attr("src") || "";
+      // Only the first service (Home Cinema) has a visible gallery button;
+      // the rest have w-condition-invisible hiding them.
+      const galleryLink = $(el).find("a.button.is--with-icon").first();
+      const isHidden = galleryLink.hasClass("w-condition-invisible");
+      const galleryHref = !isHidden && galleryLink.length ? (galleryLink.attr("href") || "") : "";
+      services.push({ name, description, image: resolveAsset(img), slug, icon: resolveAsset(icon), galleryHref });
     });
 
   const vipItems: VipItem[] = [];
