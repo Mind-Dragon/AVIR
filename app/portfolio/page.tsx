@@ -34,9 +34,14 @@ export default function PortfolioPage() {
       {/* Title section */}
       <section className="section-title">
         <div className="title__bg" />
-        <div className="title__content">
-          <div className="title__left">
-            <h1 className="page-title">{data.title}</h1>
+        <div className="page-container">
+          <div className="col-wrapper">
+            <div className="col-50">
+              <h1 className="page-title">{data.title}</h1>
+            </div>
+            <div className="col-50 title-right">
+              <p>Browse a small sample of some of our favorite projects.</p>
+            </div>
           </div>
         </div>
       </section>

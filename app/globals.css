@@ -2288,9 +2288,9 @@ a {
   line-height: 44px;
   text-transform: uppercase;
   hyphens: none;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: nowrap;
 }
 
 .page-container {
@@ -2319,6 +2319,10 @@ a {
 
 .col-50.title-right {
   padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .col-40 {
