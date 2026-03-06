@@ -14,10 +14,16 @@ const TURNSTILE_TEST_SECRET_KEY = "1x0000000000000000000000000000000AA";
 async function verifyTurnstile(token: string): Promise<boolean> {
   const secret =
     process.env.TURNSTILE_SECRET_KEY ||
-    (process.env.NODE_ENV !== "production" ? TURNSTILE_TEST_SECRET_KEY : undefined);
+    (process.env.NODE_ENV !== "production" ? TURNSTILE_TEST_SECRET_KEY : null);
   if (!secret) {
     console.error("TURNSTILE_SECRET_KEY is not configured");
     return false;
+  }
+  if (!process.env.TURNSTILE_SECRET_KEY) {
+    console.warn(
+      "TURNSTILE_SECRET_KEY is not set — using Cloudflare test secret. " +
+      "Set this env var in your deployment for real bot protection."
+    );
   }
 
   const res = await fetch(
