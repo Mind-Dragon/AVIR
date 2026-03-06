@@ -17,8 +17,9 @@ interface ProductGridProps {
 export default function ProductGrid({ products }: ProductGridProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const handleTap = useCallback(
-    (index: number) => {
+  const handleTouchEnd = useCallback(
+    (e: React.TouchEvent, index: number) => {
+      e.preventDefault();
       setActiveIndex((prev) => (prev === index ? null : index));
     },
     [],
@@ -31,7 +32,7 @@ export default function ProductGrid({ products }: ProductGridProps) {
           key={index}
           className={`exciting__item${activeIndex === index ? " is--active" : ""}`}
           data-wf-class="exciting__item"
-          onClick={() => handleTap(index)}
+          onTouchEnd={(e) => handleTouchEnd(e, index)}
         >
           {/* Product background image */}
           {product.productImg && (
