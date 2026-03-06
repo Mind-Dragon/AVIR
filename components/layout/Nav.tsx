@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef, forwardRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,21 +14,31 @@ const NAV_LINKS = [
   { text: "About", href: "/about-avir" },
 ] as const;
 
-/** Dropdown: "Exciting Products" — single link, no sub-items in top nav per avir.com */
-const EXCITING_LINK = { text: "Exciting Products", href: "/exciting-new-products" } as const;
+/** Dropdown: "Exciting Products" with sub-items */
+const EXCITING_DROPDOWN = {
+  text: "Exciting Products",
+  items: [
+    { text: "Exciting Products", href: "/exciting-new-products" },
+    { text: "Blog", href: "/blog" },
+  ],
+} as const;
 
-/** Contact link — single link per avir.com (Blog & Careers stay in footer only) */
-const CONTACT_LINK = { text: "Contact", href: "/contact" } as const;
+/** Dropdown: "Contact" with sub-items */
+const CONTACT_DROPDOWN = {
+  text: "Contact",
+  items: [
+    { text: "Contact Us", href: "/contact" },
+    { text: "Careers", href: "/careers" },
+  ],
+} as const;
 
-/** All mobile links in order — matches avir.com top-level nav */
-const MOBILE_LINKS = [
+/** Flat mobile links (non-dropdown items) */
+const MOBILE_FLAT_LINKS = [
   { text: "Home", href: "/" },
   { text: "Services", href: "/services" },
   { text: "Brands", href: "/brands" },
   { text: "Portfolio", href: "/portfolio" },
   { text: "About", href: "/about-avir" },
-  { text: "Exciting Products", href: "/exciting-new-products" },
-  { text: "Contact", href: "/contact" },
 ] as const;
 
 function isActive(pathname: string, href: string): boolean {
@@ -36,18 +46,62 @@ function isActive(pathname: string, href: string): boolean {
   return pathname === href || pathname.startsWith(href + "/");
 }
 
+function isDropdownActive(
+  pathname: string,
+  items: ReadonlyArray<{ href: string }>
+): boolean {
+  return items.some((item) => isActive(pathname, item.href));
+}
+
 export default function Nav() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // Desktop hover dropdown state
+  const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(
+    null
+  );
+
+  // Mobile accordion state
+  const [openMobileAccordion, setOpenMobileAccordion] = useState<string | null>(
+    null
+  );
+
+  // Refs for closing desktop dropdown on outside click
+  const excitingRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
   const toggleMobile = useCallback(() => {
     setMobileOpen((prev) => !prev);
   }, []);
 
-  // Close mobile menu on route change
+  const toggleMobileAccordion = useCallback((key: string) => {
+    setOpenMobileAccordion((prev) => (prev === key ? null : key));
+  }, []);
+
+  // Close mobile menu and accordions on route change
   useEffect(() => {
     setMobileOpen(false);
+    setOpenMobileAccordion(null);
+    setOpenDesktopDropdown(null);
   }, [pathname]);
+
+  // Close desktop dropdown on outside click
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (
+        openDesktopDropdown &&
+        excitingRef.current &&
+        !excitingRef.current.contains(e.target as Node) &&
+        contactRef.current &&
+        !contactRef.current.contains(e.target as Node)
+      ) {
+        setOpenDesktopDropdown(null);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [openDesktopDropdown]);
 
   return (
     <div className="nav" data-wf-class="nav">
@@ -84,7 +138,7 @@ export default function Nav() {
             data-wf-class="mobile__nav-icon w-icon-dropdown-toggle"
             aria-hidden="true"
           >
-            ▾
+            &#9662;
           </span>
           <span>Menu</span>
         </button>
@@ -92,7 +146,8 @@ export default function Nav() {
           className={`mobile__dd${mobileOpen ? " is--open" : ""}`}
           data-wf-class="mobile__dd w-dropdown-list"
         >
-          {MOBILE_LINKS.map((link) => (
+          {/* Flat mobile links */}
+          {MOBILE_FLAT_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -103,6 +158,28 @@ export default function Nav() {
               {link.text}
             </Link>
           ))}
+
+          {/* Mobile accordion: Exciting Products */}
+          <MobileAccordion
+            label={EXCITING_DROPDOWN.text}
+            items={EXCITING_DROPDOWN.items}
+            isOpen={openMobileAccordion === "exciting"}
+            onToggle={() => toggleMobileAccordion("exciting")}
+            isGroupActive={isDropdownActive(pathname, EXCITING_DROPDOWN.items)}
+            pathname={pathname}
+            onLinkClick={() => setMobileOpen(false)}
+          />
+
+          {/* Mobile accordion: Contact */}
+          <MobileAccordion
+            label={CONTACT_DROPDOWN.text}
+            items={CONTACT_DROPDOWN.items}
+            isOpen={openMobileAccordion === "contact"}
+            onToggle={() => toggleMobileAccordion("contact")}
+            isGroupActive={isDropdownActive(pathname, CONTACT_DROPDOWN.items)}
+            pathname={pathname}
+            onLinkClick={() => setMobileOpen(false)}
+          />
         </nav>
       </div>
 
@@ -119,24 +196,142 @@ export default function Nav() {
           </Link>
         ))}
 
-        {/* Exciting Products — flat link per avir.com */}
-        <Link
-          href={EXCITING_LINK.href}
-          className={`nav-link${isActive(pathname, EXCITING_LINK.href) ? " is--active" : ""}`}
-          data-wf-class="nav-link"
-        >
-          {EXCITING_LINK.text}
-        </Link>
+        {/* Exciting Products dropdown */}
+        <DesktopDropdown
+          ref={excitingRef}
+          label={EXCITING_DROPDOWN.text}
+          items={EXCITING_DROPDOWN.items}
+          isOpen={openDesktopDropdown === "exciting"}
+          onMouseEnter={() => setOpenDesktopDropdown("exciting")}
+          onMouseLeave={() => setOpenDesktopDropdown(null)}
+          isGroupActive={isDropdownActive(pathname, EXCITING_DROPDOWN.items)}
+          pathname={pathname}
+        />
 
-        {/* Contact — flat link per avir.com */}
-        <Link
-          href={CONTACT_LINK.href}
-          className={`nav-link${isActive(pathname, CONTACT_LINK.href) ? " is--active" : ""}`}
-          data-wf-class="nav-link"
-        >
-          {CONTACT_LINK.text}
-        </Link>
+        {/* Contact dropdown */}
+        <DesktopDropdown
+          ref={contactRef}
+          label={CONTACT_DROPDOWN.text}
+          items={CONTACT_DROPDOWN.items}
+          isOpen={openDesktopDropdown === "contact"}
+          onMouseEnter={() => setOpenDesktopDropdown("contact")}
+          onMouseLeave={() => setOpenDesktopDropdown(null)}
+          isGroupActive={isDropdownActive(pathname, CONTACT_DROPDOWN.items)}
+          pathname={pathname}
+        />
       </div>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Desktop dropdown sub-component                                     */
+/* ------------------------------------------------------------------ */
+
+interface DesktopDropdownProps {
+  label: string;
+  items: ReadonlyArray<{ text: string; href: string }>;
+  isOpen: boolean;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
+  isGroupActive: boolean;
+  pathname: string;
+}
+
+const DesktopDropdown = forwardRef<HTMLDivElement, DesktopDropdownProps>(
+  function DesktopDropdown(
+    { label, items, isOpen, onMouseEnter, onMouseLeave, isGroupActive, pathname },
+    ref
+  ) {
+    return (
+      <div
+        ref={ref}
+        className="nav__dropdown"
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        <button
+          type="button"
+          className={`nav-link is--dropdown${isGroupActive ? " is--active" : ""}`}
+          aria-expanded={isOpen}
+          aria-haspopup="true"
+        >
+          <span className="nav-link__text">{label}</span>
+          <span className="dd-icon" aria-hidden="true" />
+        </button>
+        <div
+          className={`nav__dropdown-list${isOpen ? " is--open" : ""}`}
+          role="menu"
+        >
+          {items.map((item, idx) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`nav-link in-dropdown${idx === 0 ? " first" : ""}${idx === items.length - 1 ? " last" : ""}${isActive(pathname, item.href) ? " is--active" : ""}`}
+              role="menuitem"
+            >
+              {item.text}
+            </Link>
+          ))}
+        </div>
+      </div>
+    );
+  }
+);
+
+/* ------------------------------------------------------------------ */
+/*  Mobile accordion sub-component                                     */
+/* ------------------------------------------------------------------ */
+
+interface MobileAccordionProps {
+  label: string;
+  items: ReadonlyArray<{ text: string; href: string }>;
+  isOpen: boolean;
+  onToggle: () => void;
+  isGroupActive: boolean;
+  pathname: string;
+  onLinkClick: () => void;
+}
+
+function MobileAccordion({
+  label,
+  items,
+  isOpen,
+  onToggle,
+  isGroupActive,
+  pathname,
+  onLinkClick,
+}: MobileAccordionProps) {
+  return (
+    <div className="mobile-accordion">
+      <button
+        type="button"
+        className={`nav-link-mobile mobile-accordion__toggle${isGroupActive ? " is--active" : ""}`}
+        onClick={onToggle}
+        aria-expanded={isOpen}
+      >
+        <span>{label}</span>
+        <span
+          className={`mobile-accordion__icon${isOpen ? " is--open" : ""}`}
+          aria-hidden="true"
+        >
+          &#9662;
+        </span>
+      </button>
+      {isOpen && (
+        <div className="mobile-accordion__items">
+          {items.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`nav-link-mobile mobile-accordion__link${isActive(pathname, item.href) ? " is--active" : ""}`}
+              onClick={onLinkClick}
+            >
+              {item.text}
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
