@@ -15,6 +15,8 @@ const nextConfig = {
     '*': [
       './public/assets/**',
       'public/assets/**',
+      './public/images/services/**',
+      'public/images/services/**',
     ],
   },
 };
