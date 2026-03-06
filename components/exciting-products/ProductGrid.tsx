@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import Image from "next/image";
 
 interface ProductItem {
@@ -16,9 +16,20 @@ interface ProductGridProps {
 
 export default function ProductGrid({ products }: ProductGridProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    const t = e.touches[0];
+    touchStart.current = { x: t.clientX, y: t.clientY };
+  }, []);
 
   const handleTouchEnd = useCallback(
     (e: React.TouchEvent, index: number) => {
+      if (touchStart.current) {
+        const dx = e.changedTouches[0].clientX - touchStart.current.x;
+        const dy = e.changedTouches[0].clientY - touchStart.current.y;
+        if (Math.abs(dx) > 10 || Math.abs(dy) > 10) return;
+      }
       e.preventDefault();
       setActiveIndex((prev) => (prev === index ? null : index));
     },
@@ -32,6 +43,7 @@ export default function ProductGrid({ products }: ProductGridProps) {
           key={index}
           className={`exciting__item${activeIndex === index ? " is--active" : ""}`}
           data-wf-class="exciting__item"
+          onTouchStart={handleTouchStart}
           onTouchEnd={(e) => handleTouchEnd(e, index)}
         >
           {/* Product background image */}
