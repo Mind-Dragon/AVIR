@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 interface ServiceItemProps {
@@ -28,11 +27,10 @@ export default function ServiceItem({
     >
       <div className="service-listing__img-wrap">
         {image && (
-          <Image
+          <img
             src={image}
             alt={name}
-            width={600}
-            height={400}
+            loading="lazy"
             className="service-listing__img"
             data-wf-class="service-listing__img"
           />
@@ -42,7 +40,7 @@ export default function ServiceItem({
         <div className="service-listing__title-wrap">
           <h3 className="service-listing__title">{name}</h3>
           {icon && (
-            <Image
+            <img
               src={icon}
               alt=""
               width={30}

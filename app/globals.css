@@ -2420,6 +2420,7 @@ a {
   width: calc(50% - 20px);
   overflow: hidden;
   position: relative;
+  aspect-ratio: 3 / 2;
 }
 
 .service-listing__img {
