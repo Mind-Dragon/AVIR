@@ -3036,8 +3036,6 @@ a {
 .portfolio__item {
   flex: 1;
   min-width: 280px;
-  overflow: hidden;
-  border-radius: 16px;
 }
 
 .portfolio__inner {
