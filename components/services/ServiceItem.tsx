@@ -30,7 +30,7 @@ export default function ServiceItem({
           <img
             src={image}
             alt={name}
-            loading="lazy"
+            loading="eager"
             className="service-listing__img"
             data-wf-class="service-listing__img"
           />
