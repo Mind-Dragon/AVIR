@@ -66,6 +66,8 @@ export default function ServicesPage() {
               description={service.description}
               image={service.image}
               slug={service.slug}
+              icon={service.icon}
+              galleryHref={service.galleryHref}
               reverse={index % 2 !== 0}
             />
           ))}
