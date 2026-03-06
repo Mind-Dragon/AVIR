@@ -98,14 +98,19 @@ a {
 
   .nav-link.in-dropdown {
     text-align: center;
+    color: var(--white-sand);
     margin-top: 4px;
     margin-left: 12px;
     margin-right: 12px;
     display: block;
   }
 
+  .nav-link.in-dropdown:hover {
+    background-color: rgba(247, 243, 240, 0.1);
+  }
+
   .nav-link.in-dropdown.first {
-    color: var(--off-black);
+    color: var(--white-sand);
     margin-top: 12px;
   }
 
@@ -134,14 +139,15 @@ a {
   }
 
   .nav__dropdown-list {
-    background-color: var(--white-sand);
-    border: 1px solid rgba(96, 78, 68, 0.15);
+    background-color: var(--off-black);
+    border: 1px solid rgba(96, 78, 68, 0.3);
     border-radius: 15px;
     position: absolute;
     top: 50px;
     right: -16px;
     overflow: hidden;
     display: none;
+    min-width: 180px;
   }
 
   .nav__dropdown-list.is--open {
@@ -164,6 +170,41 @@ a {
   /* Mobile Nav */
   .mobile__nav {
     display: none;
+  }
+
+  /* Mobile Accordion */
+  .mobile-accordion {
+    width: 100%;
+  }
+
+  .mobile-accordion__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-right: 12px;
+  }
+
+  .mobile-accordion__icon {
+    font-size: 10px;
+    margin-left: 6px;
+    transition: transform 0.3s;
+    display: inline-block;
+  }
+
+  .mobile-accordion__icon.is--open {
+    transform: rotate(180deg);
+  }
+
+  .mobile-accordion__items {
+    padding-left: 16px;
+  }
+
+  .mobile-accordion__link {
+    font-size: 10px;
   }
 
   .mobile__nav-toggle {
@@ -2245,6 +2286,9 @@ a {
   line-height: 1.1em;
   text-transform: uppercase;
   hyphens: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .page-container {
@@ -2531,24 +2575,131 @@ a {
   color: #fff;
 }
 
-/* --- About page -------------------------------------------------- */
+/* --- About page: Hero -------------------------------------------- */
+
+.about-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Ensure it spans the full viewport width even if a parent constrains */
+  min-height: 50vh;
+  max-height: 85vh;
+}
+
+.about-hero__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px 4vw;
+  pointer-events: none;
+}
+
+.about-hero__overlay-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  pointer-events: auto;
+}
+
+.about-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(221, 205, 192, 0.6);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  color: var(--joshua-rocks, #604e44);
+  text-transform: uppercase;
+  font-family: termina, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border-radius: 12px;
+  padding: 14px 24px 12px;
+  text-decoration: none;
+  transition: background-color 0.4s;
+  white-space: nowrap;
+}
+
+.about-hero__cta:hover {
+  background-color: rgba(221, 205, 192, 0.85);
+}
+
+.about-hero__cta .button__text {
+  line-height: 1;
+}
+
+.about-hero__cta .button__circle {
+  width: 6px;
+  height: 6px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  display: inline-block;
+  transition: width 0.3s, height 0.3s, border-width 0.3s;
+}
+
+.about-hero__cta .button__line {
+  width: 30px;
+  height: 1px;
+  background-color: currentColor;
+  display: inline-block;
+  transition: width 0.3s, margin-left 0.3s;
+}
+
+.about-hero__cta:hover .button__line {
+  width: 50px;
+  margin-left: 0;
+}
+
+.about-hero__cta:hover .button__circle {
+  width: 5px;
+  height: 5px;
+  border-width: 3px;
+}
+
+.about-hero__cta .button__arrow {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Spinning AVIR logo */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-hero__spinning-logo {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  animation: spin-slow 10s linear infinite;
+}
+
+.about-hero__spinning-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+/* --- About page: Content ----------------------------------------- */
 
 .about-story__content {
   max-width: 80ch;
   line-height: 1.7em;
-}
-
-.about-story__image-wrap {
-  margin-bottom: 40px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.about-story__image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
 }
 
 .about-story__para {
@@ -2556,8 +2707,10 @@ a {
 }
 
 /* Ethos */
-.section-ethos {
-  background-color: #ddcdc066;
+.ethos__wrap {
+  background-color: rgba(221, 205, 192, 0.4);
+  border-radius: 20px;
+  padding: 30px;
 }
 
 .ethos__text {
@@ -2722,6 +2875,7 @@ a {
   height: 260px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   transition: transform 0.27s ease-out 0s, border-radius 0.27s ease-out 0s,
     box-shadow 0.5s ease 0s;
 }
@@ -2762,11 +2916,14 @@ a {
 
 .exciting__logo-img {
   object-fit: contain;
-  max-height: 26px;
+  height: 26px;
   width: auto;
+  min-width: 60px;
+  display: block;
 }
 
 .exciting__info-wrap {
+  z-index: 30;
   opacity: 0;
   -webkit-backdrop-filter: saturate(70%) blur(12px);
   backdrop-filter: saturate(70%) blur(12px);
@@ -2776,12 +2933,15 @@ a {
   line-height: 1.4em;
   position: absolute;
   inset: 0%;
-  transition: opacity 0.7s ease 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.3s ease 0s;
 }
 
 .exciting__item:hover .exciting__info-wrap {
   opacity: 1;
-  transition: opacity 0.2s ease 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .exciting__title {
@@ -2807,6 +2967,46 @@ a {
   opacity: 1;
   transform: translate(0px, 0px);
   transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
+}
+
+/* Mobile tap support: .is--active mirrors :hover */
+.exciting__item.is--active {
+  z-index: 20;
+  box-shadow: 0 0 0 2px var(--desert-tan, #ddcdc0);
+  border-radius: 15px;
+  transform: scale(1.2);
+  transition: transform 0.35s ease-out 0.2s, border-radius 0.35s ease-out 0.2s,
+    box-shadow 0.5s ease 0s;
+}
+
+.exciting__item.is--active .exciting__logo {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.2s ease 0.3s;
+}
+
+.exciting__item.is--active .exciting__info-wrap {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.exciting__item.is--active .exciting__title {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
+}
+
+.exciting__item.is--active .exciting__para {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
+}
+
+/* Logo shown inside the hover/tap overlay */
+.exciting__overlay-logo {
+  object-fit: contain;
+  max-height: 30px;
+  width: auto;
+  margin-bottom: 12px;
 }
 
 /* --- Responsive: Tablet (max-width: 991px) ----------------------- */
@@ -2835,6 +3035,20 @@ a {
     width: 100%;
     margin-right: 0;
     padding-top: 15px;
+  }
+
+  .about-hero__overlay {
+    padding: 24px 4vw;
+  }
+
+  .about-hero__spinning-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-hero__cta {
+    font-size: 11px;
+    padding: 12px 18px 10px;
   }
 
   .section-heading-outline {
@@ -2900,6 +3114,11 @@ a {
     min-width: unset;
   }
 
+  .exciting__item:hover,
+  .exciting__item.is--active {
+    transform: scale(1);
+  }
+
   .exciting__grid {
     gap: 20px;
   }
@@ -2926,6 +3145,25 @@ a {
 
   .team__item {
     min-width: unset;
+  }
+
+  .about-hero__overlay {
+    padding: 16px 4vw;
+  }
+
+  .about-hero__overlay-inner {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .about-hero__spinning-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-hero__image {
+    min-height: 40vh;
   }
 }
 
