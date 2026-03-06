@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useCallback } from "react";
 import Image from "next/image";
 
 interface ProductItem {
@@ -12,13 +15,23 @@ interface ProductGridProps {
 }
 
 export default function ProductGrid({ products }: ProductGridProps) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleTap = useCallback(
+    (index: number) => {
+      setActiveIndex((prev) => (prev === index ? null : index));
+    },
+    [],
+  );
+
   return (
     <div className="exciting__grid" data-wf-class="exciting__grid">
       {products.map((product, index) => (
         <div
           key={index}
-          className="exciting__item"
+          className={`exciting__item${activeIndex === index ? " is--active" : ""}`}
           data-wf-class="exciting__item"
+          onClick={() => handleTap(index)}
         >
           {/* Product background image */}
           {product.productImg && (
@@ -32,27 +45,32 @@ export default function ProductGrid({ products }: ProductGridProps) {
             />
           )}
 
-          {/* Logo overlay */}
-          <div className="exciting__logo" data-wf-class="exciting__logo">
+          {/* Logo badge – bottom-left pill */}
+          {product.logoImg && (
+            <div className="exciting__logo" data-wf-class="exciting__logo">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={product.logoImg}
+                alt={`${product.title} logo`}
+                className="exciting__logo-img"
+                data-wf-class="exciting__logo-img"
+              />
+            </div>
+          )}
+
+          {/* Info overlay on hover / tap */}
+          <div
+            className="exciting__info-wrap"
+            data-wf-class="exciting__info-wrap"
+          >
             {product.logoImg && (
               /* eslint-disable-next-line @next/next/no-img-element */
               <img
                 src={product.logoImg}
                 alt={`${product.title} logo`}
-                width={120}
-                height={50}
-                className="exciting__logo-img"
-                data-wf-class="exciting__logo-img"
-                loading="lazy"
+                className="exciting__overlay-logo"
               />
             )}
-          </div>
-
-          {/* Info overlay on hover */}
-          <div
-            className="exciting__info-wrap"
-            data-wf-class="exciting__info-wrap"
-          >
             <h3 className="exciting__title" data-wf-class="exciting__title">
               {product.title}
             </h3>

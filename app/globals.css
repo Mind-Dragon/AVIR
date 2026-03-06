@@ -2711,6 +2711,7 @@ a {
   height: 260px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   transition: transform 0.27s ease-out 0s, border-radius 0.27s ease-out 0s,
     box-shadow 0.5s ease 0s;
 }
@@ -2751,11 +2752,14 @@ a {
 
 .exciting__logo-img {
   object-fit: contain;
-  max-height: 26px;
+  height: 26px;
   width: auto;
+  min-width: 60px;
+  display: block;
 }
 
 .exciting__info-wrap {
+  z-index: 30;
   opacity: 0;
   -webkit-backdrop-filter: saturate(70%) blur(12px);
   backdrop-filter: saturate(70%) blur(12px);
@@ -2765,12 +2769,15 @@ a {
   line-height: 1.4em;
   position: absolute;
   inset: 0%;
-  transition: opacity 0.7s ease 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.3s ease 0s;
 }
 
 .exciting__item:hover .exciting__info-wrap {
   opacity: 1;
-  transition: opacity 0.2s ease 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .exciting__title {
@@ -2796,6 +2803,46 @@ a {
   opacity: 1;
   transform: translate(0px, 0px);
   transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
+}
+
+/* Mobile tap support: .is--active mirrors :hover */
+.exciting__item.is--active {
+  z-index: 20;
+  box-shadow: 0 0 0 2px var(--desert-tan, #ddcdc0);
+  border-radius: 15px;
+  transform: scale(1.2);
+  transition: transform 0.35s ease-out 0.2s, border-radius 0.35s ease-out 0.2s,
+    box-shadow 0.5s ease 0s;
+}
+
+.exciting__item.is--active .exciting__logo {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.2s ease 0.3s;
+}
+
+.exciting__item.is--active .exciting__info-wrap {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.exciting__item.is--active .exciting__title {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
+}
+
+.exciting__item.is--active .exciting__para {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
+}
+
+/* Logo shown inside the hover/tap overlay */
+.exciting__overlay-logo {
+  object-fit: contain;
+  max-height: 30px;
+  width: auto;
+  margin-bottom: 12px;
 }
 
 /* --- Responsive: Tablet (max-width: 991px) ----------------------- */
