@@ -3349,11 +3349,11 @@ a {
   backdrop-filter: blur(6px);
 }
 
-.button.is--with-icon .button__text {
+.portfolio__image-wrap > .button.is--with-icon .button__text {
   line-height: 1;
 }
 
-.button.is--with-icon .button__circle {
+.portfolio__image-wrap > .button.is--with-icon .button__circle {
   width: 6px;
   height: 6px;
   border: 2px solid currentColor;
@@ -3364,7 +3364,7 @@ a {
   transition: width 0.3s, height 0.3s, border-width 0.3s;
 }
 
-.button.is--with-icon .button__line {
+.portfolio__image-wrap > .button.is--with-icon .button__line {
   width: 30px;
   height: 1px;
   background-color: currentColor;
@@ -3374,17 +3374,17 @@ a {
   transition: width 0.3s, margin-left 0.3s;
 }
 
-.button.is--with-icon .button__arrow {
+.portfolio__image-wrap > .button.is--with-icon .button__arrow {
   display: inline-flex;
   align-items: center;
 }
 
-.button.is--with-icon:hover .button__line {
+.portfolio__image-wrap > .button.is--with-icon:hover .button__line {
   width: 50px;
   margin-left: 0;
 }
 
-.button.is--with-icon:hover .button__circle {
+.portfolio__image-wrap > .button.is--with-icon:hover .button__circle {
   width: 5px;
   height: 5px;
   border-width: 3px;
