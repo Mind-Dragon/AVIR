@@ -118,6 +118,47 @@ export interface BrandsPageData {
   brands: BrandItem[];
 }
 
+/**
+ * Build a CDN-URL → local-path lookup for brand logos.
+ *
+ * Brand logos are committed to public/images/brands/ so they are always
+ * available — even on Vercel where the bulk prebuild-assets step is skipped.
+ * Each filename embeds the Webflow asset-ID (the hex segment after the
+ * collection ID in the CDN URL), so we extract that ID and map it back.
+ */
+const brandCdnToLocal: Record<string, string> = {};
+{
+  const brandsDir = path.join(process.cwd(), "public", "images", "brands");
+  let files: string[] = [];
+  try {
+    files = fs.readdirSync(brandsDir);
+  } catch {
+    /* directory may not exist during build — ignore */
+  }
+  for (const file of files) {
+    // Filename format: "00-<assetId>_<rest>.ext"
+    const match = file.match(/^\d+-([0-9a-f]+)_/);
+    if (match) {
+      const assetId = match[1];
+      brandCdnToLocal[assetId] = "/images/brands/" + file;
+    }
+  }
+}
+
+/** Resolve a brand-logo CDN URL to a local path using the asset-ID. */
+function resolveBrandLogo(cdnUrl: string): string {
+  if (!cdnUrl) return "";
+  // Extract the Webflow asset-ID from the CDN URL path segment
+  // URL pattern: …/<collectionId>/<assetId>_<name>.<ext>
+  const urlMatch = cdnUrl.match(/\/([0-9a-f]+)_[^/]+$/);
+  if (urlMatch) {
+    const local = brandCdnToLocal[urlMatch[1]];
+    if (local) return local;
+  }
+  // Fallback: use the general resolveAsset (CDN URL on Vercel, local asset path otherwise)
+  return resolveAsset(cdnUrl);
+}
+
 export function getBrandsData(): BrandsPageData {
   const $ = loadPageHtml("brands");
 
@@ -134,7 +175,7 @@ export function getBrandsData(): BrandsPageData {
     const link =
       $(el).find("a.button.partner").first().attr("href") || "";
     brands.push({
-      logoImg: resolveAsset(logoImg),
+      logoImg: resolveBrandLogo(logoImg),
       link,
     });
   });
