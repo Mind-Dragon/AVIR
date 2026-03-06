@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { getAboutData } from "@/lib/page-data";
 import FooterCTA from "@/components/layout/FooterCTA";
 import TeamGrid from "@/components/about/TeamGrid";
@@ -40,36 +41,78 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="section-content" data-wf-class="section">
-        <div className="page-container">
-          <h2 className="section__heading">Our Story</h2>
-          <div className="about-story__content">
-            {data.storyImage && (
-              <div className="about-story__image-wrap">
+      {/* Full-width Hero Image */}
+      {data.storyImage && (
+        <section className="about-hero" data-wf-class="section extra--padding">
+          <Image
+            src={data.storyImage.src}
+            alt={data.storyImage.alt}
+            width={3800}
+            height={2000}
+            priority
+            className="about-hero__image"
+          />
+
+          {/* Overlay: CTA + Spinning Logo */}
+          <div className="about-hero__overlay">
+            <div className="about-hero__overlay-inner">
+              <Link href="/services" className="button is--with-icon about-hero__cta">
+                <span className="button__text cta">View our Services</span>
+                <span className="button__circle" />
+                <span className="button__line" />
+                <span className="button__arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 7.06 12.71"
+                    width="15"
+                    height="15"
+                  >
+                    <polyline
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit={10}
+                      points="0.35 0.35 6.35 6.35 0.35 12.35"
+                    />
+                  </svg>
+                </span>
+              </Link>
+
+              {/* Spinning AVIR logo */}
+              <div className="about-hero__spinning-logo" aria-hidden="true">
                 <Image
-                  src={data.storyImage.src}
-                  alt={data.storyImage.alt}
-                  width={1200}
-                  height={800}
-                  className="about-story__image"
+                  src="/images/avir-logo.svg"
+                  alt=""
+                  width={80}
+                  height={80}
+                  className="about-hero__spinning-logo-img"
                 />
               </div>
-            )}
-            {data.storyParagraphs.map((para, i) => (
-              <p key={i} className="about-story__para">
-                {para}
-              </p>
-            ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* Our Ethos */}
-      <section className="section-content section-ethos" data-wf-class="section">
+      {/* Our Story + Our Ethos — two-column layout */}
+      <section className="section-content" data-wf-class="section">
         <div className="page-container">
-          <h2 className="section__heading">Our Ethos</h2>
-          <p className="ethos__text">{data.ethosText}</p>
+          <div className="col-wrapper">
+            <div className="col-50">
+              <h2 className="section__heading">Our Story</h2>
+              <div className="about-story__content">
+                {data.storyParagraphs.map((para, i) => (
+                  <p key={i} className="about-story__para">
+                    {para}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="col-50">
+              <h2 className="section__heading">Our Ethos</h2>
+              <div className="ethos__wrap">
+                <p className="ethos__text">{data.ethosText}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
