@@ -6,6 +6,8 @@ interface ServiceItemProps {
   description: string;
   image: string;
   slug: string;
+  icon: string;
+  galleryHref: string;
   reverse?: boolean;
 }
 
@@ -14,6 +16,8 @@ export default function ServiceItem({
   description,
   image,
   slug,
+  icon,
+  galleryHref,
   reverse = false,
 }: ServiceItemProps) {
   return (
@@ -37,17 +41,28 @@ export default function ServiceItem({
       <div className="service-listing__content">
         <div className="service-listing__title-wrap">
           <h3 className="service-listing__title">{name}</h3>
+          {icon && (
+            <Image
+              src={icon}
+              alt=""
+              width={30}
+              height={30}
+              className="service-listing__icon"
+            />
+          )}
         </div>
         <p className="service-listing__text">{description}</p>
-        <Link
-          href={`/services#${slug}`}
-          className="button is--with-icon"
-          data-wf-class="button is--with-icon w-inline-block"
-        >
-          <span>{name} Gallery</span>
-          <span className="button__line" />
-          <span className="button__circle" />
-        </Link>
+        {galleryHref && (
+          <Link
+            href={galleryHref}
+            className="button is--with-icon"
+            data-wf-class="button is--with-icon w-inline-block"
+          >
+            <span>{name} Gallery</span>
+            <span className="button__line" />
+            <span className="button__circle" />
+          </Link>
+        )}
       </div>
     </div>
   );
