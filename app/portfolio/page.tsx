@@ -39,7 +39,7 @@ export default function PortfolioPage() {
             <div className="col-50">
               <h1 className="page-title is--nowrap">{data.title}</h1>
             </div>
-            <div className="col-50 title-right">
+            <div className="col-50 title-right is--centered">
               <p>Browse a small sample of some of our favorite projects.</p>
             </div>
           </div>

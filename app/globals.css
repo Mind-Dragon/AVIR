@@ -2325,6 +2325,9 @@ a {
 
 .col-50.title-right {
   padding-top: 15px;
+}
+
+.col-50.title-right.is--centered {
   display: flex;
   align-items: center;
   justify-content: center;
