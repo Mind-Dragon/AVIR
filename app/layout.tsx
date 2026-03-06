@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
+import PageTransition from "@/components/layout/PageTransition";
 import { SITE_URL, resolveDefaultOgImageAbsolute } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -49,7 +50,9 @@ export default function RootLayout({
         <Nav />
         {/* Spacer for fixed nav: 97px desktop, 60px mobile */}
         <div className="pt-[97px] max-md:pt-[60px]" />
-        <main>{children}</main>
+        <main>
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>
