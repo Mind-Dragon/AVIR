@@ -2451,6 +2451,14 @@ a {
   text-transform: uppercase;
 }
 
+.service-listing__icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
 .service-listing__text {
   margin-top: 10px;
   margin-bottom: 30px;
