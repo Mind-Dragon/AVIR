@@ -3299,6 +3299,13 @@ a {
   transition: transform 0.3s ease;
 }
 
+.portfolio__image-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
 .portfolio__inner:hover {
   transform: translateY(-4px);
 }
@@ -3329,13 +3336,58 @@ a {
   gap: 8px;
 }
 
-.button__icon {
-  font-size: 16px;
-  transition: transform 0.3s ease;
+/* --- Portfolio "See Gallery" overlay button ------------------------ */
+
+.portfolio__image-wrap > .button.is--with-icon {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 2;
+  margin: 0;
+  background-color: rgba(221, 205, 192, 0.7);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
-.portfolio__inner:hover .button__icon {
-  transform: translateX(4px);
+.button.is--with-icon .button__text {
+  line-height: 1;
+}
+
+.button.is--with-icon .button__circle {
+  width: 6px;
+  height: 6px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  display: inline-block;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+  transition: width 0.3s, height 0.3s, border-width 0.3s;
+}
+
+.button.is--with-icon .button__line {
+  width: 30px;
+  height: 1px;
+  background-color: currentColor;
+  display: inline-block;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+  transition: width 0.3s, margin-left 0.3s;
+}
+
+.button.is--with-icon .button__arrow {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button.is--with-icon:hover .button__line {
+  width: 50px;
+  margin-left: 0;
+}
+
+.button.is--with-icon:hover .button__circle {
+  width: 5px;
+  height: 5px;
+  border-width: 3px;
 }
 
 /* --- Lightbox ----------------------------------------------------- */
