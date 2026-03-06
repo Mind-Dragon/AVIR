@@ -95,7 +95,7 @@ export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] 
                     width={140}
                     height={50}
                     className="partner-logos__img"
-                    loading="lazy"
+                    loading="eager"
                   />
                 )}
               </a>
