@@ -15,6 +15,8 @@ body {
   color: var(--off-black);
   background: var(--white-sand);
   font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  line-height: 23.8px;
   margin: 0;
 }
 
@@ -554,7 +556,7 @@ a {
   .page-title {
     max-width: 90%;
     margin-top: 0;
-    font-size: 64px;
+    font-size: 40px;
     font-weight: 400;
   }
 
@@ -722,7 +724,7 @@ a {
   }
 
   .page-title {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 400;
     line-height: 1.15;
     margin: 0;
@@ -1175,7 +1177,7 @@ a {
     }
 
     .page-title {
-      font-size: 36px;
+      font-size: 28px;
     }
 
     .careers__link {
@@ -1273,7 +1275,7 @@ a {
     }
 
     .page-title {
-      font-size: 30px;
+      font-size: 22px;
     }
 
     .blog__list {
@@ -1926,7 +1928,7 @@ a {
     }
 
     .page-title {
-      font-size: 42px;
+      font-size: 30px;
     }
 
     .lander__intro {
@@ -2240,9 +2242,9 @@ a {
   max-width: 90%;
   margin-top: 0;
   font-family: termina, sans-serif;
-  font-size: 60px;
-  font-weight: 500;
-  line-height: 1.1em;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 44px;
   text-transform: uppercase;
   hyphens: none;
 }
@@ -2301,9 +2303,9 @@ a {
   text-transform: uppercase;
   margin-bottom: 40px;
   font-family: termina, sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.2em;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 .section-heading-outline {
@@ -2400,9 +2402,9 @@ a {
   white-space: nowrap;
   margin-top: 4px;
   margin-bottom: 0;
-  line-height: 26px;
+  line-height: 24px;
   font-family: termina, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -2437,8 +2439,8 @@ a {
 
 .support__heading {
   font-family: termina, sans-serif;
-  font-size: 45px;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 1.1em;
   margin-top: 10px;
@@ -2812,7 +2814,7 @@ a {
   }
 
   .page-title {
-    font-size: 42px;
+    font-size: 30px;
   }
 
   .col-wrapper {
@@ -2862,7 +2864,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .page-title {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .section-content {
@@ -2871,7 +2873,7 @@ a {
   }
 
   .section__heading {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .section-heading-outline {
@@ -2894,7 +2896,7 @@ a {
   }
 
   .support__heading {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .support__grid {
@@ -3034,6 +3036,8 @@ a {
 .portfolio__item {
   flex: 1;
   min-width: 280px;
+  overflow: hidden;
+  border-radius: 16px;
 }
 
 .portfolio__inner {
@@ -3056,6 +3060,12 @@ a {
   height: 400px;
   object-fit: cover;
   border-radius: 16px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.portfolio__inner:hover .portfolio__cover-image {
+  transform: scale(1.04);
+  filter: brightness(1.05);
 }
 
 .portfolio__title {
