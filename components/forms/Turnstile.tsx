@@ -62,7 +62,14 @@ const Turnstile = forwardRef<TurnstileHandle, TurnstileProps>(
       if (widgetIdRef.current !== null) return;
 
       const siteKey =
-        process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || TURNSTILE_TEST_SITE_KEY;
+        process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ||
+        (process.env.NODE_ENV !== "production"
+          ? TURNSTILE_TEST_SITE_KEY
+          : undefined);
+      if (!siteKey) {
+        console.error("NEXT_PUBLIC_TURNSTILE_SITE_KEY is not set");
+        return;
+      }
       if (!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && typeof window !== "undefined") {
         console.warn(
           "NEXT_PUBLIC_TURNSTILE_SITE_KEY is not set — using Cloudflare test key. " +
