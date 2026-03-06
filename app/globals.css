@@ -3091,6 +3091,8 @@ a {
 @media screen and (max-width: 767px) {
   .page-title {
     font-size: 24px;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .section-content {
