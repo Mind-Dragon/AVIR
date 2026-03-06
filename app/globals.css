@@ -2288,6 +2288,12 @@ a {
   line-height: 44px;
   text-transform: uppercase;
   hyphens: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.page-title.is--nowrap {
   overflow-wrap: normal;
   word-break: normal;
   white-space: nowrap;

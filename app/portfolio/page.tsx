@@ -37,7 +37,7 @@ export default function PortfolioPage() {
         <div className="page-container">
           <div className="col-wrapper">
             <div className="col-50">
-              <h1 className="page-title">{data.title}</h1>
+              <h1 className="page-title is--nowrap">{data.title}</h1>
             </div>
             <div className="col-50 title-right">
               <p>Browse a small sample of some of our favorite projects.</p>
