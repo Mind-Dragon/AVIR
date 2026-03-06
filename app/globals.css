@@ -2293,6 +2293,12 @@ a {
   white-space: normal;
 }
 
+.page-title.is--nowrap {
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: nowrap;
+}
+
 .page-container {
   width: 100%;
   max-width: 1200px;
@@ -2319,6 +2325,13 @@ a {
 
 .col-50.title-right {
   padding-top: 15px;
+}
+
+.col-50.title-right.is--centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .col-40 {
