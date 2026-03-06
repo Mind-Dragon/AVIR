@@ -41,6 +41,51 @@ function loadPageHtml(slug: string): cheerio.CheerioAPI {
 }
 
 /* ------------------------------------------------------------------ */
+/*  Service image lookup (self-hosted like brand logos)                 */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Build a CDN-URL → local-path lookup for service images & icons.
+ *
+ * Service images are committed to public/images/services/ so they are always
+ * available — even on Vercel where the bulk prebuild-assets step is skipped.
+ * Each filename embeds the Webflow asset-ID (the hex segment after the
+ * collection ID in the CDN URL), so we extract that ID and map it back.
+ */
+const serviceCdnToLocal: Record<string, string> = {};
+{
+  const servicesDir = path.join(process.cwd(), "public", "images", "services");
+  let files: string[] = [];
+  try {
+    files = fs.readdirSync(servicesDir);
+  } catch {
+    /* directory may not exist during build — ignore */
+  }
+  for (const file of files) {
+    // Filename format: "00-<assetId>_<rest>.ext"
+    const match = file.match(/^\d+-([0-9a-f]+)_/);
+    if (match) {
+      const assetId = match[1];
+      serviceCdnToLocal[assetId] = "/images/services/" + encodeURIComponent(file);
+    }
+  }
+}
+
+/** Resolve a service-image CDN URL to a local path using the asset-ID. */
+function resolveServiceImage(cdnUrl: string): string {
+  if (!cdnUrl) return "";
+  // Extract the Webflow asset-ID from the CDN URL path segment
+  // URL pattern: …/<collectionId>/<assetId>_<name>.<ext>
+  const urlMatch = cdnUrl.match(/\/([0-9a-f]+)_[^/]+$/);
+  if (urlMatch) {
+    const local = serviceCdnToLocal[urlMatch[1]];
+    if (local) return local;
+  }
+  // Fallback: use the general resolveAsset (CDN URL on Vercel, local asset path otherwise)
+  return resolveAsset(cdnUrl);
+}
+
+/* ------------------------------------------------------------------ */
 /*  Services page data                                                 */
 /* ------------------------------------------------------------------ */
 
@@ -86,7 +131,7 @@ export function getServicesData(): ServicesPageData {
       const galleryLink = $(el).find("a.button.is--with-icon").first();
       const isHidden = galleryLink.hasClass("w-condition-invisible");
       const galleryHref = !isHidden && galleryLink.length ? (galleryLink.attr("href") || "") : "";
-      services.push({ name, description, image: resolveAsset(img), slug, icon: resolveAsset(icon), galleryHref });
+      services.push({ name, description, image: resolveServiceImage(img), slug, icon: resolveServiceImage(icon), galleryHref });
     });
 
   const vipItems: VipItem[] = [];
