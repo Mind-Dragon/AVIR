@@ -2936,6 +2936,11 @@ a {
     min-width: unset;
   }
 
+  .exciting__item:hover,
+  .exciting__item.is--active {
+    transform: scale(1);
+  }
+
   .exciting__grid {
     gap: 20px;
   }
