@@ -26,7 +26,7 @@ export default function BrandGrid({ brands }: BrandGridProps) {
                 height={60}
                 className="partner__logo-img"
                 data-wf-class="partner__logo-img"
-                loading="lazy"
+                loading="eager"
               />
             )}
           </div>
