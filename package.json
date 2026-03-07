@@ -12,7 +12,9 @@
     "extract-blog": "node scripts/extract-blog.mjs",
     "scrape": "node scripts/scrape.mjs",
     "download-assets": "node scripts/download-assets.mjs",
-    "classify-templates": "node scripts/classify-templates.mjs"
+    "classify-templates": "node scripts/classify-templates.mjs",
+    "deploy": "bash scripts/deploy.sh",
+    "deploy:prod": "bash scripts/deploy.sh --prod"
   },
   "dependencies": {
     "framer-motion": "^12.35.0",
