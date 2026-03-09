@@ -58,6 +58,26 @@ export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const isHome = pathname === "/";
 
+  // Track scroll position on homepage to toggle transparent → solid nav
+  const [scrolledPastHero, setScrolledPastHero] = useState(false);
+
+  useEffect(() => {
+    if (!isHome) {
+      setScrolledPastHero(false);
+      return;
+    }
+
+    const handleScroll = () => {
+      setScrolledPastHero(window.scrollY > window.innerHeight * 0.8);
+    };
+
+    // Check immediately in case the page loads scrolled
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHome]);
+
   // Desktop hover dropdown state
   const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(
     null
@@ -106,7 +126,7 @@ export default function Nav() {
 
   return (
     <div
-      className={`nav${isHome ? " nav--transparent" : ""}`}
+      className={`nav${isHome && !scrolledPastHero ? " nav--transparent" : ""}`}
       data-wf-class="nav"
     >
       {/* Logo */}
