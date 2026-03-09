@@ -1,0 +1,128 @@
+/* ============================================================
+   Web2 redesigned hero styles — web2 branch only, not merged to main
+   ============================================================ */
+
+.home-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #1a1714;
+}
+
+.home-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.home-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 23, 20, 0.55) 0%,
+    rgba(26, 23, 20, 0.35) 50%,
+    rgba(26, 23, 20, 0.72) 100%
+  );
+  z-index: 1;
+}
+
+.home-hero__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.home-hero__text-wrap {
+  max-width: 680px;
+}
+
+.home-hero__eyebrow {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: rgba(247, 243, 240, 0.7);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.home-hero__heading {
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  color: #f7f3f0;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+}
+
+.home-hero__sub {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.65;
+  color: rgba(247, 243, 240, 0.75);
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+.button.is--hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border: 1px solid rgba(247, 243, 240, 0.6);
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: #f7f3f0;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.button.is--hero-cta:hover {
+  background: rgba(247, 243, 240, 0.12);
+  border-color: #f7f3f0;
+}
+
+.hero-scroll__wrap {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-scroll__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(247, 243, 240, 0.7);
+  animation: scrollBounce 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(10px); opacity: 0.3; }
+}
+
+@media (max-width: 768px) {
+  .home-hero__content { padding: 0 24px; }
+  .home-hero__text-wrap { max-width: 100%; }
+  .home-hero__heading { font-size: clamp(32px, 9vw, 52px); }
+}
