@@ -53,10 +53,16 @@ function isDropdownActive(
   return items.some((item) => isActive(pathname, item.href));
 }
 
+/** Nav height in px — used as scroll threshold for transparent → solid transition */
+const NAV_HEIGHT = 97;
+
 export default function Nav() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const isHome = pathname === "/";
+
+  // Track whether user has scrolled past the hero on the homepage
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Desktop hover dropdown state
   const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(
@@ -71,6 +77,23 @@ export default function Nav() {
   // Refs for closing desktop dropdown on outside click
   const excitingRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+
+  // Toggle nav solid/transparent based on scroll position on homepage
+  useEffect(() => {
+    if (!isHome) {
+      setIsScrolled(false);
+      return;
+    }
+
+    function handleScroll() {
+      const threshold = window.innerHeight - NAV_HEIGHT;
+      setIsScrolled(window.scrollY > threshold);
+    }
+
+    handleScroll(); // check on mount
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHome]);
 
   const toggleMobile = useCallback(() => {
     setMobileOpen((prev) => !prev);
@@ -106,7 +129,7 @@ export default function Nav() {
 
   return (
     <div
-      className={`nav${isHome ? " nav--transparent" : ""}`}
+      className={`nav${isHome && !isScrolled ? " nav--transparent" : ""}`}
       data-wf-class="nav"
     >
       {/* Logo */}
