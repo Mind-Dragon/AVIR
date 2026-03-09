@@ -42,6 +42,48 @@ a {
     position: fixed;
     top: 0;
     left: 0;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  /* Transparent nav on homepage — floats over the hero video */
+  .nav.nav--transparent {
+    background-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  .nav.nav--transparent .nav-link,
+  .nav.nav--transparent .nav-link.is--dropdown,
+  .nav.nav--transparent .mobile__nav-toggle {
+    color: var(--white-sand);
+  }
+
+  .nav.nav--transparent .nav-link:hover {
+    background-color: rgba(247, 243, 240, 0.1);
+  }
+
+  .nav.nav--transparent .nav-link.is--active {
+    border-color: rgba(247, 243, 240, 0.25);
+  }
+
+  .nav.nav--transparent .nav__site-logo-inner {
+    filter: brightness(0) invert(1);
+  }
+
+  .nav.nav--transparent .mobile__dd {
+    background-color: rgba(12, 10, 9, 0.85);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom-color: rgba(247, 243, 240, 0.1);
+  }
+
+  .nav.nav--transparent .nav-link-mobile,
+  .nav.nav--transparent .mobile-accordion__toggle {
+    color: var(--white-sand);
+  }
+
+  .nav.nav--transparent .nav-link-mobile:hover,
+  .nav.nav--transparent .mobile-accordion__toggle:hover {
+    background-color: rgba(247, 243, 240, 0.1);
   }
 
   .nav__site-logo {

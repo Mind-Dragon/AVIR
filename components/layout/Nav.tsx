@@ -56,6 +56,7 @@ function isDropdownActive(
 export default function Nav() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const isHome = pathname === "/";
 
   // Desktop hover dropdown state
   const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(
@@ -104,7 +105,10 @@ export default function Nav() {
   }, [openDesktopDropdown]);
 
   return (
-    <div className="nav" data-wf-class="nav">
+    <div
+      className={`nav${isHome ? " nav--transparent" : ""}`}
+      data-wf-class="nav"
+    >
       {/* Logo */}
       <Link
         href="/"
