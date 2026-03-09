@@ -1,6 +1,3 @@
-"use client";
-
-import { useRef, useEffect, useState } from "react";
 
 /** Process steps from index.json / index.html */
 const PROCESS_STEPS = [
@@ -37,39 +34,12 @@ const PROCESS_STEPS = [
 function ProcessStep({
   heading,
   desc,
-  index,
 }: {
   heading: string;
   desc: string;
-  index: number;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.05 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div
-      ref={ref}
-      className={`dept__item${visible ? " is--visible" : ""}`}
-      style={{ transitionDelay: `${index * 0.08}s` }}
-    >
+    <div className="dept__item">
       <div className="dept__line" />
       <div className="dept__heading-wrap">
         <h3 className="dept__heading">{heading}</h3>
@@ -95,12 +65,11 @@ export default function ProcessSection() {
 
         {/* Steps — matches avir.com dept__item layout */}
         <div className="process-home__grid">
-          {PROCESS_STEPS.map((step, i) => (
+          {PROCESS_STEPS.map((step) => (
             <ProcessStep
               key={step.heading}
               heading={step.heading}
               desc={step.desc}
-              index={i}
             />
           ))}
         </div>

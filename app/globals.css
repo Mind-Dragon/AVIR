@@ -1455,12 +1455,6 @@ a {
   }
 
   .scroller__card {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-
-  .scroller__card.is--visible {
     opacity: 1;
     transform: translateY(0);
   }
@@ -1538,16 +1532,10 @@ a {
 
   /* dept__item — matches avir.com process step layout */
   .dept__item {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    position: relative;
-    padding-left: 20px;
-  }
-
-  .dept__item.is--visible {
     opacity: 1;
     transform: translateY(0);
+    position: relative;
+    padding-left: 20px;
   }
 
   .dept__line {
@@ -1598,12 +1586,6 @@ a {
   }
 
   .partners-section .container {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-
-  .partners-section .container.is--visible {
     opacity: 1;
     transform: translateY(0);
   }
@@ -1719,12 +1701,6 @@ a {
   }
 
   .portfolio-preview-section .container {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-
-  .portfolio-preview-section .container.is--visible {
     opacity: 1;
     transform: translateY(0);
   }

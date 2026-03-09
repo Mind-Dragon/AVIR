@@ -1,6 +1,3 @@
-"use client";
-
-import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,30 +13,9 @@ const PARTNER_TYPES = [
 ] as const;
 
 export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.05 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section className="section partners-section" data-wf-class="section">
-      <div className={`container${visible ? " is--visible" : ""}`} ref={ref}>
+      <div className="container">
         {/* Outline heading pair */}
         <div className="outline-title-wrap">
           <div className="section-heading outline">Building</div>
