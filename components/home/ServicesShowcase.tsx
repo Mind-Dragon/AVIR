@@ -1,6 +1,3 @@
-"use client";
-
-import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 
 /** Service sections data matching the Webflow scroller-section layout */
@@ -53,29 +50,8 @@ function ServiceCard({
   btn: string;
   href: string;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.05 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div ref={ref} className={`scroller__card${visible ? " is--visible" : ""}`}>
+    <div className="scroller__card">
       <div className="scroller__content">
         <h2 className="scroller__heading">{heading}</h2>
         <p className="scroller__para">{para}</p>

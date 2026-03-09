@@ -1,6 +1,3 @@
-"use client";
-
-import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,35 +14,11 @@ export default function PortfolioPreview({
 }: {
   items: PortfolioPreviewItem[];
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.05 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   if (items.length === 0) return null;
 
   return (
     <section className="section portfolio-preview-section">
-      <div
-        className={`container${visible ? " is--visible" : ""}`}
-        ref={ref}
-      >
+      <div className="container">
         <div className="outline-title-wrap">
           <div className="section-heading outline">Gallery</div>
           <h2 className="section-heading">Portfolio</h2>
