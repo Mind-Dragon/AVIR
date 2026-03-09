@@ -1601,17 +1601,17 @@ a {
 
   .section.scroller-section,
   .section.scroller-section-extended {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     background-color: var(--white-sand);
-    padding: 120px 20px;
+    padding: 80px 20px;
   }
 
   .section.scroller-section.first {
-    padding-top: 160px;
+    padding-top: 100px;
   }
 
   .section.scroller-section.transition,
