@@ -59,7 +59,11 @@ export default function ProcessesPage() {
           <h2 className="section__heading">Working with Partners</h2>
           <div className="partners__grid">
             {data.partnerTypes.map((partner) => (
-              <div key={partner.name} className="partner-type__item">
+              <div
+                key={partner.name}
+                id={partner.name.toLowerCase().replace(/\s+/g, "-")}
+                className="partner-type__item"
+              >
                 <h3 className="partner-type__title">{partner.name}</h3>
                 <p className="partner-type__text">{partner.description}</p>
               </div>
