@@ -318,9 +318,10 @@ export default function ScrollerHero() {
         <div className="scroller-hero__content">
           <AnimatePresence mode="wait">
             {activeIndex === 0 ? (
-              <IntroPanel />
+              <IntroPanel key="intro" />
             ) : (
               <ServicePanel
+                key={SERVICES[activeIndex - 1].name}
                 name={SERVICES[activeIndex - 1].name}
                 Icon={SERVICES[activeIndex - 1].Icon}
                 wider={SERVICES[activeIndex - 1].wider}
