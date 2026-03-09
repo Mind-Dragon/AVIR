@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
+import NavSpacer from "@/components/layout/NavSpacer";
 import Footer from "@/components/layout/Footer";
 import PageTransition from "@/components/layout/PageTransition";
 import { SITE_URL, resolveDefaultOgImageAbsolute } from "@/lib/seo";
@@ -48,8 +49,7 @@ export default function RootLayout({
       </head>
       <body className="font-manrope antialiased">
         <Nav />
-        {/* Spacer for fixed nav: 97px desktop, 60px mobile */}
-        <div className="pt-[97px] max-md:pt-[60px]" />
+        <NavSpacer />
         <main>
           <PageTransition>{children}</PageTransition>
         </main>
