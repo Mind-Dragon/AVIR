@@ -3,9 +3,11 @@ import HeroSection from "@/components/home/HeroSection";
 import ServicesShowcase from "@/components/home/ServicesShowcase";
 import ProcessSection from "@/components/home/ProcessSection";
 import PartnersSection from "@/components/home/PartnersSection";
+import PortfolioPreview from "@/components/home/PortfolioPreview";
 import FooterCTA from "@/components/layout/FooterCTA";
 import { canonicalUrl, AVIR_LOCAL_BUSINESS, AVIR_ORGANIZATION } from "@/lib/seo";
 import { getBrandsData } from "@/lib/page-data";
+import { getPortfolioData } from "@/lib/gallery-data";
 
 export const metadata: Metadata = {
   title: "AVIR | Luxury Smart Home Solutions",
@@ -30,6 +32,9 @@ export default function Home() {
     .filter((b) => b.logoImg)
     .map((b) => ({ logoImg: b.logoImg, link: b.link }));
 
+  // Load portfolio items for the preview grid
+  const portfolioData = getPortfolioData();
+
   return (
     <>
       <script
@@ -40,6 +45,7 @@ export default function Home() {
       <ServicesShowcase />
       <ProcessSection />
       <PartnersSection logos={partnerLogos} />
+      <PortfolioPreview items={portfolioData.items} />
       <FooterCTA />
     </>
   );

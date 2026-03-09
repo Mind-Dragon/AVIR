@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,6 +17,7 @@ const PARTNER_TYPES = [
 
 export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] }) {
   const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -25,10 +26,11 @@ export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.classList.add("is--visible");
+          setVisible(true);
+          observer.disconnect();
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.05 }
     );
 
     observer.observe(el);
@@ -37,7 +39,7 @@ export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] 
 
   return (
     <section className="section partners-section" data-wf-class="section">
-      <div className="container" ref={ref}>
+      <div className={`container${visible ? " is--visible" : ""}`} ref={ref}>
         {/* Outline heading pair */}
         <div className="outline-title-wrap">
           <div className="section-heading outline">Building</div>
@@ -66,11 +68,11 @@ export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] 
           {/* Partner image */}
           <div className="propart__image-wrap">
             <Image
-              src="/assets/cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/627031527309863b09abc49b_Shutterstock Partners Pic 220502.jpg"
+              src="https://cdn.prod.website-files.com/61aeaa63fc373a25c198ab33/627031527309863b09abc49b_Shutterstock%20Partners%20Pic%20220502.jpg"
               alt="Professional Partners"
               width={1600}
               height={1057}
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="propart__image"
             />
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 /** Process steps from index.json / index.html */
 const PROCESS_STEPS = [
@@ -44,6 +44,7 @@ function ProcessStep({
   index: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -52,10 +53,11 @@ function ProcessStep({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.classList.add("is--visible");
+          setVisible(true);
+          observer.disconnect();
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.05 }
     );
 
     observer.observe(el);
@@ -65,7 +67,7 @@ function ProcessStep({
   return (
     <div
       ref={ref}
-      className="dept__item"
+      className={`dept__item${visible ? " is--visible" : ""}`}
       style={{ transitionDelay: `${index * 0.08}s` }}
     >
       <div className="dept__line" />
