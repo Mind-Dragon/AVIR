@@ -18,10 +18,24 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "AVIR",
     locale: "en_US",
-    images: [{ url: resolveDefaultOgImageAbsolute(), alt: "AVIR" }],
+    title: "AVIR | Luxury Smart Home Solutions",
+    description:
+      "Luxury smart home solutions, designed for the discerning.",
+    url: SITE_URL,
+    images: [
+      {
+        url: resolveDefaultOgImageAbsolute(),
+        width: 1920,
+        height: 1080,
+        alt: "AVIR — Luxury Smart Home Solutions",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    title: "AVIR | Luxury Smart Home Solutions",
+    description: "Luxury smart home solutions, designed for the discerning.",
+    images: [resolveDefaultOgImageAbsolute()],
   },
 };
 

@@ -1,0 +1,30 @@
+# AVIR
+
+> AVIR provides elite audiovisual, automation, lighting, shading, and home cinema solutions for high-end residential and commercial projects in the Coachella Valley and beyond.
+
+AVIR is a luxury smart home integration company serving Palm Springs, Palm Desert, La Quinta, Indian Wells, Rancho Mirage, and surrounding desert communities. We specialize in bespoke technology systems that are invisible in design yet profound in experience.
+
+## Services
+
+- [Home Automation](/services#automation): Full-home intelligent control — lighting, climate, security, AV — unified in a single ecosystem.
+- [Sound & Vision](/services#music): Architectural audio and video systems engineered for acoustic precision and visual clarity.
+- [Motorized Shading](/services#shading): Precision-engineered shading solutions that balance light, privacy, and energy efficiency.
+- [Architectural Lighting](/services#lighting): Lighting design and control that transforms spaces through layered, programmable scenes.
+- [Home Cinema](/services#home-cinema): Dedicated home theater rooms and media spaces built to audiophile and cinephile standards.
+
+## About
+
+- [About AVIR](/about-avir): Our story, philosophy, and team.
+- [Our Process](/processes): How we work — from discovery through commissioning and support.
+- [Portfolio](/portfolio): Completed residential and commercial projects.
+- [Brands](/brands): Technology partners including Savant, Lutron, Control4, Crestron, Sony, and McIntosh.
+
+## Contact
+
+- [Contact Us](/contact): Request a consultation or ask a question.
+- [Careers](/careers): Join the AVIR team.
+- [Service Request](/service-request): Existing clients — log a support request.
+
+## Geographic Service Area
+
+We serve luxury residential and commercial clients throughout the Coachella Valley including Palm Springs, Palm Desert, Indian Wells, La Quinta, Rancho Mirage, Desert Hot Springs, Cathedral City, Indio, and Coachella.
