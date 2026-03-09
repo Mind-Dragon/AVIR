@@ -2,7 +2,7 @@ export default function HeroSection() {
   return (
     <section className="hero-video__wrapper" data-wf-class="hero-video__wrapper">
       {/* Full-viewport autoplay video — no text overlay, matching avir.com */}
-      <div className="hero-video__bg">
+      <div className="hero-video__bg" aria-hidden="true">
         <video
           autoPlay
           loop
