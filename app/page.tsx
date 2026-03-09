@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import HeroSection from "@/components/home/HeroSection";
-import ServicesShowcase from "@/components/home/ServicesShowcase";
+import ScrollerHero from "@/components/home/ScrollerHero";
 import ProcessSection from "@/components/home/ProcessSection";
 import PartnersSection from "@/components/home/PartnersSection";
 import PortfolioPreview from "@/components/home/PortfolioPreview";
@@ -41,8 +40,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <HeroSection />
-      <ServicesShowcase />
+      <ScrollerHero />
       <ProcessSection />
       <PartnersSection logos={partnerLogos} />
       <PortfolioPreview items={portfolioData.items} />
