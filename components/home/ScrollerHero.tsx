@@ -222,7 +222,7 @@ export default function ScrollerHero() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  /* Scroll progress across the entire wrapper (6 x 100vh) */
+  /* Scroll progress across the entire wrapper (6 x 200vh = 1200vh) */
   const { scrollYProgress } = useScroll({
     target: wrapperRef,
     offset: ["start start", "end end"],
