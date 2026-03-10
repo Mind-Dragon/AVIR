@@ -56,9 +56,9 @@ const itemVariants = {
 };
 
 const lineVariants = {
-  hidden: { scaleX: 0 },
+  hidden: { scaleY: 0 },
   visible: {
-    scaleX: 1,
+    scaleY: 1,
     transition: { duration: 0.5, ease: "easeOut" as const },
   },
 };
@@ -96,7 +96,7 @@ function ProcessStep({
       <motion.div
         className="dept__line"
         variants={lineVariants}
-        style={{ transformOrigin: "0%" }}
+        style={{ transformOrigin: "top" }}
       />
       <motion.div className="dept__heading-wrap" variants={itemVariants}>
         <h3 className="dept__heading">{heading}</h3>
