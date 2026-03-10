@@ -33,6 +33,7 @@ export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] 
   }, []);
 
   const Wrap = isClient ? motion.div : "div";
+  const PWrap = isClient ? motion.p : "p";
   const wrapProps = isClient
     ? {
         initial: "hidden" as const,
@@ -51,9 +52,9 @@ export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] 
           <h2 className="section-heading">Professional Partners</h2>
         </Wrap>
 
-        <Wrap className="large-para is--keep-left" {...wrapProps}>
+        <PWrap className="large-para is--keep-left" {...wrapProps}>
           AVIR works with homeowners and professional partners alike.
-        </Wrap>
+        </PWrap>
 
         <div className="propart__wrap">
           {/* Partner type links */}

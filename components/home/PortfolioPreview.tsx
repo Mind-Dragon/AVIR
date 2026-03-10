@@ -36,6 +36,7 @@ export default function PortfolioPreview({
   if (items.length === 0) return null;
 
   const Wrap = isClient ? motion.div : "div";
+  const PWrap = isClient ? motion.p : "p";
   const wrapProps = isClient
     ? {
         initial: "hidden" as const,
@@ -53,9 +54,9 @@ export default function PortfolioPreview({
           <h2 className="section-heading">Portfolio</h2>
         </Wrap>
 
-        <Wrap className="large-para is--keep-left" {...wrapProps}>
+        <PWrap className="large-para is--keep-left" {...wrapProps}>
           Browse a small sample of some of our favorite projects.
-        </Wrap>
+        </PWrap>
 
         <div className="portfolio-preview__grid">
           {items.map((item) => (
