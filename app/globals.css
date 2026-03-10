@@ -540,6 +540,10 @@ a {
     border: none;
   }
 
+  .button:hover {
+    background-color: rgba(221, 205, 192, 0.6);
+  }
+
   .button.is--outline {
     border: 1px solid var(--white-sand);
     color: var(--white-sand);
@@ -550,6 +554,7 @@ a {
   .button.is--outline:hover {
     background-color: var(--white-sand);
     color: var(--off-black);
+    transition: color 0.2s ease, background-color 0.2s ease;
   }
 
   .button.is--outline.is--dark {
@@ -852,11 +857,11 @@ a {
     text-decoration: none;
     color: inherit;
     width: 100%;
-    transition: opacity 0.3s;
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   .blog__link-wrap:hover {
-    opacity: 0.8;
+    transform: translateY(-15px);
   }
 
   .blog__link-wrap h3 {
@@ -1429,10 +1434,10 @@ a {
 /* ===== Scroll-Jacking Hero (ScrollerHero) ===== */
 
 @layer components {
-  /* Outer wrapper: drives the scroll distance (6 × 100vh) */
+  /* Outer wrapper: drives the scroll distance (6 × 200vh) matching original Webflow */
   .scroller-hero {
     position: relative;
-    height: 600vh; /* 1 intro + 5 services */
+    height: 1200vh; /* 6 panels × 200vh — slow, deliberate transitions */
   }
 
   /* Sticky inner hero — stays pinned for the full scroll distance */
@@ -1797,7 +1802,9 @@ a {
   }
 
   .propart__item:hover {
-    opacity: 0.7;
+    background-color: rgba(221, 205, 192, 0.65);
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
   }
 
   .propart__line {
@@ -1941,6 +1948,11 @@ a {
 
 @layer components {
   @media screen and (max-width: 991px) {
+    /* Revert scroller to 100vh per panel on tablet */
+    .scroller-hero {
+      height: 600vh;
+    }
+
     .propart__wrap {
       flex-direction: column;
     }

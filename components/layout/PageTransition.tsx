@@ -43,10 +43,10 @@ export default function PageTransition({
     <AnimatePresence mode="wait">
       <motion.div
         key={pathname}
-        initial={isFirstRender.current ? false : { opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+        initial={isFirstRender.current ? false : { opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -8 }}
+        transition={{ duration: 0.8, ease: [0.165, 0.84, 0.44, 1] }}
       >
         <FrozenRouter>{children}</FrozenRouter>
       </motion.div>

@@ -4,6 +4,7 @@ import ProcessSection from "@/components/home/ProcessSection";
 import PartnersSection from "@/components/home/PartnersSection";
 import PortfolioPreview from "@/components/home/PortfolioPreview";
 import FooterCTA from "@/components/layout/FooterCTA";
+import ScrollReveal from "@/components/layout/ScrollReveal";
 import { canonicalUrl, AVIR_LOCAL_BUSINESS, AVIR_ORGANIZATION } from "@/lib/seo";
 import { getBrandsData } from "@/lib/page-data";
 import { getPortfolioData } from "@/lib/gallery-data";
@@ -44,7 +45,9 @@ export default function Home() {
       <ProcessSection />
       <PartnersSection logos={partnerLogos} />
       <PortfolioPreview items={portfolioData.items} />
-      <FooterCTA />
+      <ScrollReveal>
+        <FooterCTA />
+      </ScrollReveal>
     </>
   );
 }

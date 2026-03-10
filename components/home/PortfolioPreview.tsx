@@ -1,5 +1,9 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export interface PortfolioPreviewItem {
   href: string;
@@ -9,24 +13,49 @@ export interface PortfolioPreviewItem {
   title: string;
 }
 
+const revealVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" as const },
+  },
+};
+
 export default function PortfolioPreview({
   items,
 }: {
   items: PortfolioPreviewItem[];
 }) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   if (items.length === 0) return null;
+
+  const Wrap = isClient ? motion.div : "div";
+  const wrapProps = isClient
+    ? {
+        initial: "hidden" as const,
+        whileInView: "visible" as const,
+        viewport: { once: true, amount: 0.2 },
+        variants: revealVariants,
+      }
+    : {};
 
   return (
     <section className="section portfolio-preview-section">
       <div className="container">
-        <div className="outline-title-wrap">
+        <Wrap className="outline-title-wrap" {...wrapProps}>
           <div className="section-heading outline">Gallery</div>
           <h2 className="section-heading">Portfolio</h2>
-        </div>
+        </Wrap>
 
-        <p className="large-para is--keep-left">
+        <Wrap className="large-para is--keep-left" {...wrapProps}>
           Browse a small sample of some of our favorite projects.
-        </p>
+        </Wrap>
 
         <div className="portfolio-preview__grid">
           {items.map((item) => (

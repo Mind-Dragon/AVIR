@@ -1,5 +1,9 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export interface PartnerLogo {
   logoImg: string;
@@ -12,19 +16,44 @@ const PARTNER_TYPES = [
   { text: "Builders", href: "/processes#builders" },
 ] as const;
 
+const revealVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" as const },
+  },
+};
+
 export default function PartnersSection({ logos = [] }: { logos?: PartnerLogo[] }) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const Wrap = isClient ? motion.div : "div";
+  const wrapProps = isClient
+    ? {
+        initial: "hidden" as const,
+        whileInView: "visible" as const,
+        viewport: { once: true, amount: 0.2 },
+        variants: revealVariants,
+      }
+    : {};
+
   return (
     <section className="section partners-section" data-wf-class="section">
       <div className="container">
         {/* Outline heading pair */}
-        <div className="outline-title-wrap">
+        <Wrap className="outline-title-wrap" {...wrapProps}>
           <div className="section-heading outline">Building</div>
           <h2 className="section-heading">Professional Partners</h2>
-        </div>
+        </Wrap>
 
-        <p className="large-para is--keep-left">
+        <Wrap className="large-para is--keep-left" {...wrapProps}>
           AVIR works with homeowners and professional partners alike.
-        </p>
+        </Wrap>
 
         <div className="propart__wrap">
           {/* Partner type links */}
